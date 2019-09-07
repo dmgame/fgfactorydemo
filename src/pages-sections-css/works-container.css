@@ -1,0 +1,7 @@
+.works-container {
+  padding: 85px 0;
+}
+
+.works-container + .works-container {
+  padding-top: 0;
+}

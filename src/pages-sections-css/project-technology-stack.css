@@ -1,0 +1,16 @@
+.project-technology-stack {
+  padding: 120px 0;
+}
+
+.project-technology-stack .title {
+  margin-bottom: 55px;
+}
+
+.project-technology-stack .base-list + .base-list {
+  margin-left: 40px;
+}
+
+.project-technology-stack.web-project-playcrowd .base-list + .base-list {
+  margin-left: 220px;
+}
+ 

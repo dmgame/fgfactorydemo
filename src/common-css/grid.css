@@ -1,0 +1,26 @@
+.d-grid {
+  display: grid;
+}
+
+.grid-column-2 {
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 36px;
+}
+
+.grid-column-3 {
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 58px;
+}
+
+.grid-column-5 {
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 33px;
+}
+
+.grid-random .d-grid {
+  grid-gap: 33px;
+}
+
+.grid-random .d-grid + .d-grid {
+  margin-top: 33px;
+}

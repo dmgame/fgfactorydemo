@@ -1,0 +1,32 @@
+.featured-articles {
+  padding-top: 90px;
+}
+
+.featured-articles .title {
+  margin-bottom: 40px;
+}
+
+.guide-and-tips {
+  padding-top: 90px;
+  padding-bottom: 220px;
+}
+
+.guide-and-tips .title {
+  margin-bottom: 30px;
+}
+
+.guide-and-tips .carousel {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.other-articles {
+  padding: 30px 40px;
+}
+
+.other-articles .grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin-left: -20px;
+  margin-right: -20px;
+}

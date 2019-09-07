@@ -1,0 +1,24 @@
+.related-works {
+  padding: 90px 0 100px 0;
+}
+
+.related-works .title {
+  margin-bottom: 50px;
+}
+
+.related-works .image-card + .image-card {
+  margin-left: 38px;
+}
+
+.related-works-wrap {
+  position: relative;
+}
+
+.related-works-wrap .above-title {
+  position: absolute;
+  top: -30px;
+}
+
+.related-works-wrap + .related-works-wrap {
+  margin-left: 38px;
+}

@@ -1,0 +1,24 @@
+[data-slick-slider] .slide {
+  padding: 0 10px;
+}
+
+[data-slick-slider] .slick-dots {
+  bottom: -125px;
+}
+
+[data-slick-slider] .slick-dots li button {
+  width: 10px;
+  height: 10px;
+  border: 1px solid var(--main-green);
+  border-radius: 50%;
+  padding: 0;
+  background-color: transparent;
+}
+
+[data-slick-slider] .slick-dots li.slick-active button {
+  background-color: var(--main-green);
+}
+
+[data-slick-slider] .slick-dots li button::before {
+  display: none;
+}

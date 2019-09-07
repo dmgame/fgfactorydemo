@@ -1,0 +1,7 @@
+.footer {
+  padding: 90px 0;
+}
+
+.footer .list-wrap + .list-wrap {
+  margin-left: 100px;
+}

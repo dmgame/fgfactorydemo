@@ -1,0 +1,39 @@
+:root {
+  --main-black: #0a0b0f;
+  --main-white: #fff;
+  --main-green: #00ac6a;
+  /* todo переделать в hex */
+  --main-gray: #9f9fa0;
+}
+
+.color-black {
+  color: var(--main-black) !important;
+}
+
+.color-white {
+  color: var(--main-white) !important;
+}
+
+.color-green {
+  color: var(--main-green) !important;
+}
+
+.color-gray {
+  color: var(--main-gray);
+}
+
+.bg-black {
+  background: var(--main-black);
+}
+
+.bg-white {
+  background: var(--main-white);
+}
+
+.bg-green {
+  background: var(--main-green);
+}
+
+.bg-gray {
+  background: var(--main-gray);
+}

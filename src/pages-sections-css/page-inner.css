@@ -1,0 +1,37 @@
+.page-inner {
+  padding: 157px 0 50px 0;
+}
+
+.page-inner .article {
+  max-width: 900px;
+}
+
+.blog-inner {
+  padding: 172px 0 65px 0;
+}
+
+.blog-inner .article {
+  max-width: 650px;
+  margin-top: 35px;
+}
+
+.web-project-inner {
+  padding-bottom: 205px;
+  padding-top: 177px;
+}
+
+.project-type {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.333;
+  color: var(--main-black);
+}
+
+.web-project-inner .article {
+  margin-top: 90px;
+}
+
+.web-work-inner {
+  padding: 175px 0 75px 0;
+}

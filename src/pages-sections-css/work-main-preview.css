@@ -1,0 +1,25 @@
+.work-main-preview {
+  padding-top: 90px;
+}
+.work-main-preview .work-main-preview-image {
+  height: 790px;
+  background-size: cover;
+  position: relative;
+  background-position: center;
+  padding-left: 200px;
+}
+
+.work-main-preview .phone-preview {
+  position: absolute;
+  top: -100px;
+  right: 180px;
+}
+
+.work-main-preview-text {
+  max-width: 415px;
+}
+
+.work-main-preview-text .article {
+  margin-top: 60px;
+  margin-bottom: 70px;
+}

@@ -1,0 +1,36 @@
+.tab-content > .tab-pane {
+  display: none;
+  padding-top: 130px;
+  padding-bottom: 200px;
+}
+
+.tab-content > .active {
+  display: block;
+}
+
+.nav-tabs .nav-item {
+  flex-grow: 1;
+}
+
+.nav-tabs .nav-item .nav-link {
+  padding: 0 15px 70px;
+  border-bottom: 5px solid transparent;
+  opacity: 0.4;
+}
+
+.nav-tabs .nav-item .nav-link.active {
+  border-color: var(--main-green);
+  opacity: 1;
+}
+
+.nav-tabs .nav-item .nav-link img {
+  margin-right: 40px;
+}
+
+.nav-tabs .nav-item .nav-link span {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  width: 100px;
+  line-height: 1.5;
+}

@@ -1,0 +1,26 @@
+.statistic-item .statistic-item-number {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 142px;
+  font-weight: 700;
+  letter-spacing: -3.55px;
+  color: #54be57;
+}
+
+.statistic-item .statistic-item-text {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 33px;
+  font-weight: 700;
+  letter-spacing: -0.82px;
+  line-height: 1.2;
+  opacity: 0.3;
+  color: #ffffff;
+  margin-left: 65px;
+}
+
+.statistic-item + .statistic-item {
+  margin-top: 60px;
+}
+
+.statistic-item + .statistic-item .statistic-item-number {
+  color: #8fce41;
+}

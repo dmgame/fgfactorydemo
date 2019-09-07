@@ -1,0 +1,20 @@
+.review-info img {
+  margin-right: 34px;
+}
+
+.review-info-text {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.review-body-text {
+  font-family: 'Butler-Medium', sans-serif;
+  font-size: 58px;
+  letter-spacing: 1.45px;
+  line-height: 1.25;
+  max-width: 1130px;
+}
+
+.review-body-text + .arrow-link {
+  margin-top: 55px;
+}

@@ -1,0 +1,35 @@
+.range-image-wrap .range-img {
+  height: 700px;
+  overflow: hidden;
+  background: url('../img/web-project-pastry-range-img.png') no-repeat;
+  cursor: grab;
+}
+
+.range-image-wrap .range-img img {
+  display: none;
+}
+
+.range-image-wrap .range-control {
+  padding: 45px 0;
+  background-color: var(--main-black);
+}
+.range-image-wrap .range-control #range-img-control {
+  width: 240px;
+  height: 2px;
+}
+
+.range-image-wrap .range-control #range-img-control .ui-slider-handle {
+  top: 50%;
+  transform: translateY(-50%);
+  border: 2px solid var(--main-green);
+  border-radius: 50%;
+  box-shadow: 0px 0px 0 2px black inset;
+  cursor: pointer;
+  outline: none;
+  width: 24px;
+  height: 24px;
+}
+
+.range-image-wrap .range-control #range-img-control .ui-state-active {
+  background-color: #fff;
+}

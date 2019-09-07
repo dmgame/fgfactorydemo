@@ -1,0 +1,49 @@
+:root {
+  --btn-primary: var(--main-green);
+  --btn-primary-hover-bg: transparent;
+  --btn-primary-text-color: #fff;
+  --btn-primary-hover-text-color: var(--main-green);
+  --btn-bordered: #fff;
+  --btn-bordered-hover: #fff;
+  --btn-bordered-text-color: var(--main-green);
+  --btn-bordered-border-color: var(--main-green);
+  --btn-bordered-hover-border-color: var(--main-black);
+  --btn-bordered-hover-text-color: var(--main-black);
+}
+
+.btn {
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 16px 30px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  transition: all 0.1s ease-in;
+}
+
+.btn--primary {
+  border-color: var(--btn-primary);
+  background: var(--btn-primary);
+  color: var(--btn-primary-text-color);
+}
+
+.btn--primary:hover {
+  border-color: var(--btn-primary);
+  background: var(--btn-primary-hover-bg);
+  color: var(--btn-primary-hover-text-color);
+}
+
+.btn--bordered {
+  border-color: var(--btn-bordered-border-color);
+  background: var(--btn-bordered);
+  color: var(--btn-bordered-text-color);
+}
+
+.btn--bordered:hover {
+  border-color: var(--btn-bordered-hover-border-color);
+  background: var(--btn-bordered-hover);
+  color: var(--btn-bordered-hover-text-color);
+}

@@ -1,0 +1,21 @@
+.border-bottom {
+  border-bottom: 1px solid #efefef;
+}
+
+.negative-margin {
+  margin-top: -120px;
+}
+
+.negative-margin.web-project-timber {
+  margin-top: -205px;
+}
+
+.negative-margin.web-project-orks,
+.negative-margin.web-project-playcrowd {
+  margin-top: -75px;
+}
+
+.centered-text {
+  max-width: 850px;
+  margin: auto;
+}
