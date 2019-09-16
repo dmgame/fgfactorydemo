@@ -1,12 +1,21 @@
-const slider = $('[data-slick-slider ]');
+import { initSlider, initSliderNav } from './slickSlider';
+
+// Init carousel
+const slider = $('[data-slick-slider]');
+const carouselNav = $('.carousel-nav');
+const caroiselNavItems = $('.carousel-nav .carousel-nav-item');
 
 if (slider.length) {
-  slider.slick();
+  initSlider(slider);
 }
 
-$('#myTab a').on('click', function(e) {
+if (carouselNav && caroiselNavItems.length) {
+  initSliderNav(slider, caroiselNavItems);
+}
+
+// Init Tabs
+$('[data-tab-nav] a').on('click', function(e) {
   e.preventDefault();
-  console.log('click');
   $(this).tab('show');
 });
 

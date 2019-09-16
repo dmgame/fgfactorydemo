@@ -3483,6 +3483,7 @@ section {
   --main-black: #0a0b0f;
   --main-white: #fff;
   --main-green: #00ac6a;
+  --light-green: #b2ff1c;
   /* todo переделать в hex */
   --main-gray: #9f9fa0;
 }
@@ -3497,6 +3498,10 @@ section {
 
 .color-green {
   color: var(--main-green) !important;
+}
+
+.color-light-green {
+  color: #b2ff1c;
 }
 
 .color-gray {
@@ -3539,6 +3544,10 @@ section {
 .centered-text {
   max-width: 850px;
   margin: auto;
+}
+
+.negative-margin.fade-carousel-wrap {
+  margin-top: -80px;
 }
 
 :root {
@@ -4100,6 +4109,9 @@ section {
   margin-right: -35px;
 }
 
+.review-wrap {
+  padding: 215px 0;
+}
 .review-info img {
   margin-right: 34px;
 }
@@ -4109,12 +4121,16 @@ section {
   line-height: 1.7;
 }
 
+.review-body {
+  margin-left: 195px;
+}
+
 .review-body-text {
   font-family: 'Butler-Medium', sans-serif;
   font-size: 58px;
   letter-spacing: 1.45px;
   line-height: 1.25;
-  max-width: 1130px;
+  max-width: 1000px;
 }
 
 .review-body-text + .arrow-link {
@@ -4127,6 +4143,10 @@ section {
 
 [data-slick-slider] .slick-dots {
   bottom: -125px;
+}
+
+[data-slick-slider].service-fade-carousel .slick-dots {
+  bottom: -45px;
 }
 
 [data-slick-slider] .slick-dots li button {
@@ -4146,6 +4166,15 @@ section {
   display: none;
 }
 
+.carousel-wrap {
+  padding-top: 135px;
+  padding-bottom: 220px;
+}
+
+.fade-carousel-wrap {
+  padding-bottom: 45px;
+}
+
 .tab-content > .tab-pane {
   display: none;
   padding-top: 130px;
@@ -4158,10 +4187,11 @@ section {
 
 .nav-tabs .nav-item {
   flex-grow: 1;
+  max-width: 395px;
 }
 
 .nav-tabs .nav-item .nav-link {
-  padding: 0 15px 70px;
+  padding: 0 15px 65px;
   border-bottom: 5px solid transparent;
   opacity: 0.4;
 }
@@ -4181,6 +4211,10 @@ section {
   font-weight: 400;
   width: 100px;
   line-height: 1.5;
+}
+
+.nav-tabs .nav-item .nav-link span.large-width {
+  width: 170px;
 }
 
 .footer {
@@ -4227,6 +4261,16 @@ section {
 
 .web-work-inner {
   padding: 175px 0 75px 0;
+}
+
+.service-page-inner {
+  padding-top: 175px;
+  padding-bottom: 120px;
+  border-bottom-color: #38393c;
+}
+
+.service-page-inner .article {
+  margin-top: 100px;
 }
 
 .project-description .title {
@@ -4386,6 +4430,30 @@ section {
 
 .statistic-item + .statistic-item .statistic-item-number {
   color: #8fce41;
+}
+
+.service-fade-carousel-wrap {
+  padding-bottom: 175px;
+}
+
+.service-slide-content {
+  position: relative;
+}
+
+.service-slide-content .service-slide-text {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 215px;
+  max-width: 405px;
+}
+
+.service-slide-content .service-slide-text .title {
+  margin-bottom: 55px;
+}
+
+.service-slide-content .service-slide-text .article {
+  margin-bottom: 30px;
 }
 
 .project-preview-images {

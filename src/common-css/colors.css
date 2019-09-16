@@ -2,6 +2,7 @@
   --main-black: #0a0b0f;
   --main-white: #fff;
   --main-green: #00ac6a;
+  --light-green: #b2ff1c;
   /* todo переделать в hex */
   --main-gray: #9f9fa0;
 }
@@ -16,6 +17,10 @@
 
 .color-green {
   color: var(--main-green) !important;
+}
+
+.color-light-green {
+  color: #b2ff1c;
 }
 
 .color-gray {

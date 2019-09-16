@@ -6,6 +6,10 @@
   bottom: -125px;
 }
 
+[data-slick-slider].service-fade-carousel .slick-dots {
+  bottom: -45px;
+}
+
 [data-slick-slider] .slick-dots li button {
   width: 10px;
   height: 10px;
@@ -21,4 +25,13 @@
 
 [data-slick-slider] .slick-dots li button::before {
   display: none;
+}
+
+.carousel-wrap {
+  padding-top: 135px;
+  padding-bottom: 220px;
+}
+
+.fade-carousel-wrap {
+  padding-bottom: 45px;
 }

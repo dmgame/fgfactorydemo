@@ -19,3 +19,7 @@
   max-width: 850px;
   margin: auto;
 }
+
+.negative-margin.fade-carousel-wrap {
+  margin-top: -80px;
+}

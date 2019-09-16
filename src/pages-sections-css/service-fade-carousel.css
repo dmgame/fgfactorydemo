@@ -1,0 +1,23 @@
+.service-fade-carousel-wrap {
+  padding-bottom: 175px;
+}
+
+.service-slide-content {
+  position: relative;
+}
+
+.service-slide-content .service-slide-text {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 215px;
+  max-width: 405px;
+}
+
+.service-slide-content .service-slide-text .title {
+  margin-bottom: 55px;
+}
+
+.service-slide-content .service-slide-text .article {
+  margin-bottom: 30px;
+}

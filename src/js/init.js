@@ -23,6 +23,7 @@ import '../pages-sections-css/next-page.css';
 import '../pages-sections-css/works-container.css';
 import '../pages-sections-css/work-main-preview.css';
 import '../pages-sections-css/statistics-block.css';
+import '../pages-sections-css/service-fade-carousel.css';
 
 import '../pages-css/web-project-bigbash.css';
 import '../pages-css/blog.css';

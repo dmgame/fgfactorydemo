@@ -35,3 +35,13 @@
 .web-work-inner {
   padding: 175px 0 75px 0;
 }
+
+.service-page-inner {
+  padding-top: 175px;
+  padding-bottom: 120px;
+  border-bottom-color: #38393c;
+}
+
+.service-page-inner .article {
+  margin-top: 100px;
+}

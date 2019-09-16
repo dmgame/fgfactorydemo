@@ -10,10 +10,11 @@
 
 .nav-tabs .nav-item {
   flex-grow: 1;
+  max-width: 395px;
 }
 
 .nav-tabs .nav-item .nav-link {
-  padding: 0 15px 70px;
+  padding: 0 15px 65px;
   border-bottom: 5px solid transparent;
   opacity: 0.4;
 }
@@ -33,4 +34,8 @@
   font-weight: 400;
   width: 100px;
   line-height: 1.5;
+}
+
+.nav-tabs .nav-item .nav-link span.large-width {
+  width: 170px;
 }
