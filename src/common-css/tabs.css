@@ -39,3 +39,7 @@
 .nav-tabs .nav-item .nav-link span.large-width {
   width: 170px;
 }
+
+.nav-tabs .nav-item .nav-link span.width-auto {
+  width: auto;
+}

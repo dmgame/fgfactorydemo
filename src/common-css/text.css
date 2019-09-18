@@ -5,6 +5,8 @@
   --lh-text-medium: 2;
   --fx-text-small: 16px;
   --lh-text-small: 2.25;
+  --fx-text-ex-small: 14px;
+  --lh-text-ex-small: 2.15;
 }
 
 .font-bold {
@@ -37,6 +39,11 @@
 .article--small {
   font-size: var(--fz-text-small);
   line-height: var(--lh-text-small);
+}
+
+.article--ex-small {
+  font-size: var(--fx-text-ex-small);
+  line-height: var(--lh-text-ex-small);
 }
 
 .copyright {

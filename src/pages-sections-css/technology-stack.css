@@ -1,0 +1,30 @@
+.technology-stack-wrap {
+  padding: 100px 0;
+}
+
+.technology-stack-wrap .title {
+  margin-bottom: 75px;
+}
+
+.technology-stack-item .technology-stack-item-logo {
+  margin-bottom: 40px;
+}
+
+.technology-stack-item .technology-stack-item-logo img {
+  margin-right: 16px;
+}
+
+.technology-stack-item .technology-stack-item-logo .title {
+  margin-bottom: 0;
+}
+
+.technology-stack-item .technology-item-class {
+  font-size: 14px;
+  font-style: italic;
+  color: var(--main-gray);
+}
+
+.technology-stack-item .article {
+  margin-top: 35px;
+  max-width: 425px;
+}

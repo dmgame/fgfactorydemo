@@ -35,3 +35,42 @@
 .fade-carousel-wrap {
   padding-bottom: 45px;
 }
+
+[data-slick-slider].overflow-visible .slick-list {
+  overflow: visible;
+}
+
+.slick-arrow {
+  width: 75px;
+  height: 35px;
+  background: url('../img/arrow_right.png') no-repeat;
+  bottom: -130px;
+  top: auto;
+  z-index: 1;
+}
+
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+  background: url('../img/arrow_right.png') no-repeat;
+}
+
+.slick-arrow::before {
+  display: none;
+}
+
+.slick-arrow.slick-next {
+  right: 0;
+}
+
+.slick-arrow.slick-prev {
+  right: 155px;
+  left: auto;
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.slick-arrow.slick-disabled {
+  opacity: 0.1;
+  cursor: not-allowed;
+}

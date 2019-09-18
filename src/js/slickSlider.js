@@ -23,6 +23,10 @@ export function initSlider(slider) {
   slider.slick();
 }
 
-export function initSliderNav(slider, caroiselNavItems) {
-  setEvents(slider, caroiselNavItems);
+export function initSliderNav(caroiselNavItems) {
+  const parent = $(caroiselNavItems).closest('.tabs-wrap');
+  const slider = parent.find('[data-slick-slider]');
+  if (slider) {
+    setEvents(slider, caroiselNavItems);
+  }
 }

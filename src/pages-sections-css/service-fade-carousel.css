@@ -14,6 +14,13 @@
   max-width: 405px;
 }
 
+.service-slide-content .service-slide-img-upper {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 175px;
+}
+
 .service-slide-content .service-slide-text .title {
   margin-bottom: 55px;
 }

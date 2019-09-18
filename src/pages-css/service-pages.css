@@ -1,0 +1,21 @@
+.service-tab-wrap {
+  margin-top: 128px;
+}
+
+.service-tab-wrap .content-wrap .slide-img {
+  max-width: 900px;
+}
+
+.service-tab-wrap .sldie-text {
+  max-width: 560px;
+  margin-left: 100px;
+}
+
+.service-tab-wrap .sldie-text .article + .article {
+  margin-top: 40px;
+}
+
+.service-tab-wrap .sldie-text .btn {
+  margin-top: 40px;
+  text-transform: none;
+}

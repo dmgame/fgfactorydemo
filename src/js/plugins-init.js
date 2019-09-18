@@ -10,7 +10,7 @@ if (slider.length) {
 }
 
 if (carouselNav && caroiselNavItems.length) {
-  initSliderNav(slider, caroiselNavItems);
+  initSliderNav(caroiselNavItems);
 }
 
 // Init Tabs
