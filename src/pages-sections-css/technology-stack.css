@@ -28,3 +28,7 @@
   margin-top: 35px;
   max-width: 425px;
 }
+
+.technology-stack-list-item .list-title {
+  padding-left: 45px;
+}

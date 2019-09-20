@@ -13,6 +13,7 @@ import '../common-css/section-review.css';
 import '../common-css/slider.css';
 import '../common-css/tabs.css';
 import '../common-css/footer.css';
+import '../common-css/popover.css';
 
 import '../pages-sections-css/page-inner.css';
 import '../pages-sections-css/project-description.css';

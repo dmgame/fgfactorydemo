@@ -4079,6 +4079,7 @@ section {
   margin-top: 45px;
 }
 
+
 :root {
   --call-to-action-bg: #f5f5f5;
 }
@@ -4278,6 +4279,63 @@ section {
 
 .footer .list-wrap + .list-wrap {
   margin-left: 100px;
+}
+
+.popover {
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.16);
+  border: 1px solid #00ac6a;
+  background-color: #ffffff;
+  padding: 50px;
+  border-radius: 10px;
+  margin-left: 28px;
+  max-width: 480px;
+}
+
+.popover-body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.popover::before {
+  content: '';
+  width: 14px;
+  height: 14px;
+  background-color: #fff;
+  border: 1px solid var(--main-green);
+  border-right: none;
+  border-top: none;
+  position: absolute;
+  top: 50%;
+  left: -8px;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.popover .popover-header {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+
+[data-toggle='popover'] {
+  cursor: pointer;
+  position: relative;
+}
+
+.active-poppover::before {
+  content: '';
+  border-radius: 13px;
+  border: 1px solid var(--main-green);
+  padding: 5px 10px;
+  width: calc(100% + 20px);
+  height: calc(100% + 10px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
 }
 
 .page-inner {
@@ -4549,6 +4607,10 @@ section {
   max-width: 425px;
 }
 
+.technology-stack-list-item .list-title {
+  padding-left: 45px;
+}
+
 .project-preview-images {
   margin-top: 100px;
 }
@@ -4746,4 +4808,53 @@ section {
   margin-top: 40px;
   text-transform: none;
 }
+
+.service-buy-inner .title {
+  line-height: 1.2;
+}
+
+.inner-cards {
+  padding: 170px 0;
+}
+
+.inner-cards .inner-cards-item img {
+  margin-right: 50px;
+}
+
+.inner-cards .inner-cards-item .article {
+  max-width: 315px;
+}
+
+.visual-assets {
+  padding-bottom: 45px;
+}
+
+.visual-assets .grid-visual-assets {
+  grid-template-columns: repeat(4, minmax(380px, 1fr));
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+
+.visual-assets-card .visual-assets-desc {
+  padding: 40px;
+}
+
+.visual-assets-card .title {
+  line-height: 36px;
+  margin-bottom: 15px;
+}
+
+.visual-assets-card .visual-assets-type {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.visual-assets-card .article {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
 

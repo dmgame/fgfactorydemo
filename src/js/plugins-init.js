@@ -92,3 +92,41 @@ function setImageBgFromDataUrl() {
 }
 
 setImageBgFromDataUrl();
+
+// Poppover init
+$(function() {
+  $('[data-toggle="popover"]').popover();
+});
+
+$('[data-toggle="popover"]').on('show.bs.popover', function(e) {
+  const openedPoppover = document.querySelector('[id^="popover"]');
+  $(openedPoppover).popover('hide');
+});
+
+$('[data-toggle="popover"]').on('shown.bs.popover', function(e) {
+  e.currentTarget.classList.add('active-poppover');
+  const parent = e.currentTarget.closest('.poppover-item');
+  
+  if (parent) {
+    parent.classList.add('active-poppover-item');
+  }
+
+  const poppoverContainer = e.currentTarget.closest('.poppover-container');
+  if (!poppoverContainer) return;
+  const [...children] = poppoverContainer.children;
+  children.forEach(el => {
+    if (!el.classList.contains('active-poppover-item')) {
+      el.style.color = '#bcbfca';
+    }
+  });
+});
+
+$('[data-toggle="popover"]').on('hidden.bs.popover', function(e) {
+  e.currentTarget.classList.remove('active-poppover');
+  const poppoverContainer = e.currentTarget.closest('.poppover-container');
+  
+  if (!poppoverContainer) return;
+  
+  const [...children] = poppoverContainer.children;
+  children.forEach(el => (el.style.color = ''));
+});
