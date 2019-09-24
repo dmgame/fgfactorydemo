@@ -26,6 +26,7 @@ import '../pages-sections-css/work-main-preview.css';
 import '../pages-sections-css/statistics-block.css';
 import '../pages-sections-css/service-fade-carousel.css';
 import '../pages-sections-css/technology-stack.css';
+import '../pages-sections-css/team-slider.css';
 
 import '../pages-css/web-project-bigbash.css';
 import '../pages-css/blog.css';
@@ -33,6 +34,7 @@ import '../pages-css/blog-article.css';
 import '../pages-css/web-works.css';
 import '../pages-css/index.css';
 import '../pages-css/service-pages.css';
+import '../pages-css/team.css';
 
 import './plugins-init';
 

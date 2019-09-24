@@ -1,0 +1,10 @@
+[data-team-slider] {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+[data-team-slider] .team-slider-item {
+  margin: 20px;
+}

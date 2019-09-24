@@ -106,7 +106,7 @@ $('[data-toggle="popover"]').on('show.bs.popover', function(e) {
 $('[data-toggle="popover"]').on('shown.bs.popover', function(e) {
   e.currentTarget.classList.add('active-poppover');
   const parent = e.currentTarget.closest('.poppover-item');
-  
+
   if (parent) {
     parent.classList.add('active-poppover-item');
   }
@@ -124,9 +124,79 @@ $('[data-toggle="popover"]').on('shown.bs.popover', function(e) {
 $('[data-toggle="popover"]').on('hidden.bs.popover', function(e) {
   e.currentTarget.classList.remove('active-poppover');
   const poppoverContainer = e.currentTarget.closest('.poppover-container');
-  
+
   if (!poppoverContainer) return;
-  
+
   const [...children] = poppoverContainer.children;
   children.forEach(el => (el.style.color = ''));
 });
+
+// Team slider
+const teamData = [...new Array(20)].map((item, index) => ({
+  img: `public/img/team-unit-${index + 1}.png`,
+}));
+
+console.log(teamData);
+
+const teamSliderModule = (function() {
+  let container = null;
+  let itemList = [];
+  let settings = {
+    container: '[data-team-slider]',
+  };
+
+  function init(data, userSettings = {}) {
+    settings = Object.assign(settings, userSettings);
+    itemList = _updateItemCount(data.slice());
+
+    _findContainer();
+
+    if (!container) return console.warn('Container not found!');
+
+    _renderItems(itemList);
+  }
+
+  function _findContainer() {
+    container = document.querySelector(settings.container);
+  }
+
+  function _renderItems(items) {
+    let fragment = '';
+    items.forEach(item => {
+      const template = _itemTemplate(item);
+      fragment += template;
+    });
+
+    container.insertAdjacentHTML('afterbegin', fragment);
+  }
+
+  function _itemTemplate(item) {
+    return `
+      <div class="team-slider-item">
+        <img src="${item.img}">
+      </div>
+    `;
+  }
+
+  function _randomize(items) {
+    return items.sort(() => {
+      const random1 = _randomNumber(items.length);
+      const random2 = _randomNumber(items.length);
+      return random1 - random2;
+    });
+  }
+
+  function _randomNumber(count = 100) {
+    return Math.floor(Math.random() * count);
+  }
+
+  function _updateItemCount(items) {
+    return _randomize(items).concat(_randomize(items), _randomize(items));
+  }
+
+  return {
+    init,
+  };
+})();
+
+teamSliderModule.init(teamData);
