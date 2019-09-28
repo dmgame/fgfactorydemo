@@ -1,3 +1,10 @@
 .next-page {
   padding: 75px 0 85px 0;
 }
+.next-page .title {
+  transition: all 0.1s ease-in;
+  color: var(--main-green);
+}
+.next-page .title:hover {
+  color: var(--main-black);
+}

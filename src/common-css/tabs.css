@@ -43,3 +43,28 @@
 .nav-tabs .nav-item .nav-link span.width-auto {
   width: auto;
 }
+
+.nav-tabs.tabs-without-icons .nav-item .nav-link span {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.nav-tabs.tabs-without-icons .nav-item .nav-link {
+  padding: 25px 65px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+
+.nav-tabs.tabs-without-icons .nav-item .nav-link.active {
+  border-color: transparent;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.18);
+}
+
+.nav-tabs.tabs-without-icons .nav-item .nav-link:hover {
+  border-color: rgba(10, 11, 15, 0.18);
+}
+
+.nav-tabs.tabs-without-icons .nav-item {
+  max-width: 265px;
+}

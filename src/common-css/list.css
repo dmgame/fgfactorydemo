@@ -5,6 +5,11 @@
   color: var(--main-black);
 }
 
+.base-list li:hover a {
+  transition: all 0.1s ease-in;
+  color: var(--main-green);
+}
+
 .base-list--light {
   font-size: 14px;
 }
@@ -108,4 +113,3 @@
 .base-list--without-title {
   margin-top: 45px;
 }
-

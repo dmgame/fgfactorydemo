@@ -27,6 +27,7 @@ import '../pages-sections-css/statistics-block.css';
 import '../pages-sections-css/service-fade-carousel.css';
 import '../pages-sections-css/technology-stack.css';
 import '../pages-sections-css/team-slider.css';
+import '../pages-sections-css/contact-us.css';
 
 import '../pages-css/web-project-bigbash.css';
 import '../pages-css/blog.css';
