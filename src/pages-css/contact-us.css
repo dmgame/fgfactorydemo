@@ -1,0 +1,63 @@
+.map-wrapper {
+  margin-top: -25px;
+  position: relative;
+}
+
+.contact-us-form-tabs {
+  position: relative;
+  z-index: 1;
+}
+
+.map-container {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+.map-container .list-title {
+  color: #fff;
+}
+
+.map-container .base-list {
+  color: #fff;
+}
+
+.map-container .follow-us-list {
+  margin-left: 170px;
+}
+
+.map-container .base-list--icons {
+  max-width: 225px;
+  margin-right: -35px;
+}
+
+.map-container .contact-ul-list .list-title {
+  margin-bottom: 60px;
+}
+
+.map-container .follow-us-list .list-title {
+  margin-bottom: 65px;
+}
+
+.on-map-review {
+  margin-top: 60px;
+}
+
+.on-map-review .review-text {
+  font-family: 'Butler-Medium', sans-serif;
+  font-size: 36px;
+  letter-spacing: 0.9px;
+  max-width: 540px;
+  color: #fff;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+.on-map-review .review-info span {
+  display: block;
+  color: #fff;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: 'Roboto', sans-serif;
+}

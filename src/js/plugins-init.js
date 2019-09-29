@@ -250,3 +250,41 @@ function hasScrolled() {
 
   lastScrollTop = st;
 }
+
+// Input file init
+// document.getElementById('uploadBtn').onchange = function() {
+//   document.getElementById('uploadFile').value = this.value.replace(
+//     'C:\\fakepath\\',
+//     '',
+//   );
+//   document.getElementById('uploadFile').classList.add('focused');
+// };
+
+document.querySelectorAll('[data-upload-btn]').forEach(item => {
+  item.addEventListener('change', e => {
+    const parent = item.closest('.input-file');
+    const inputText = parent.querySelector('[data-file-name]');
+    inputText.value = item.value.replace('C:\\fakepath\\', '');
+    inputText.classList.add('focused');
+  });
+});
+
+// Gange slider init for contact us form
+function teamCountRangeSliderInit() {
+  const control = $('.team-count-range');
+
+  control.slider({
+    value: 0,
+    min: 0,
+    max: 10,
+    step: 1,
+    slide: function(event, ui) {
+      const parent = ui.handle.closest('label');
+      const counter = parent.querySelector('.team-counter');
+      counter.textContent = ui.value;
+      // img.style.backgroundPositionX = `${ui.value}%`;
+    },
+  });
+}
+
+teamCountRangeSliderInit();
