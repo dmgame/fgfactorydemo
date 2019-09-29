@@ -12,12 +12,13 @@
     <link rel="stylesheet" href="libs/butler-font/stylesheet.css" />
     <link rel="stylesheet" href="libs/slick/slick.css" />
     <link rel="stylesheet" href="libs/slick/slick-theme.css" />
+    <link rel="stylesheet" href="libs/aos/aos.css">
     <link rel="stylesheet" href="public/dist/init/bundle.css" />
     <title>Home</title>
   </head>
   <body>
     <header class="header">
-      <div class="container d-flex align-items-center">
+      <div class="container d-flex align-items-center" data-aos="fade-down">
         <a href="#" class="logo">
           <img src="public/img/logo.png" alt="" />
         </a>
@@ -31,20 +32,20 @@
       </div>
     </header>
     <main>
-      <div class="web-project-inner page-inner border-bottom">
+      <div class="web-project-inner page-inner border-bottom" >
         <div class="container">
-          <div class="inner-title">
+          <div class="inner-title" data-aos="fade-up">
             <h1 class="title title--page">Timber Slash</h1>
             <span class="project-type">Casual art</span>
           </div>
-          <p class="article article--big">
+          <p class="article article--big" data-aos="fade-up"  data-aos-delay="300">
             Fgfactory designed game art for characters, backgrounds, icons, UI
             all other graphical assets for a mobile game.
           </p>
         </div>
       </div>
       <!-- /.web-project-inner -->
-      <div class="image-preview negative-margin web-project-timber">
+      <div class="image-preview negative-margin web-project-timber" data-aos="fade-up" data-aos-delay="500">
         <div class="container-fluid">
           <div class="d-flex justify-content-center">
             <img src="public/img/web-project-timber-smash-1.png" alt="" />
@@ -55,8 +56,8 @@
       <div class="project-description">
         <div class="container">
           <div class="centered-text">
-            <h3 class="title title--section title__gray">Compete and donate</h3>
-            <p class="article article--medium">
+            <h3 class="title title--section title__gray" data-aos="fade-up">Compete and donate</h3>
+            <p class="article article--medium" data-aos="fade-up">
               Each time starting the application users participates in a
               competition against other users. Mini games are launched in random
               order, so there is a variety and gameplay does not bother. During
@@ -74,22 +75,28 @@
               src="public/img/web-project-timber-smash-2.png"
               alt=""
               class="image-item"
+              data-aos="fade-up"
+              data-aos-delay="500"
             />
             <img
               src="public/img/web-project-timber-smash-3.png"
               alt=""
               class="image-item"
+              data-aos="fade-up"
+              data-aos-delay="700"
             />
             <img
               src="public/img/web-project-timber-smash-4.png"
               alt=""
               class="image-item"
+              data-aos="fade-up"
+              data-aos-delay="900"
             />
           </div>
         </div>
       </div>
       <!-- /.project-preview-images -->
-      <div class="project-technology-stack bg-black color-white">
+      <div class="project-technology-stack bg-black color-white" data-aos="fade-up">
         <div class="container d-flex">
           <div class="left-side mr-auto">
             <div class="title title--section color-white">Technology stack</div>
@@ -135,15 +142,15 @@
       <div class="related-works">
         <div class="container">
           <div class="related-works-wrap">
-            <h3 class="title title--section title__gray">Related works</h3>
+            <h3 class="title title--section title__gray" data-aos="fade-up">Related works</h3>
             <div class="related-works-list d-flex">
-              <div class="image-card">
+              <div class="image-card" data-aos="fade-up" data-aos-delay="500">
                 <img src="public/img/related-works-img-1.png" alt="" />
               </div>
-              <div class="image-card">
+              <div class="image-card" data-aos="fade-up" data-aos-delay="700">
                 <img src="public/img/related-works-img-2.png" alt="" />
               </div>
-              <div class="image-card">
+              <div class="image-card" data-aos="fade-up" data-aos-delay="900">
                 <img src="public/img/related-works-img-1.png" alt="" />
               </div>
             </div>
@@ -151,7 +158,7 @@
         </div>
       </div>
       <!-- /.related-works -->
-      <div class="call-to-action-section">
+      <div class="call-to-action-section" data-aos="fade-up">
         <div class="container-fluid">
           <div class="call-to-action-wrap">
             <div class="title-wrap d-flex align-items-center">
@@ -276,6 +283,7 @@
     ></script>
     <script src="libs/bootstrap/bootstrap.min.js"></script>
     <script src="libs/slick/slick.min.js"></script>
+    <script src="libs/aos/aos.js"></script>
     <script src="public/dist/init/bundle.js"></script>
   </body>
 </html>

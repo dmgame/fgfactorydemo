@@ -12,12 +12,13 @@
     <link rel="stylesheet" href="libs/butler-font/stylesheet.css" />
     <link rel="stylesheet" href="libs/slick/slick.css" />
     <link rel="stylesheet" href="libs/slick/slick-theme.css" />
+    <link rel="stylesheet" href="libs/aos/aos.css" />
     <link rel="stylesheet" href="public/dist/init/bundle.css" />
     <title>Home</title>
   </head>
   <body>
     <header class="header bg-transparent">
-      <div class="container d-flex align-items-center">
+      <div class="container d-flex align-items-center"  data-aos="fade-down">
         <a href="#" class="logo">
           <img src="public/img/logo-white.png" alt="" />
         </a>
@@ -35,12 +36,12 @@
         class="service-page-inner bg-black page-inner d-flex align-items-center border-bottom"
       >
         <div class="container">
-          <div class="inner-title">
+          <div class="inner-title" data-aos="fade-up">
             <h1 class="title title--page  color-white">
               Casual art
             </h1>
           </div>
-          <p class="article article--big color-white">
+          <p class="article article--big color-white" data-aos="fade-up" data-aos-delay="300">
             What is casual graphics style in games? It is when it looks 
             fresh, eye catching and is suitable for a wide audience of users.
           </p>
@@ -49,7 +50,7 @@
       <!-- /.service-page-inner -->
       <div class="review-wrap bg-black">
         <div class="container">
-          <div class="section-review d-flex align-items-start">
+          <div class="section-review d-flex align-items-start"  data-aos="fade-up" data-aos-delay="500">
             <div class="review-info d-flex align-items-center">
               <img src="public/img/review-logo-1.png" alt="" />
               <div class="review-info-text d-flex flex-column color-white">
@@ -71,6 +72,7 @@
       <!-- /.review-wrap -->
       <div
         class="fade-carousel-wrap service-fade-carousel-wrap negative-margin"
+        data-aos="fade-up" 
       >
         <div class="container">
           <div
@@ -120,10 +122,10 @@
       <!-- /.fade-carousel-wrap -->
       <div class="service-info-section">
         <div class="centered-text">
-          <div class="title title--section title__gray">
+          <div class="title title--section title__gray" data-aos="fade-up" >
             Casual game graphics
           </div>
-          <p class="article article--medium">
+          <p class="article article--medium" data-aos="fade-up" >
             We believe that delivering a WOW effect for the end user is definitely a must 
             during each casual game design. During the initial stage of mobile game 
             graphics design, we discover and analyze what mobile users like, and then we 
@@ -136,8 +138,8 @@
       </div>
       <!-- /.service-info-section -->
       <div class="tabs-wrap service-tab-wrap border-bottom">
-        <div class="container">
-          <ul class="nav nav-tabs d-flex carousel-nav justify-content-center" id="myTab" role="tablist" data-tab-nav>
+        <div class="container"> 
+          <ul class="nav nav-tabs d-flex carousel-nav justify-content-center" data-aos="fade-up"  id="myTab" role="tablist" data-tab-nav>
             <li class="nav-item">
               <a class="nav-link active d-flex align-items-center justify-content-center carousel-nav-item" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true" data-slide-index="0">
                 <img src="public/img/tab-icon-1.png" alt="">
@@ -157,7 +159,7 @@
               </a>
             </li>
           </ul>
-          <div class="carousel-wrap">
+          <div class="carousel-wrap" data-aos="fade-up" data-aos-delay="300">
             <div  class="carousel" data-slick-slider data-slick='{"slidesToShow": 1, "slidesToScroll": 1, "dots": true, "adaptiveHeight": true, "arrows": true, "infinite": false}'>
               <div class="content-wrap d-flex">
                 <div class="slide-img">
@@ -229,7 +231,7 @@
         </div>
       </div>
       <!-- /.tabs-wrap -->
-      <div class="next-page">
+      <div class="next-page" data-aos="fade-up">
         <div
           class="container d-flex justify-content-center align-items-center flex-column"
         >
@@ -240,7 +242,7 @@
         </div>
       </div>
       <!-- /.next-article -->
-      <div class="call-to-action-section">
+      <div class="call-to-action-section" data-aos="fade-up">
         <div class="container-fluid">
           <div class="call-to-action-wrap">
             <div class="title-wrap d-flex align-items-center">
@@ -373,6 +375,7 @@
     ></script>
     <script src="libs/bootstrap/bootstrap.min.js"></script>
     <script src="libs/slick/slick.min.js"></script>
+    <script src="libs/aos/aos.js"></script>
     <script src="public/dist/init/bundle.js"></script>
   </body>
 </html>

@@ -12,12 +12,13 @@
     <link rel="stylesheet" href="libs/butler-font/stylesheet.css" />
     <link rel="stylesheet" href="libs/slick/slick.css" />
     <link rel="stylesheet" href="libs/slick/slick-theme.css" />
+    <link rel="stylesheet" href="libs/aos/aos.css" />
     <link rel="stylesheet" href="public/dist/init/bundle.css" />
     <title>Home</title>
   </head>
   <body>
     <header class="header">
-      <div class="container d-flex align-items-center">
+      <div class="container d-flex align-items-center" data-aos="fade-down">
         <a href="#" class="logo">
           <img src="public/img/logo.png" alt="" />
         </a>
@@ -33,11 +34,15 @@
     <main>
       <div class="web-project-inner page-inner border-bottom">
         <div class="container">
-          <div class="inner-title">
+          <div class="inner-title" data-aos="fade-up">
             <h1 class="title title--page">Orks Village</h1>
             <span class="project-type">Concept art</span>
           </div>
-          <p class="article article--big">
+          <p
+            class="article article--big"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
             Promonation art design, concept art of characters, props and
             buildings. Characters 2d animation using Spine.
           </p>
@@ -49,8 +54,19 @@
           <div
             class="d-flex justify-content-center flex-column align-items-center"
           >
-            <img src="public/img/web-project-orks-1.png" alt="" class="mb-4" />
-            <img src="public/img/web-project-orks-2.png" alt="" />
+            <img
+              src="public/img/web-project-orks-1.png"
+              alt=""
+              class="mb-4"
+              data-aos="fade-up"
+              data-aos-delay="500"
+            />
+            <img
+              src="public/img/web-project-orks-2.png"
+              alt=""
+              data-aos="fade-up"
+              data-aos-delay="700"
+            />
           </div>
         </div>
       </div>
@@ -58,7 +74,7 @@
       <div class="project-description border-bottom w-padding">
         <div class="container">
           <div class="centered-text">
-            <p class="article article--medium">
+            <p class="article article--medium" data-aos="fade-up">
               Every concept art is a story imagined and visualized by an artist.
               This story was imagined on a classic fantasy world of Warcraft
               basis and designed in a casual way. Main character concept art
@@ -73,24 +89,26 @@
       <div class="related-works">
         <div class="container d-flex">
           <div class="related-works-wrap">
-            <h3 class="title title--section title__gray">Related works</h3>
+            <h3 class="title title--section title__gray" data-aos="fade-up">
+              Related works
+            </h3>
             <div class="related-works-list d-flex">
-              <div class="image-card">
+              <div class="image-card" data-aos="fade-up" data-aos-delay="500">
                 <img src="public/img/related-works-img-3.png" alt="" />
               </div>
-              <div class="image-card">
+              <div class="image-card" data-aos="fade-up" data-aos-delay="700">
                 <img src="public/img/related-works-img-4.png" alt="" />
               </div>
-              <div class="image-card">
+              <div class="image-card" data-aos="fade-up" data-aos-delay="900">
                 <img src="public/img/related-works-img-5.png" alt="" />
               </div>
             </div>
           </div>
           <div class="related-works-wrap">
-            <span class="article article--small above-title">Other works</span>
-            <h3 class="title title--section title__gray">Casual art</h3>
+            <span class="article article--small above-title" data-aos="fade-up">Other works</span>
+            <h3 class="title title--section title__gray" data-aos="fade-up">Casual art</h3>
             <div class="related-works-list d-flex">
-              <div class="image-card">
+              <div class="image-card"  data-aos="fade-up" data-aos-delay="1100">
                 <img src="public/img/related-works-img-6.png" alt="" />
               </div>
             </div>
@@ -98,7 +116,7 @@
         </div>
       </div>
       <!-- /.related-works -->
-      <div class="call-to-action-section">
+      <div class="call-to-action-section" data-aos="fade-up">
         <div class="container-fluid">
           <div class="call-to-action-wrap">
             <div class="title-wrap d-flex align-items-center">
@@ -231,6 +249,7 @@
     ></script>
     <script src="libs/bootstrap/bootstrap.min.js"></script>
     <script src="libs/slick/slick.min.js"></script>
+    <script src="libs/aos/aos.js"></script>
     <script src="public/dist/init/bundle.js"></script>
   </body>
 </html>

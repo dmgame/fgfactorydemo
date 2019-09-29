@@ -12,12 +12,13 @@
     <link rel="stylesheet" href="libs/butler-font/stylesheet.css" />
     <link rel="stylesheet" href="libs/slick/slick.css" />
     <link rel="stylesheet" href="libs/slick/slick-theme.css" />
+    <link rel="stylesheet" href="libs/aos/aos.css" />
     <link rel="stylesheet" href="public/dist/init/bundle.css" />
     <title>Home</title>
   </head>
   <body>
     <header class="header">
-      <div class="container d-flex align-items-center">
+      <div class="container d-flex align-items-center" data-aos="fade-down">
         <a href="#" class="logo">
           <img src="public/img/logo.png" alt="" />
         </a>
@@ -33,20 +34,28 @@
     <main>
       <div class="web-project-inner page-inner border-bottom">
         <div class="container">
-          <div class="inner-title">
+          <div class="inner-title" data-aos="fade-up">
             <h1 class="title title--page">Playcrowd</h1>
             <span class="project-type">Mobile</span>
           </div>
-          <p class="article article--big">
-            Playcrowd is the UK’s first mobile cash treasure hunt game. 
-            Interact with the real world and compete against other people.
+          <p
+            class="article article--big"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            Playcrowd is the UK’s first mobile cash treasure hunt game. Interact
+            with the real world and compete against other people.
           </p>
-        </div> 
+        </div>
       </div>
       <!-- /.web-project-inner -->
       <div class="image-preview negative-margin web-project-playcrowd">
         <div class="container-fluid">
-          <div class="d-flex justify-content-center">
+          <div
+            class="d-flex justify-content-center"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
             <img src="public/img/web-project-playcrowd-2.png" alt="" />
           </div>
         </div>
@@ -54,19 +63,22 @@
       <!-- /.image-preview -->
       <div class="project-description web-project-playcrowd">
         <div class="container">
-          <div class="centered-text">
-            <h3 class="title title--section title__gray">Play and earn real cash</h3>
+          <div class="centered-text" data-aos="fade-up">
+            <h3 class="title title--section title__gray">
+              Play and earn real cash
+            </h3>
             <p class="article article--medium">
-              The application combines mini-games and gambling platform with the ability to 
-              win real money. One of the available mini-games is Hunt, in which users travel 
-              around the city, look for clues, find prizes and win cash. It is possible to сonnect 
-              payment cards, load money to the account and withdraw winnings.
+              The application combines mini-games and gambling platform with the
+              ability to win real money. One of the available mini-games is
+              Hunt, in which users travel around the city, look for clues, find
+              prizes and win cash. It is possible to сonnect payment cards, load
+              money to the account and withdraw winnings.
             </p>
-          </div> 
+          </div>
         </div>
       </div>
       <!-- /.web-project-description -->
-      <div class="image-preview">
+      <div class="image-preview" data-aos="fade-up">
         <div class="container-fluid">
           <div class="d-flex justify-content-center">
             <img src="public/img/web-project-playcrowd-1.png" alt="" />
@@ -74,7 +86,10 @@
         </div>
       </div>
       <!-- /.image-preview -->
-      <div class="project-technology-stack bg-black color-white web-project-playcrowd">
+      <div
+        class="project-technology-stack bg-black color-white web-project-playcrowd"
+        data-aos="fade-up"
+      >
         <div class="container d-flex">
           <div class="left-side mr-auto">
             <div class="title title--section color-white">Technology stack</div>
@@ -115,15 +130,15 @@
       <div class="related-works">
         <div class="container">
           <div class="related-works-wrap">
-            <h3 class="title title--section title__gray">Related works</h3>
+            <h3 class="title title--section title__gray" data-aos="fade-up">Related works</h3>
             <div class="related-works-list d-flex">
-              <div class="image-card">
+              <div class="image-card" data-aos="fade-up" data-aos-delay="500">
                 <img src="public/img/related-works-img-1.png" alt="" />
               </div>
-              <div class="image-card">
+              <div class="image-card" data-aos="fade-up" data-aos-delay="700">
                 <img src="public/img/related-works-img-2.png" alt="" />
               </div>
-              <div class="image-card">
+              <div class="image-card" data-aos="fade-up" data-aos-delay="900">
                 <img src="public/img/related-works-img-1.png" alt="" />
               </div>
             </div>
@@ -131,7 +146,7 @@
         </div>
       </div>
       <!-- /.related-works -->
-      <div class="call-to-action-section">
+      <div class="call-to-action-section" data-aos="fade-up">
         <div class="container-fluid">
           <div class="call-to-action-wrap">
             <div class="title-wrap d-flex align-items-center">
@@ -232,12 +247,20 @@
         <div class="list-wrap">
           <h3 class="list-title">Latest articles</h3>
           <ul class="base-list base-list--light">
-            <li><a href="" class="color-gray text-underline">Meeting at White Nights Berlin 2019</a></li>
             <li>
-              <a href="" class="color-gray text-underline">How to design a 3d character from scratch</a>
+              <a href="" class="color-gray text-underline"
+                >Meeting at White Nights Berlin 2019</a
+              >
             </li>
             <li>
-              <a href="" class="color-gray text-underline">Top 15 game features besides the core gameplay</a>
+              <a href="" class="color-gray text-underline"
+                >How to design a 3d character from scratch</a
+              >
+            </li>
+            <li>
+              <a href="" class="color-gray text-underline"
+                >Top 15 game features besides the core gameplay</a
+              >
             </li>
           </ul>
         </div>
@@ -256,6 +279,7 @@
     ></script>
     <script src="libs/bootstrap/bootstrap.min.js"></script>
     <script src="libs/slick/slick.min.js"></script>
+    <script src="libs/aos/aos.js"></script>
     <script src="public/dist/init/bundle.js"></script>
   </body>
 </html>
