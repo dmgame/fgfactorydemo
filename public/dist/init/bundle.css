@@ -3546,6 +3546,16 @@ section {
   margin: auto;
 }
 
+.centered-text.w-icon {
+  position: relative;
+}
+
+.centered-text.w-icon .centered-text-icon {
+  position: absolute;
+  left: -182px;
+  top: -53px;
+}
+
 .negative-margin.fade-carousel-wrap {
   margin-top: -80px;
 }
@@ -4249,6 +4259,24 @@ section {
   cursor: not-allowed;
 }
 
+.centered-carousel {
+  max-width: 1920px;
+}
+
+.centered-carousel .project-slide img {
+  margin: auto;
+}
+
+.centered-carousel .project-slide {
+  opacity: 0.5;
+  transition: all 0.2s ease-in;
+}
+
+.centered-carousel .project-slide.slick-current,
+.centered-carousel .slick-track:hover .project-slide {
+  opacity: 1;
+}
+
 .tab-content > .tab-pane {
   display: none;
   padding-top: 130px;
@@ -4498,7 +4526,8 @@ section {
 }
 
 .project-description.web-project-playcrowd,
-.project-description.web-project-pastry {
+.project-description.web-project-pastry,
+.project-description.web-project-timber {
   padding: 115px 0;
 }
 
@@ -4517,7 +4546,10 @@ section {
 .project-technology-stack.web-project-playcrowd .base-list + .base-list {
   margin-left: 220px;
 }
- 
+.project-technology-stack.web-project-timber .right-side {
+  margin-left: 300px;
+}
+
 .related-works {
   padding: 90px 0 100px 0;
 }
@@ -5103,6 +5135,22 @@ section {
   > input
   ~ label {
   color: #fff;
+}
+
+.character-wrap {
+  height: 857px;
+  background: url(../../img/character-bg.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.character-wrap .container {
+  position: relative;
+}
+.character-game-preview {
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  position: absolute;
 }
 
 .project-preview-images {

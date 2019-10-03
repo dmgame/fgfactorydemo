@@ -74,3 +74,21 @@
   opacity: 0.1;
   cursor: not-allowed;
 }
+
+.centered-carousel {
+  max-width: 1920px;
+}
+
+.centered-carousel .project-slide img {
+  margin: auto;
+}
+
+.centered-carousel .project-slide {
+  opacity: 0.5;
+  transition: all 0.2s ease-in;
+}
+
+.centered-carousel .project-slide.slick-current,
+.centered-carousel .slick-track:hover .project-slide {
+  opacity: 1;
+}

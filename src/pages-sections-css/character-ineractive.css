@@ -1,0 +1,15 @@
+.character-wrap {
+  height: 857px;
+  background: url('../img/character-bg.png') no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.character-wrap .container {
+  position: relative;
+}
+.character-game-preview {
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  position: absolute;
+}

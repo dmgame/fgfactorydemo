@@ -20,6 +20,16 @@
   margin: auto;
 }
 
+.centered-text.w-icon {
+  position: relative;
+}
+
+.centered-text.w-icon .centered-text-icon {
+  position: absolute;
+  left: -182px;
+  top: -53px;
+}
+
 .negative-margin.fade-carousel-wrap {
   margin-top: -80px;
 }

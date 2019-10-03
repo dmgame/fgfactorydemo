@@ -13,4 +13,6 @@
 .project-technology-stack.web-project-playcrowd .base-list + .base-list {
   margin-left: 220px;
 }
- 
+.project-technology-stack.web-project-timber .right-side {
+  margin-left: 300px;
+}
