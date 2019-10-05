@@ -105,7 +105,8 @@
   max-width: 500px;
 }
 
-.input-item input {
+.input-item input,
+.input-item textarea {
   border: none;
   width: 100%;
   border-bottom: 1px solid #d3d3d4;
@@ -117,7 +118,8 @@
   line-height: 1;
 }
 
-.input-item input ~ label {
+.input-item input ~ label,
+.input-item textarea ~ label {
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -128,11 +130,17 @@
   transition: 300ms ease all;
 }
 
-.input-item input:hover ~ label {
+textarea {
+  resize: none;
+}
+
+.input-item input:hover ~ label,
+.input-item textarea:hover ~ label {
   color: var(--main-green);
 }
 
-.input-item input:focus ~ label {
+.input-item input:focus ~ label,
+.input-item textarea:focus ~ label {
   top: -20px;
   font-size: 12px;
   color: var(--main-gray);
