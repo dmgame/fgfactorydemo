@@ -12,11 +12,12 @@
     <link rel="stylesheet" href="libs/butler-font/stylesheet.css" />
     <link rel="stylesheet" href="libs/slick/slick.css" />
     <link rel="stylesheet" href="libs/slick/slick-theme.css" />
+    <link rel="stylesheet" href="libs/aos/aos.css">
     <link rel="stylesheet" href="public/dist/init/bundle.css" />
     <title>Home</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header" data-aos="fade-down">
       <div class="container d-flex align-items-center">
         <a href="#" class="logo">
           <img src="public/img/logo.png" alt="" />
@@ -33,11 +34,11 @@
     <main>
       <div class="web-work-inner page-inner border-bottom">
         <div class="container d-flex">
-          <div class="inner-title">
+          <div class="inner-title" data-aos="fade-up">
             <h1 class="title title--page">Work</h1>
             <span class="project-type">117 works</span>
           </div>
-          <div class="works-menu-list ml-auto d-flex">
+          <div class="works-menu-list ml-auto d-flex" data-aos="fade-up">
             <div class="list-wrap">
               <h3 class="list-title">Games</h3>
               <ul class="base-list base-list--with-active-links">
@@ -142,19 +143,19 @@
       <!-- /.web-work-inner -->
       <div class="works-container border-bottom">
         <div class="container">
-          <h3 class="title title--section title__gray">Tower Defense</h3>
+          <h3 class="title title--section title__gray" data-aos="fade-up">Tower Defense</h3>
           <div class="d-grid grid-column-2">
-            <div class="image-card image-card--big">
+            <div class="image-card image-card--big" data-aos="fade-up">
               <img src="public/img/web-work-1.png" alt="" />
             </div>
-            <div class="image-card image-card--big">
+            <div class="image-card image-card--big" data-aos="fade-up">
               <img src="public/img/web-work-2.png" alt="" />
             </div>
           </div>
         </div>
       </div>
       <!-- /.works-container -->
-      <div class="next-page">
+      <div class="next-page" data-aos="fade-up">
         <div
           class="container d-flex justify-content-center align-items-center flex-column"
         >
@@ -165,7 +166,7 @@
         </div>
       </div>
       <!-- /.next-page -->
-      <div class="call-to-action-section">
+      <div class="call-to-action-section" data-aos="fade-up">
         <div class="container-fluid">
           <div class="call-to-action-wrap">
             <div class="title-wrap d-flex align-items-center">
@@ -237,7 +238,7 @@
       </div>
       <!-- /.call-to-action-section -->
     </main>
-    <footer class="footer">
+    <footer class="footer" data-aos="fade-up">
       <div class="container d-flex">
         <div class="list-wrap">
           <h3 class="list-title">Main</h3>
@@ -298,6 +299,7 @@
     ></script>
     <script src="libs/bootstrap/bootstrap.min.js"></script>
     <script src="libs/slick/slick.min.js"></script>
+    <script src="libs/aos/aos.js"></script>
     <script src="public/dist/init/bundle.js"></script>
   </body>
 </html>

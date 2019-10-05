@@ -18,9 +18,10 @@
 
 .nav-down {
   background: #fff;
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.3);
-  padding: 20px 0;
+  padding: 37px 0;
 }
+
+
 
 .header-nav a {
   padding: 12px 18px;
@@ -46,4 +47,16 @@
 .header.bg-black .header-nav a,
 .header.bg-transparent .header-nav a {
   color: var(--main-white);
+}
+
+.nav-down .header-nav.background-white a {
+  color: #0a0b0f;
+}
+
+.nav-down .header-nav.background-white a:hover {
+  color: #fff;
+}
+
+.nav-down a.logo.background-white img {
+  filter: brightness(0);
 }

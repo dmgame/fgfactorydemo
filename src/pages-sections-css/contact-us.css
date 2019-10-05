@@ -7,9 +7,16 @@
   background-color: #fff;
 }
 
+
+
 .contact-us-form {
   padding: 130px 100px;
   flex-grow: 1;
+}
+
+#home .contact-us-form {
+  padding-top: 125px;
+  padding-bottom: 125px;
 }
 
 .project-type-part {
