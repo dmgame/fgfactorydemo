@@ -325,6 +325,10 @@ textarea {
   background-color: #019c61;
 }
 
+.project-type-checkbox-item input:checked + label .team-count-range {
+  background-color: #019c61;
+}
+
 .project-type-checkbox-item
   input:checked
   + label
@@ -334,8 +338,9 @@ textarea {
   border-color: var(--main-green);
 }
 
-.project-type-checkbox-item input:checked + label .project-type-title {
-  color: #fff;
+.project-type-checkbox-item input:checked + label .project-type-icon .cls, 
+.project-type-checkbox-item input:checked + label .project-type-icon .cls {
+  fill: #fff;
 }
 
 .project-team-type-ragio-item input {
@@ -395,4 +400,12 @@ textarea {
   > input
   ~ label {
   color: #fff;
+}
+
+.project-type-icon {
+  padding: 0 25px;
+}
+
+.project-type-info:first-of-type {
+  padding-left: 81px;
 }

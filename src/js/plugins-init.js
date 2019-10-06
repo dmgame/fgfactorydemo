@@ -305,11 +305,11 @@ teamCountRangeSliderInit();
 
  // team-counter value
 
- function getValue() {
-   const input = $('[type=radio]');
-   const counter = $('.team-counter');
+//  function getValue() {
+//    const input = $('[type=radio]');
+//    const counter = $('.team-counter');
 
-   if (parseInt(counter.textContent) > 0) {
-     $(input).removeAttr('disabled');
-   }
- }
+//    if ( && parseInt(counter.textContent) > 0) {
+//      $(input).removeAttr('disabled');
+//    }
+//  }
