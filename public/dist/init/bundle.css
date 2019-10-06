@@ -4933,6 +4933,14 @@ textarea {
   font-weight: 400;
 }
 
+.input-item input.focus-blur ~ label,
+.input-item textarea.focus-blur ~ label {
+  top: -20px;
+  font-size: 12px;
+  color: var(--main-gray);
+  font-weight: 400;
+}
+
 .input-item input[readonly] ~ label {
   font-size: 18px;
   top: 5px;
