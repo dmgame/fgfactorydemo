@@ -29,6 +29,10 @@
   grid-column: span 2;
 }
 
+.text-on-hover {
+  opacity: 0;
+}
+
 .image-card img {
   max-width: none;
   height: 100%;
@@ -41,6 +45,11 @@
 
 .image-card:hover img {
   transform: scale(1.1);
+}
+
+.image-card:hover .text-on-hover {
+  opacity: 1;
+  transition: 0.2s ease-in;
 }
 
 .image-card .text-wrapp {

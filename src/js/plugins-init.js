@@ -288,3 +288,28 @@ function teamCountRangeSliderInit() {
 }
 
 teamCountRangeSliderInit();
+
+// input blur
+
+ $('.input-item textarea').on('blur', addClassFormElement);
+
+ $('.input-item input').on('blur', addClassFormElement);
+
+ function addClassFormElement() {
+  if ($(this).val() !== '') {
+    $(this).addClass('focus-blur');
+  } else {
+    $(this).removeClass('focus-blur');
+  }
+ }
+
+ // team-counter value
+
+//  function getValue() {
+//    const input = $('[type=radio]');
+//    const counter = $('.team-counter');
+
+//    if ( && parseInt(counter.textContent) > 0) {
+//      $(input).removeAttr('disabled');
+//    }
+//  }
