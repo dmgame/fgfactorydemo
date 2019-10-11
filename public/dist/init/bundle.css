@@ -3769,6 +3769,10 @@ section {
   grid-column: span 2;
 }
 
+.text-on-hover {
+  opacity: 0;
+}
+
 .image-card img {
   max-width: none;
   height: 100%;
@@ -3781,6 +3785,11 @@ section {
 
 .image-card:hover img {
   transform: scale(1.1);
+}
+
+.image-card:hover .text-on-hover {
+  opacity: 1;
+  transition: 0.2s ease-in;
 }
 
 .image-card .text-wrapp {
@@ -3966,9 +3975,10 @@ section {
 
 .nav-down {
   background: #fff;
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.3);
-  padding: 20px 0;
+  padding: 37px 0;
 }
+
+
 
 .header-nav a {
   padding: 12px 18px;
@@ -3994,6 +4004,19 @@ section {
 .header.bg-black .header-nav a,
 .header.bg-transparent .header-nav a {
   color: var(--main-white);
+}
+
+.nav-down .header-nav.background-white a {
+  color: #0a0b0f;
+}
+
+.nav-down .header-nav.background-white a:hover {
+  color: #fff;
+}
+
+.nav-down a.logo.background-white img {
+  -webkit-filter: brightness(0);
+          filter: brightness(0);
 }
 
 .base-list {
@@ -4355,7 +4378,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #f5f5f5;
+  border: 1px solid #d3d3d4;
   background-color: #fff;
   border-radius: 5px 5px 0 0;
   border-bottom: none;
@@ -4770,9 +4793,16 @@ section {
   background-color: #fff;
 }
 
+
+
 .contact-us-form {
   padding: 130px 100px;
   flex-grow: 1;
+}
+
+#home .contact-us-form {
+  padding-top: 125px;
+  padding-bottom: 125px;
 }
 
 .project-type-part {
@@ -4861,7 +4891,8 @@ section {
   max-width: 500px;
 }
 
-.input-item input {
+.input-item input,
+.input-item textarea {
   border: none;
   width: 100%;
   border-bottom: 1px solid #d3d3d4;
@@ -4873,7 +4904,8 @@ section {
   line-height: 1;
 }
 
-.input-item input ~ label {
+.input-item input ~ label,
+.input-item textarea ~ label {
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -4884,11 +4916,25 @@ section {
   transition: 300ms ease all;
 }
 
-.input-item input:hover ~ label {
+textarea {
+  resize: none;
+}
+
+.input-item input:hover ~ label,
+.input-item textarea:hover ~ label {
   color: var(--main-green);
 }
 
-.input-item input:focus ~ label {
+.input-item input:focus ~ label,
+.input-item textarea:focus ~ label {
+  top: -20px;
+  font-size: 12px;
+  color: var(--main-gray);
+  font-weight: 400;
+}
+
+.input-item input.focus-blur ~ label,
+.input-item textarea.focus-blur ~ label {
   top: -20px;
   font-size: 12px;
   color: var(--main-gray);
@@ -5065,6 +5111,10 @@ section {
   background-color: #019c61;
 }
 
+.project-type-checkbox-item input:checked + label .team-count-range {
+  background-color: #019c61;
+}
+
 .project-type-checkbox-item
   input:checked
   + label
@@ -5074,8 +5124,9 @@ section {
   border-color: var(--main-green);
 }
 
-.project-type-checkbox-item input:checked + label .project-type-title {
-  color: #fff;
+.project-type-checkbox-item input:checked + label .project-type-icon .cls, 
+.project-type-checkbox-item input:checked + label .project-type-icon .cls {
+  fill: #fff;
 }
 
 .project-team-type-ragio-item input {
@@ -5136,6 +5187,11 @@ section {
   ~ label {
   color: #fff;
 }
+
+.project-type-icon {
+  padding: 0 25px;
+}
+
 
 .character-wrap {
   height: 857px;
