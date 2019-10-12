@@ -95,7 +95,9 @@ setImageBgFromDataUrl();
 
 // Poppover init
 $(function() {
-  $('[data-toggle="popover"]').popover();
+  $('[data-toggle="popover"]').popover({
+    trigger: 'hover'
+  });
 });
 
 $('[data-toggle="popover"]').on('show.bs.popover', function(e) {
