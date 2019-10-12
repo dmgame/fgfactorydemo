@@ -206,60 +206,39 @@ if (window.AOS) {
   AOS.init();
 }
 
-// Move header on scroll
-// Hide Header on on scroll down
-var didScroll;
-var lastScrollTop = 0;
-var delta = 5;
-var navbarHeight = $('.header').outerHeight();
+// animate header menu on scroll
+(function($){
+  $(window).on('load', function(){
+    var tempScrollTop, currentScrollTop = 0;
+    var header = $('header');
 
-$(window).scroll(function(event) {
-  didScroll = true;
-});
-
-setInterval(function() {
-  if (didScroll) {
-    hasScrolled();
-    didScroll = false;
-  }
-}, 250);
-
-function hasScrolled() {
-  var st = $(window).scrollTop();
-  // Make sure they scroll more than delta
-  if (Math.abs(lastScrollTop - st) <= delta) return;
-  if (st === 0) {
-    $('.header').removeClass('nav-down');
-    return;
-  }
-  // If they scrolled down and are past the navbar, add class .nav-up.
-  // This is necessary so you never see what is "behind" the navbar.
-  if (st > lastScrollTop && st > navbarHeight) {
-    // Scroll Down
-    $('.header')
-      .removeClass('nav-down')
-      .addClass('nav-up');
-  } else {
-    // Scroll Up
-    if (st + $(window).height() < $(document).height()) {
-      $('.header')
-        .removeClass('nav-up')
-        .addClass('nav-down');
+    var windowWidth = $(window).width();
+    if (windowWidth < 768) {
+        header.addClass("pos-fixed");
+        return;
     }
-  }
+    $(window).on('scroll', function(){
+      var windowHeight = $(window).height();
 
-  lastScrollTop = st;
-}
+      currentScrollTop = $(window).scrollTop();
+
+      if (currentScrollTop > windowHeight+100 ){
+          header.addClass("is-fixed");
+      } else if ( currentScrollTop == 0){
+          header.removeClass("is-fixed");
+      }
+      if (tempScrollTop < currentScrollTop ){
+          header.removeClass('show-header');
+      }
+      else if (tempScrollTop > currentScrollTop ){
+          header.addClass('show-header');
+      }
+      tempScrollTop = currentScrollTop;
+    });
+  });
+})(jQuery);
 
 // Input file init
-// document.getElementById('uploadBtn').onchange = function() {
-//   document.getElementById('uploadFile').value = this.value.replace(
-//     'C:\\fakepath\\',
-//     '',
-//   );
-//   document.getElementById('uploadFile').classList.add('focused');
-// };
-
 document.querySelectorAll('[data-upload-btn]').forEach(item => {
   item.addEventListener('change', e => {
     const parent = item.closest('.input-file');
@@ -272,6 +251,8 @@ document.querySelectorAll('[data-upload-btn]').forEach(item => {
 // Gange slider init for contact us form
 function teamCountRangeSliderInit() {
   const control = $('.team-count-range');
+
+  if (!control.length) return;
 
   control.slider({
     value: 0,
