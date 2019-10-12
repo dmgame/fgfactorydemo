@@ -248,7 +248,7 @@ document.querySelectorAll('[data-upload-btn]').forEach(item => {
   });
 });
 
-// Gange slider init for contact us form
+// Range slider init for contact us form
 function teamCountRangeSliderInit() {
   const control = $('.team-count-range');
 
@@ -262,8 +262,12 @@ function teamCountRangeSliderInit() {
     slide: function(event, ui) {
       const parent = ui.handle.closest('label');
       const counter = parent.querySelector('.team-counter');
+      const nestedRadio = parent.querySelectorAll('.project-team-type-ragio-item input');
       counter.textContent = ui.value;
-      // img.style.backgroundPositionX = `${ui.value}%`;
+      nestedRadio.forEach(el => (el.disabled = !Boolean(ui.value)));
+      if (!ui.value) {
+        nestedRadio.forEach(el => (el.checked = false));
+      }
     },
   });
 }
