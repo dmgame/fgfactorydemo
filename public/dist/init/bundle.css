@@ -3560,6 +3560,16 @@ section {
   margin-top: -80px;
 }
 
+.pos-static {
+  position: static !important;
+}
+.pos-fixed {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
 :root {
   --fz-text-big: 30px;
   --lh-text-big: 1.6;
@@ -3957,11 +3967,7 @@ section {
 
 .header {
   padding: 37px 0;
-  /* position: absolute;
-  top: 0;
-  left: 0%;
-  right: 0; */
-  position: fixed;
+  position: absolute;
   top: 0;
   transition: all 0.2s ease-in-out;
   width: 100%;
@@ -3971,18 +3977,35 @@ section {
 
 .nav-up {
   top: -107px;
+  position: fixed;
 }
 
 .nav-down {
   background: #fff;
   padding: 37px 0;
+  position: fixed;
 }
 
-
+header.is-fixed {
+  position: fixed;
+  top: -107px;
+  z-index: 999;
+  background: #fff;
+  transition: top 0.2s ease-out;
+}
+header.is-fixed.menu-open {
+  top: -160px;
+}
+header.is-fixed.show-header {
+  top: 0;
+}
+.bg-transparent.is-fixed.show-header {
+  background: #000;
+}
 
 .header-nav a {
   padding: 12px 18px;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
