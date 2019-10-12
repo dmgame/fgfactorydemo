@@ -29,6 +29,7 @@ import '../pages-sections-css/technology-stack.css';
 import '../pages-sections-css/team-slider.css';
 import '../pages-sections-css/contact-us.css';
 import '../pages-sections-css/character-ineractive.css';
+import '../pages-sections-css/video-block.css';
 
 import '../pages-css/web-project-bigbash.css';
 import '../pages-css/blog.css';
