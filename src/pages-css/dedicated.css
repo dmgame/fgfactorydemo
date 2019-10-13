@@ -197,7 +197,7 @@
 }
 
 .work-step-1 .work-step-item:first-child .work-step-item-right::before {
-  background: url("../img/inner-card-img-5.png") no-repeat center;
+  background: url("../img/inner-card-img-5.png") no-repeat center, #fff;
   background-size: 100%;
   width: 76px;
   height: 70px;
@@ -227,6 +227,26 @@
   background-size: 100%;
   width: 80px;
   height: 79px;
+}
+
+.work-step-item-left.w-line::after {
+  content: "";
+  width: 120px;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    #cececf 33%,
+    rgba(255, 255, 255, 0) 0%
+  );
+  background-size: 11px 1px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+}
+
+.work-step-1 .work-step-item-left.w-line::after {
+  top: 105px;
 }
 
 .reviews-carousel-wrap {
