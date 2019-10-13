@@ -32,14 +32,17 @@
       </div>
     </header>
     <main>
-      <div class="home-inner d-flex flex-column" data-aos="fade-up" data-video-preview="public/video/vide-for-homepage.avi" data-image-bg="public/img/home-inner.png">
-        <video autoplay muted loop class="video-on-block">
-          <source src="public/video/homepage-video.mp4" type="video/mp4">
-        </video>
-        <div class="play-btn">
-          <img src="public/img/play-btn.png" alt="">
+      <div class="home-inner d-flex flex-column" data-aos="fade-up" data-image-bg="public/img/home-inner.png">
+        <div class="video-wrap">
+          <video autoplay muted loop class="video-on-block">
+            <source src="public/video/homepage-video.mp4" type="video/mp4">
+          </video>
+          <div class="play-btn" data-toggle="modal" data-target="#videoModal">
+            <img src="public/img/play-btn.png" alt="">
+          </div>
+          <!-- /.play-btn -->
         </div>
-        <!-- /.play-btn -->
+        <!-- /.video-wrap -->
         <div class="home-inner-container container d-flex flex-column ">   
           <h4 class="title title--card color-gray mt-auto mb-auto" data-aos="fade-up">
             <span class="color-white">Mobile</span> and <span class="color-white">web</span> games 
@@ -564,6 +567,18 @@
       </div>
     </footer>
     <!-- /.footer -->
+    
+    <!-- Modal -->
+    <div class="modal fade video-modal" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <video autoplay muted loop class="video-in-modal video-on-block">
+            <source src="public/video/homepage-video.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
