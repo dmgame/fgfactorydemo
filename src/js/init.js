@@ -39,6 +39,8 @@ import '../pages-css/service-pages.css';
 import '../pages-css/team.css';
 import '../pages-css/contact-us.css';
 
+import '../css-media/index-media.css';
+
 import './plugins-init';
 
 console.log('Init plugins');

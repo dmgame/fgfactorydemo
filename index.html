@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
       href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:300i,400,700&display=swap"
@@ -14,21 +14,25 @@
     <link rel="stylesheet" href="libs/slick/slick-theme.css" />
     <link rel="stylesheet" href="libs/aos/aos.css">
     <link rel="stylesheet" href="public/dist/init/bundle.css" />
+    <link rel="stylesheet" href="libs/slickNav/slicknav.css" />
     <title>Home</title>
   </head>
   <body>
     <header class="header">
       <div class="container d-flex align-items-center" data-aos="fade-down">
         <a href="#" class="logo">
-          <img src="public/img/logo.png" alt="" />
+          <img src="public/img/logo.png" class="logo-img" alt="" />
+          <img src="public/img/logo-mob.png" class="logo-img--mobile" alt="">
         </a>
-        <nav class="header-nav ml-auto d-flex align-items-center">
+
+        <nav class="header-nav ml-auto d-flex align-items-center" id="menu">
           <a href="" class="active ">WORK</a>
           <a href="">SERVICES</a>
           <a href="">TEAM</a>
           <a href="">BLOG</a>
           <a href="">CONTACT</a>
         </nav>
+
       </div>
     </header>
     <main>
@@ -348,7 +352,7 @@
                   <span class="item-type__small color-white">Casual art</span>
                 </div>
               </div>
-              <div class="image-card image-card--small" data-aos="fade-up">
+              <div class="image-card image-card--small image-card--none" data-aos="fade-up">
                 <img src="public/img/card-img-medium-1.png" alt="" />
                 <div class="text-wrapp text-wrapp--bottom text-on-hover">
                   <h3 class="title title--card__ex-small color-white">
@@ -358,7 +362,7 @@
                 </div>
               </div>
             </div>
-            <div class="d-grid grid-column-2">
+            <div class="d-grid grid-column-2 grid-column--none">
               <div class="image-card image-card--big" data-aos="fade-up">
                 <img src="public/img/card-img-5.png" alt="" />
                 <div class="text-wrapp text-wrapp--bottom text-on-hover">
@@ -378,7 +382,7 @@
                 </div>
               </div>
             </div>
-            <div class="d-grid grid-column-5">
+            <div class="d-grid grid-column-5 grid-column--none">
               <div class="image-card image-card--small" data-aos="fade-up">
                 <img src="public/img/card-img-medium-2.png" alt="" />
                 <div class="text-wrapp text-wrapp--bottom text-on-hover">
@@ -551,7 +555,7 @@
         </div>
         <div class="copyright d-flex flex-column ml-auto">
           <span>All Rights Reserved</span>
-          <span>Fgfactory LTD</span>
+          <span> Fgfactory LTD</span>
           <span>© 2010 - 2019</span>
         </div>
       </div>
@@ -565,6 +569,7 @@
     <script src="libs/bootstrap/bootstrap.min.js"></script>
     <script src="libs/slick/slick.min.js"></script>
     <script src="libs/aos/aos.js"></script>
+    <script src="libs/slickNav/jquery.slicknav.min.js"></script>
     <script src="public/dist/init/bundle.js"></script>
   </body>
 </html>

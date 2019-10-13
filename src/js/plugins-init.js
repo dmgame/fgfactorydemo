@@ -1,5 +1,14 @@
 import { initSlider, initSliderNav } from './slickSlider';
 
+// Init slickNav
+
+$(function(){
+  $('#menu').slicknav({
+    label: '',
+    duplicate: true
+  });
+});
+
 // Init carousel
 const slider = $('[data-slick-slider]');
 const carouselNav = $('.carousel-nav');
