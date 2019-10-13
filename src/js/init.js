@@ -40,6 +40,7 @@ import '../pages-css/index.css';
 import '../pages-css/service-pages.css';
 import '../pages-css/team.css';
 import '../pages-css/contact-us.css';
+import '../pages-css/dedicated.css';
 
 import './plugins-init';
 

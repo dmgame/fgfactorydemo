@@ -1,0 +1,251 @@
+.dedicated-inner-title {
+  max-width: 790px;
+}
+
+.work-steps-wrap {
+  margin-top: 75px;
+  position: relative;
+  padding-bottom: 228px;
+  margin-bottom: 125px;
+}
+
+.work-steps-wrap::before {
+  content: "";
+  width: 12px;
+  /* background-image: radial-gradient(black 33%, rgba(255, 255, 255, 0) 0%); */
+  background-image: radial-gradient(
+    circle closest-side,
+    #cececf calc(100% - 0.5px),
+    transparent 100%
+  );
+  background-position: center;
+  background-size: 11px 52px;
+  background-repeat: repeat-y;
+  position: absolute;
+  top: 140px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.work-steps-wrap::after {
+  content: "";
+  width: 121px;
+  height: 81px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: url("../img/icon-sun.png") no-repeat, #fff;
+  background-size: contain;
+}
+
+.work-step-1 .work-step-item + .work-step-item {
+  margin-top: 55px;
+}
+
+.work-step-item-left {
+  width: 50%;
+  padding-right: 140px;
+}
+
+.work-step-team-block {
+  max-width: 672px;
+  box-shadow: 0 13px 27px rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+}
+
+.work-step-team-item {
+  text-align: center;
+}
+
+.work-step-team-item img {
+  display: block;
+  margin: 0 auto 20px auto;
+}
+
+.work-step-team-item-position {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.work-step-team-block-content {
+  padding: 20px 20px 50px 20px;
+  background-color: #fff;
+}
+
+.work-step-team-block-footer {
+  background-color: var(--main-green);
+  padding: 33px 20px;
+  color: #fff;
+  text-align: right;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.work-step-item-right {
+  width: 50%;
+  padding-left: 80px;
+  position: relative;
+}
+
+.work-step-item-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  margin-bottom: 25px;
+  margin-top: 30px;
+}
+
+.work-step-item-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  max-width: 360px;
+}
+
+.work-step-item-text-w-bg {
+  border-radius: 5px;
+  background-color: #f5f5f5;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  padding: 45px 55px;
+  max-width: 710px;
+}
+
+.work-step-2 {
+  margin-top: 37px;
+}
+
+.work-step-2 .work-step-item + .work-step-item {
+  margin-top: 70px;
+}
+
+.project-backlog-wrap {
+  max-width: 540px;
+  width: 100%;
+  position: relative;
+}
+
+.project-backlog-top {
+  border-radius: 5px;
+  border: 1px solid rgba(10, 11, 15, 0.18);
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: #b5b6b7;
+  padding: 15px 20px 15px 150px;
+}
+
+.project-backlog-item {
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.18);
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 30px 30px 30px 80px;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 20px;
+  position: relative;
+}
+
+.project-backlog-wrap .w-decorate::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 237px;
+  background: url("../img/backlog-decorate-img.png") no-repeat;
+  top: 50%;
+  left: -23px;
+}
+
+.project-backlog-item-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 25px;
+}
+
+.project-backlog-item.w-text-decorate::before {
+  content: "SPRINT";
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: #b5b6b7;
+  font-size: 18px;
+  text-transform: uppercase;
+  position: absolute;
+  left: -50px;
+  bottom: 16px;
+  transform: rotate(-90deg);
+  transform-origin: left;
+}
+
+.work-step-3 {
+  margin-top: 95px;
+}
+
+.work-step .work-step-item:first-child .work-step-item-right::before {
+  content: "";
+  position: absolute;
+
+  top: 70px;
+  transform: translateX(-50%);
+  left: 0;
+}
+
+.work-step-1 .work-step-item:first-child .work-step-item-right::before {
+  background: url("../img/inner-card-img-5.png") no-repeat center;
+  background-size: 100%;
+  width: 76px;
+  height: 70px;
+}
+
+.work-step-2 .work-step-item:first-child .work-step-item-right::before {
+  background: url("../img/inner-card-img-24.png") no-repeat center, #fff;
+  background-size: 100%;
+  width: 76px;
+  height: 76px;
+}
+
+.work-step .work-step-item:last-child .work-step-item-right::before {
+  content: "";
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  background: url("../img/star-icon.png") no-repeat center;
+  background-size: 100%;
+  top: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  left: 0;
+}
+
+.work-step-3 .work-step-item:first-child .work-step-item-right::before {
+  background: url("../img/inner-card-img-23.png") no-repeat center, #fff;
+  background-size: 100%;
+  width: 80px;
+  height: 79px;
+}
+
+.reviews-carousel-wrap {
+  padding-top: 215px;
+  padding-bottom: 105px;
+}
+
+.reviews-carousel-wrap .fade-carousel-wrap {
+  padding-bottom: 85px;
+}
+
+.reviews-carousel-wrap [data-slick-slider].service-fade-carousel .slick-dots {
+  bottom: -100px;
+}
+
+.team-setup-wrap {
+  padding-top: 175px;
+}
+
+.team-setup-wrap .contact-us-form-container {
+  margin-top: 110px;
+}
