@@ -1,10 +1,23 @@
-[data-team-slider] {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
 [data-team-slider] .team-slider-item {
   margin: 20px;
+}
+.team-carousel {
+  position: relative;
+}
+
+.team-carousel .slick-arrow {
+  background: transparent;
+  top: 0;
+  bottom: auto;
+  height: 100%;
+  width: 150px;
+  transform: none;
+}
+
+.team-carousel .slick-prev {
+  left: 0;
+}
+
+.team-carousel .slick-next {
+  right: 0;
 }
