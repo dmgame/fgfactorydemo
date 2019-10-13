@@ -10,6 +10,8 @@
   padding-right: 90px;
   padding-bottom: 50px;
   border-radius: 5px;
+  position: relative;
+  overflow: hidden;
 }
 
 .home-inner .title {
