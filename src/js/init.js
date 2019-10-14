@@ -42,6 +42,8 @@ import '../pages-css/team.css';
 import '../pages-css/contact-us.css';
 import '../pages-css/dedicated.css';
 
+import '../css-media/index-media.css';
+
 import './plugins-init';
 
 console.log('Init plugins');
