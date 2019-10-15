@@ -33,3 +33,13 @@
 .negative-margin.fade-carousel-wrap {
   margin-top: -80px;
 }
+
+.pos-static {
+  position: static !important;
+}
+.pos-fixed {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+}

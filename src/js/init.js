@@ -14,6 +14,7 @@ import '../common-css/slider.css';
 import '../common-css/tabs.css';
 import '../common-css/footer.css';
 import '../common-css/popover.css';
+import '../common-css/modal.css';
 
 import '../pages-sections-css/page-inner.css';
 import '../pages-sections-css/project-description.css';
@@ -29,6 +30,7 @@ import '../pages-sections-css/technology-stack.css';
 import '../pages-sections-css/team-slider.css';
 import '../pages-sections-css/contact-us.css';
 import '../pages-sections-css/character-ineractive.css';
+import '../pages-sections-css/video-block.css';
 
 import '../pages-css/web-project-bigbash.css';
 import '../pages-css/blog.css';
@@ -38,6 +40,7 @@ import '../pages-css/index.css';
 import '../pages-css/service-pages.css';
 import '../pages-css/team.css';
 import '../pages-css/contact-us.css';
+import '../pages-css/dedicated.css';
 
 import '../css-media/index-media.css';
 
