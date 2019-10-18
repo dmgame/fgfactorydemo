@@ -1,0 +1,39 @@
+.paralax-target-1 {
+  position: absolute;
+  top: -116px;
+  left: 510px;
+  z-index: -1;
+}
+
+.image-preview {
+  position: relative;
+}
+
+.paralax-target-2 {
+  position: absolute;
+  top: 410px;
+  left: 10%;
+}
+
+.paralax-target-3 {
+  position: absolute;
+  top: 140px;
+  right: 17%;
+  z-index: -1;
+}
+
+.paralax-target-4 {
+  position: absolute;
+  bottom: 65px;
+  right: -200px;
+}
+
+.paralax-target-5 {
+  position: absolute;
+  bottom: -45px;
+  right: 200px;
+}
+
+.web-project-pastry.project-description {
+  position: relative;
+}

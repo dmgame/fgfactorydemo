@@ -40,6 +40,12 @@
       <div class="web-project-inner page-inner border-bottom">
         <div class="container">
           <div class="inner-title" data-aos="fade-up">
+            <img
+              src="public/img/paralax-candy-3.png"
+              alt=""
+              class="lax paralax-target-1"
+              data-lax-translate-y="0 0, 400 -400"
+            />
             <h1 class="title title--page">Pastry Mania</h1>
             <span class="project-type">Casual art</span>
           </div>
@@ -62,6 +68,19 @@
             data-aos="fade-up"
             data-aos-delay="500"
           >
+            <img
+              src="public/img/paralax-bear-1.png"
+              alt=""
+              class="lax paralax-target-2"
+              data-lax-translate-y="0 0, 600 -600 | offset=-200"
+            />
+            <img
+              src="public/img/paralax-bear-2.png"
+              alt=""
+              class="lax paralax-target-3"
+              data-lax-translate-y="0 0, 600 -600 | offset=-200"
+            />
+
             <img src="public/img/web-project-pastry-1.png" alt="" />
           </div>
         </div>
@@ -79,17 +98,28 @@
               should accommodate all game locations and have diversity in nature
               and other objects.
             </p>
+            <img
+              src="public/img/paralax-candy-1.png"
+              alt=""
+              class="lax paralax-target-4"
+              data-lax-translate-y="0 0, 600 -600 | offset=-600"
+            />
+            <img
+              src="public/img/paralax-candy-2.png"
+              alt=""
+              class="lax paralax-target-5"
+              data-lax-translate-y="0 0, 600 -600 | offset=-800"
+            />
           </div>
         </div>
       </div>
       <!-- /.web-project-description -->
-      <div class="range-image-wrap" data-aos="fade-up">
+      <div class="range-image-wrap" data-aos="fade-up" data-aos-delay="500">
         <div class="range-img">
           <img src="public/img/web-project-pastry-range-img.png" alt="" />
         </div>
         <div class="range-control d-flex justify-content-center">
           <div id="range-img-control"></div>
-          <!-- <input type="range" id="range-img-control" name="range-img" id="" value="0" max="100" step="0.5"> -->
         </div>
       </div>
       <div
@@ -116,13 +146,13 @@
               Related works
             </h3>
             <div class="related-works-list d-flex">
-              <div class="image-card" data-aos="fade-up" data-aos-delay="500">
+              <div class="image-card" data-aos="fade-up">
                 <img src="public/img/related-works-img-3.png" alt="" />
               </div>
-              <div class="image-card" data-aos="fade-up" data-aos-delay="700">
+              <div class="image-card" data-aos="fade-up">
                 <img src="public/img/related-works-img-4.png" alt="" />
               </div>
-              <div class="image-card" data-aos="fade-up" data-aos-delay="900">
+              <div class="image-card" data-aos="fade-up">
                 <img src="public/img/related-works-img-5.png" alt="" />
               </div>
             </div>
@@ -135,7 +165,7 @@
               Casual art
             </h3>
             <div class="related-works-list d-flex">
-              <div class="image-card" data-aos="fade-up" data-aos-delay="1100">
+              <div class="image-card" data-aos="fade-up">
                 <img src="public/img/related-works-img-6.png" alt="" />
               </div>
             </div>
@@ -215,7 +245,7 @@
       </div>
       <!-- /.call-to-action-section -->
     </main>
-    <footer class="footer" data-aos="fade-up">
+    <footer class="footer">
       <div class="container d-flex">
         <div class="list-wrap">
           <h3 class="list-title">Main</h3>
@@ -275,10 +305,23 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
     <script src="libs/bootstrap/bootstrap.min.js"></script>
     <script src="libs/slick/slick.min.js"></script>
     <script src="libs/aos/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
     <script src="public/dist/init/bundle.js"></script>
+
+    <script>
+      window.onload = function() {
+        lax.setup(); // init
+
+        const updateLax = () => {
+          lax.update(window.scrollY);
+          window.requestAnimationFrame(updateLax);
+        };
+
+        window.requestAnimationFrame(updateLax);
+      };
+    </script>
   </body>
 </html>
