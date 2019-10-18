@@ -4084,7 +4084,7 @@ header.is-fixed.show-header {
 }
 
 .base-list--icons.store-icons li:hover i {
-  color: var(--main-gray) !important;
+  color: #00ac6a !important;
 }
 
 .base-list--icons li + li {
@@ -4342,11 +4342,13 @@ header.is-fixed.show-header {
   padding: 0 15px 65px;
   border-bottom: 5px solid transparent;
   opacity: 0.4;
+  height: 100%;
 }
 
 .nav-tabs .nav-item .nav-link.active {
   border-color: var(--main-green);
   opacity: 1;
+  height: 100%;
 }
 
 .nav-tabs .nav-item .nav-link img {
@@ -4404,6 +4406,12 @@ header.is-fixed.show-header {
   border: 1px solid #d3d3d4;
   background-color: #fff;
   border-radius: 5px 5px 0 0;
+  border-bottom: none;
+}
+
+.contact-us-form-tabs .nav-tabs .nav-item .nav-link:hover {
+  border: 1px solid #0a0b0f;
+  color: #0a0b0f;
   border-bottom: none;
 }
 
@@ -5026,6 +5034,11 @@ header.is-fixed.show-header {
   right: 0;
 }
 
+:root {
+  --btn-bordered-border-color-hover: #0a0b0f;
+
+}
+
 .contact-us-form-container {
   max-width: 1790px;
   margin-left: auto;
@@ -5245,6 +5258,11 @@ textarea {
   height: 100%;
 }
 
+.fileUpload .btn--bordered:hover {
+border-color:var(--btn-bordered-border-color-hover);
+color: #0a0b0f;
+}
+
 .input-file .input-file-fake {
   max-width: 330px;
   width: 100%;
@@ -5294,7 +5312,7 @@ textarea {
   font-size: 16px;
   font-weight: bold;
   text-align: center;
-  border: 1px solid var(--main-black);
+  border: 1px solid #d3d3d4;
   border-radius: 5px;
   line-height: 1;
   padding: 11px 10px;
@@ -5730,7 +5748,7 @@ textarea {
 .visual-assets-card .visual-assets-type {
   font-size: 14px;
   line-height: 24px;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-weight: 400;
   font-style: italic;
 }
@@ -5757,7 +5775,7 @@ textarea {
 .process-flow-list
   .process-flow-item:not(:last-child)
   .process-flow-item-header::after {
-  content: '';
+  content: "";
   position: absolute;
   right: 0;
   top: 50%;
@@ -5768,7 +5786,7 @@ textarea {
 }
 
 .process-flow-list .process-flow-item .process-flow-item-header span {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 24px;
   font-weight: 400;
   margin-left: 20px;
@@ -5800,6 +5818,10 @@ textarea {
 
 .process-flow-services .process-flow-services-item-header {
   margin-bottom: 60px;
+}
+
+.services-category-item:last-of-type .process-flow-services-item-header {
+  padding-bottom: 20px;
 }
 
 .process-flow-services .process-flow-services-item-header span {
@@ -5846,6 +5868,10 @@ textarea {
 
 .services-category-list .arrow-link {
   color: var(--main-black);
+}
+
+.services-category-list .arrow-link:last-of-type {
+  top: 21px;
 }
 
 .service-home-tabs .title {

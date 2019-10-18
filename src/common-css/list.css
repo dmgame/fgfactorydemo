@@ -40,7 +40,7 @@
 }
 
 .base-list--icons.store-icons li:hover i {
-  color: var(--main-gray) !important;
+  color: #00ac6a !important;
 }
 
 .base-list--icons li + li {

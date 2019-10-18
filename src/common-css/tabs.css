@@ -17,11 +17,13 @@
   padding: 0 15px 65px;
   border-bottom: 5px solid transparent;
   opacity: 0.4;
+  height: 100%;
 }
 
 .nav-tabs .nav-item .nav-link.active {
   border-color: var(--main-green);
   opacity: 1;
+  height: 100%;
 }
 
 .nav-tabs .nav-item .nav-link img {
@@ -79,6 +81,12 @@
   border: 1px solid #d3d3d4;
   background-color: #fff;
   border-radius: 5px 5px 0 0;
+  border-bottom: none;
+}
+
+.contact-us-form-tabs .nav-tabs .nav-item .nav-link:hover {
+  border: 1px solid #0a0b0f;
+  color: #0a0b0f;
   border-bottom: none;
 }
 
