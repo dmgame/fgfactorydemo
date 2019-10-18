@@ -247,19 +247,19 @@ teamCountRangeSliderInit();
 
 
 // Paralax on scroll
-var scale_tween = TweenMax.to('#scale-animation', 1, {
-  transform: 'scale(.75)',
-  ease: Linear.easeNone
-});
+// var scale_tween = TweenMax.to('#scale-animation', 1, {
+//   transform: 'scale(.75)',
+//   ease: Linear.easeNone
+// });
 
-var controller = new ScrollMagic.Controller();
-var scene = new ScrollMagic.Scene({
-  triggerElement: '#paralax-target-1',
-})
-.setTween(scale_tween);
-// .setPin("#paralax-target-1")
+// var controller = new ScrollMagic.Controller();
+// var scene = new ScrollMagic.Scene({
+//   triggerElement: '#paralax-target-1',
+// })
+// .setTween(scale_tween);
+// // .setPin("#paralax-target-1")
 
-// Add Scenes to ScrollMagic Controller
-controller.addScene([
-  scene,
-]);
+// // Add Scenes to ScrollMagic Controller
+// controller.addScene([
+//   scene,
+// ]);
