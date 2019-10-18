@@ -134,74 +134,29 @@ $('[data-toggle="popover"]').on('hidden.bs.popover', function(e) {
 });
 
 // Team slider
-const teamData = [...new Array(20)].map((item, index) => ({
-  img: `public/img/team-unit-${index + 1}.png`,
-}));
+$('[data-team-slider]').slick({
+  centerMode: true,
+  centerPadding: '80px',
+  slidesToShow: 8,
+  infinite: true,
+  dots: false,
+  arrows: true,
+  cssEase: 'linear'
+});
 
-console.log(teamData);
+let teamSliderInterval = null;
 
-const teamSliderModule = (function() {
-  let container = null;
-  let itemList = [];
-  let settings = {
-    container: '[data-team-slider]',
-  };
+$('.team-carousel .slick-prev').on('mouseover', (e) => moveSlider('slickPrev'));
+$('.team-carousel .slick-prev').on('mouseleave', (e) => clearInterval(teamSliderInterval));
 
-  function init(data, userSettings = {}) {
-    settings = Object.assign(settings, userSettings);
-    itemList = _updateItemCount(data.slice());
+$('.team-carousel .slick-next').on('mouseover', (e) => moveSlider('slickNext'));
+$('.team-carousel .slick-next').on('mouseleave', (e) => clearInterval(teamSliderInterval));
 
-    _findContainer();
-
-    if (!container) return console.warn('Container not found!');
-
-    _renderItems(itemList);
-  }
-
-  function _findContainer() {
-    container = document.querySelector(settings.container);
-  }
-
-  function _renderItems(items) {
-    let fragment = '';
-    items.forEach(item => {
-      const template = _itemTemplate(item);
-      fragment += template;
-    });
-
-    container.insertAdjacentHTML('afterbegin', fragment);
-  }
-
-  function _itemTemplate(item) {
-    return `
-      <div class="team-slider-item">
-        <img src="${item.img}">
-      </div>
-    `;
-  }
-
-  function _randomize(items) {
-    return items.sort(() => {
-      const random1 = _randomNumber(items.length);
-      const random2 = _randomNumber(items.length);
-      return random1 - random2;
-    });
-  }
-
-  function _randomNumber(count = 100) {
-    return Math.floor(Math.random() * count);
-  }
-
-  function _updateItemCount(items) {
-    return _randomize(items).concat(_randomize(items), _randomize(items));
-  }
-
-  return {
-    init,
-  };
-})();
-
-teamSliderModule.init(teamData);
+function moveSlider(moveTo) {
+  teamSliderInterval = setInterval(() => {
+    $('[data-team-slider]').slick(moveTo);
+  }, 500);
+}
 
 // Init WoW animation
 if (window.AOS) {
