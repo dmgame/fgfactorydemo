@@ -3763,6 +3763,10 @@ section {
   position: relative;
 }
 
+.image-card a {
+  height: 100%;
+}
+
 .image-card--big {
   height: var(--card-big-height);
 }
@@ -3784,9 +3788,13 @@ section {
 }
 
 .image-card img {
-  max-width: none;
+  /* max-width: none; */
   height: 100%;
   transition: all 0.2s ease-in;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
 }
 
 .image-card--auto img {
@@ -4114,7 +4122,7 @@ header.is-fixed.show-header {
 .base-list--with-active-links a.active,
 .base-list--with-active-links a:hover {
   background-color: var(--main-green);
-  color: #fff;
+  color: #fff !important;
 }
 .base-list--with-active-links a.active .list-count-bage,
 .base-list--with-active-links a:hover .list-count-bage {
@@ -4394,6 +4402,10 @@ header.is-fixed.show-header {
 
 .nav-tabs.tabs-without-icons .nav-item {
   max-width: 265px;
+}
+
+.nav-tabs.tabs-without-icons .nav-item + .nav-item {
+  margin-left: 33px;
 }
 
 .contact-us-form-tabs .nav-tabs .nav-item .nav-link {
@@ -4741,6 +4753,8 @@ header.is-fixed.show-header {
   font-weight: 300;
   line-height: 1.333;
   color: var(--main-black);
+  position: relative;
+  top: 5px;
 }
 
 .web-project-inner .article {
@@ -5055,7 +5069,6 @@ header.is-fixed.show-header {
 
 #home .contact-us-form {
   padding-top: 125px;
-  padding-bottom: 125px;
 }
 
 .project-type-part {
@@ -5326,7 +5339,7 @@ color: #0a0b0f;
 }
 
 .radio-group-month {
-  margin-bottom: 100px;
+  margin-bottom: 105px;
 }
 
 .radio-group-month .radio-month-item + .radio-month-item {
@@ -5702,7 +5715,7 @@ color: #0a0b0f;
 }
 
 .service-tab-wrap .sldie-text .article + .article {
-  margin-top: 40px;
+  margin-top: 45px;
 }
 
 .service-tab-wrap .sldie-text .btn {
@@ -5824,6 +5837,18 @@ color: #0a0b0f;
   padding-bottom: 20px;
 }
 
+.process-flow-services .process-flow-services-item-header-mbplus {
+  margin-bottom: 66px;
+}
+
+.process-flow-services .process-flow-services-item-header-mbminus {
+  margin-bottom: -6px;
+}
+
+.process-flow-services .arrow-link-top {
+  top: 5px;
+}
+
 .process-flow-services .process-flow-services-item-header span {
   font-size: 30px;
   font-weight: 700;
@@ -5868,10 +5893,6 @@ color: #0a0b0f;
 
 .services-category-list .arrow-link {
   color: var(--main-black);
-}
-
-.services-category-list .arrow-link:last-of-type {
-  top: 21px;
 }
 
 .service-home-tabs .title {
@@ -6003,6 +6024,14 @@ color: #0a0b0f;
   font-size: 14px;
   line-height: 24px;
   font-family: 'Roboto', sans-serif;
+}
+
+.left-side {
+  width: 50%;
+}
+
+.left-side .map-slider.slick-slider {
+  max-width: 100%;
 }
 
 .dedicated-inner-title {

@@ -19,7 +19,6 @@
 
 #home .contact-us-form {
   padding-top: 125px;
-  padding-bottom: 125px;
 }
 
 .project-type-part {
@@ -290,7 +289,7 @@ color: #0a0b0f;
 }
 
 .radio-group-month {
-  margin-bottom: 100px;
+  margin-bottom: 105px;
 }
 
 .radio-group-month .radio-month-item + .radio-month-item {

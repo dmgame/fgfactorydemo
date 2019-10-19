@@ -61,3 +61,11 @@
   line-height: 24px;
   font-family: 'Roboto', sans-serif;
 }
+
+.left-side {
+  width: 50%;
+}
+
+.left-side .map-slider.slick-slider {
+  max-width: 100%;
+}

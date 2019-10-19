@@ -12,7 +12,7 @@
 }
 
 .service-tab-wrap .sldie-text .article + .article {
-  margin-top: 40px;
+  margin-top: 45px;
 }
 
 .service-tab-wrap .sldie-text .btn {
@@ -133,6 +133,18 @@
   padding-bottom: 20px;
 }
 
+.process-flow-services .process-flow-services-item-header-mbplus {
+  margin-bottom: 66px;
+}
+
+.process-flow-services .process-flow-services-item-header-mbminus {
+  margin-bottom: -6px;
+}
+
+.process-flow-services .arrow-link-top {
+  top: 5px;
+}
+
 .process-flow-services .process-flow-services-item-header span {
   font-size: 30px;
   font-weight: 700;
@@ -177,10 +189,6 @@
 
 .services-category-list .arrow-link {
   color: var(--main-black);
-}
-
-.services-category-list .arrow-link:last-of-type {
-  top: 21px;
 }
 
 .service-home-tabs .title {

@@ -71,6 +71,10 @@
   max-width: 265px;
 }
 
+.nav-tabs.tabs-without-icons .nav-item + .nav-item {
+  margin-left: 33px;
+}
+
 .contact-us-form-tabs .nav-tabs .nav-item .nav-link {
   padding: 10px;
   width: 265px;

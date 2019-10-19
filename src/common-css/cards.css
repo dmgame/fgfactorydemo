@@ -13,6 +13,10 @@
   position: relative;
 }
 
+.image-card a {
+  height: 100%;
+}
+
 .image-card--big {
   height: var(--card-big-height);
 }
@@ -34,9 +38,11 @@
 }
 
 .image-card img {
-  max-width: none;
+  /* max-width: none; */
   height: 100%;
   transition: all 0.2s ease-in;
+  object-fit: cover;
+  object-position: top;
 }
 
 .image-card--auto img {
