@@ -44,6 +44,7 @@ import '../pages-css/dedicated.css';
 import '../pages-css/project-pastry.css';
 
 import '../css-media/index-media.css';
+import '../css-media/web-projects-media.css';
 
 import './plugins-init';
 

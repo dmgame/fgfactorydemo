@@ -6,8 +6,12 @@
   margin-bottom: 50px;
 }
 
-.related-works .image-card + .image-card {
-  margin-left: 38px;
+.related-works .related-works-list {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+.related-works .related-works-list .image-card {
+  padding: 0 20px;
 }
 
 .related-works-wrap {

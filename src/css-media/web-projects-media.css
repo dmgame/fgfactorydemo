@@ -1,0 +1,107 @@
+@media screen and (max-width: 1629px) {
+  .project-technology-stack .left-side {
+    width: 70%;
+  }
+
+  .character-wrap {
+    display: none !important;
+  }
+
+  .centered-text.w-icon .centered-text-icon {
+    left: -155px;
+  }
+
+  .project-technology-stack.web-project-timber .right-side {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .project-technology-stack .left-side,
+  .project-technology-stack .right-side {
+    width: 100%;
+  }
+
+  .project-technology-stack .right-side {
+    margin-top: 80px;
+  }
+
+  .related-works .related-works-list .image-card {
+    margin-bottom: 40px;
+  }
+  .lax {
+    display: none;
+  }
+  .centered-text.w-icon .centered-text-icon {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .related-works .container {
+    flex-wrap: wrap;
+  }
+
+  .related-works-wrap + .related-works-wrap {
+    margin-left: 0;
+    margin-top: 40px;
+  }
+  .project-description.w-padding {
+    padding: 100px 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .web-project-inner {
+    padding-top: 100px;
+    padding-bottom: 150px;
+  }
+  .web-project-inner .article {
+    margin-top: 50px;
+  }
+  .negative-margin.web-project-timber {
+    margin-top: -100px;
+  }
+  .project-preview-images .image-item {
+    margin-left: -85px;
+  }
+  .project-technology-stack .left-side .list-wrap {
+    flex-wrap: wrap;
+  }
+  .project-technology-stack .left-side .list-wrap .base-list {
+    margin-left: 0;
+  }
+  .project-technology-stack .left-side .list-wrap .base-list + .base-list {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .project-preview-images .image-item {
+    margin-left: -50px;
+  }
+
+  .project-technology-stack .title {
+    margin-bottom: 30px;
+  }
+
+  .project-technology-stack {
+    padding: 70px 0;
+  }
+
+  .image-preview.web-project-timber img {
+    transform: scale(1.5);
+  }
+
+  .related-works .related-works-list {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .project-description.web-project-pastry {
+    padding: 85px 0;
+  }
+
+  .range-image-wrap .range-img {
+    height: 590px;
+  }
+}
