@@ -12,7 +12,7 @@
 }
 
 .service-tab-wrap .sldie-text .article + .article {
-  margin-top: 40px;
+  margin-top: 45px;
 }
 
 .service-tab-wrap .sldie-text .btn {
@@ -57,7 +57,7 @@
 .visual-assets-card .visual-assets-type {
   font-size: 14px;
   line-height: 24px;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-weight: 400;
   font-style: italic;
 }
@@ -84,18 +84,18 @@
 .process-flow-list
   .process-flow-item:not(:last-child)
   .process-flow-item-header::after {
-  content: '';
+  content: "";
   position: absolute;
   right: 0;
   top: 50%;
   transform: translateY(-50%);
   width: 60px;
   height: 13px;
-  background: url('../img/light-arrow.png') no-repeat;
+  background: url("../img/light-arrow.png") no-repeat;
 }
 
 .process-flow-list .process-flow-item .process-flow-item-header span {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 24px;
   font-weight: 400;
   margin-left: 20px;
@@ -127,6 +127,22 @@
 
 .process-flow-services .process-flow-services-item-header {
   margin-bottom: 60px;
+}
+
+.services-category-item:last-of-type .process-flow-services-item-header {
+  padding-bottom: 20px;
+}
+
+.process-flow-services .process-flow-services-item-header-mbplus {
+  margin-bottom: 66px;
+}
+
+.process-flow-services .process-flow-services-item-header-mbminus {
+  margin-bottom: -6px;
+}
+
+.process-flow-services .arrow-link-top {
+  top: 5px;
 }
 
 .process-flow-services .process-flow-services-item-header span {

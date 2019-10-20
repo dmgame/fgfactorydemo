@@ -158,6 +158,17 @@ $('[data-toggle="popover"]').on('hidden.bs.popover', function(e) {
   children.forEach(el => (el.style.color = ''));
 });
 
+// contact-us map slider
+
+$('.map-slider').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  dots: false,
+  arrows: false,
+  infinity: true,
+  autoplay: true
+});
+
 // Team slider
 $('[data-team-slider]').slick({
   centerMode: true,

@@ -40,7 +40,7 @@
 }
 
 .base-list--icons.store-icons li:hover i {
-  color: var(--main-gray) !important;
+  color: #00ac6a !important;
 }
 
 .base-list--icons li + li {
@@ -70,7 +70,7 @@
 .base-list--with-active-links a.active,
 .base-list--with-active-links a:hover {
   background-color: var(--main-green);
-  color: #fff;
+  color: #fff !important;
 }
 .base-list--with-active-links a.active .list-count-bage,
 .base-list--with-active-links a:hover .list-count-bage {
