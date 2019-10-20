@@ -1,4 +1,29 @@
-import { initSlider, initSliderNav } from './slickSlider';
+import { initSlider, initSliderNav } from "./slickSlider";
+
+// menu mobile
+
+let menuBtn = document.querySelector(".open-menu");
+let menu = document.querySelector(".header-nav--mobile");
+let menuLink = document.querySelectorAll(".header-nav--mobile a");
+
+if (menuBtn) {
+  menuBtn.addEventListener("click", openMenu);
+
+  function openMenu(event) {
+    menu.classList.toggle("header-active");
+    menuBtn.classList.toggle("open-menu--active");
+  }
+  
+  for (let i = 0; i < menuLink.length; i++) {
+    menuLink[i].addEventListener("click", closeMenu);
+  
+    function closeMenu(event) {
+      event.preventDefault();
+      menu.classList.toggle("header-active");
+      menuBtn.classList.toggle("open-menu--active");
+    }
+  }
+}
 
 // Init carousel
 const slider = $('[data-slick-slider]');

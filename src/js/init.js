@@ -43,6 +43,8 @@ import '../pages-css/contact-us.css';
 import '../pages-css/dedicated.css';
 import '../pages-css/project-pastry.css';
 
+import '../css-media/index-media.css';
+
 import './plugins-init';
 
 console.log('Init plugins');
