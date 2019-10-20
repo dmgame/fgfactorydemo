@@ -6,20 +6,22 @@ let menuBtn = document.querySelector(".open-menu");
 let menu = document.querySelector(".header-nav--mobile");
 let menuLink = document.querySelectorAll(".header-nav--mobile a");
 
-menuBtn.addEventListener("click", openMenu);
+if (menuBtn) {
+  menuBtn.addEventListener("click", openMenu);
 
-function openMenu(event) {
-  menu.classList.toggle("header-active");
-  menuBtn.classList.toggle("open-menu--active");
-}
-
-for (let i = 0; i < menuLink.length; i++) {
-  menuLink[i].addEventListener("click", closeMenu);
-
-  function closeMenu(event) {
-    event.preventDefault();
+  function openMenu(event) {
     menu.classList.toggle("header-active");
     menuBtn.classList.toggle("open-menu--active");
+  }
+  
+  for (let i = 0; i < menuLink.length; i++) {
+    menuLink[i].addEventListener("click", closeMenu);
+  
+    function closeMenu(event) {
+      event.preventDefault();
+      menu.classList.toggle("header-active");
+      menuBtn.classList.toggle("open-menu--active");
+    }
   }
 }
 
@@ -268,5 +270,24 @@ teamCountRangeSliderInit();
   }
  }
 
+// Project timber, video dashboard
+const gameIcons = document.querySelectorAll('[data-video-src]');
+const gamePreviewVideo = document.querySelector('.game-preview-wrap video');
 
-// Video player in block
+function onGameIconClick(e) {
+  const parent = e.target.closest('.character-game-item');
+  const newVideoSrc = parent.dataset.videoSrc;
+
+  gameIcons.forEach(icon => icon.classList.remove('active'));
+  parent.classList.add('active');
+
+  const indexVideoSrc = gamePreviewVideo.src.indexOf('public/video');
+  const oldSrc = gamePreviewVideo.src.slice(indexVideoSrc);
+  if (oldSrc !== newVideoSrc) {
+    gamePreviewVideo.src = newVideoSrc;
+  }
+}
+
+if (gameIcons && gamePreviewVideo) {
+  gameIcons.forEach(icon => icon.addEventListener('click', onGameIconClick));  
+}
