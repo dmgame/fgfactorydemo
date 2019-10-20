@@ -245,21 +245,24 @@ teamCountRangeSliderInit();
   }
  }
 
+// Project timber, video dashboard
+const gameIcons = document.querySelectorAll('[data-video-src]');
+const gamePreviewVideo = document.querySelector('.game-preview-wrap video');
 
-// Paralax on scroll
-// var scale_tween = TweenMax.to('#scale-animation', 1, {
-//   transform: 'scale(.75)',
-//   ease: Linear.easeNone
-// });
+function onGameIconClick(e) {
+  const parent = e.target.closest('.character-game-item');
+  const newVideoSrc = parent.dataset.videoSrc;
 
-// var controller = new ScrollMagic.Controller();
-// var scene = new ScrollMagic.Scene({
-//   triggerElement: '#paralax-target-1',
-// })
-// .setTween(scale_tween);
-// // .setPin("#paralax-target-1")
+  gameIcons.forEach(icon => icon.classList.remove('active'));
+  parent.classList.add('active');
 
-// // Add Scenes to ScrollMagic Controller
-// controller.addScene([
-//   scene,
-// ]);
+  const indexVideoSrc = gamePreviewVideo.src.indexOf('public/video');
+  const oldSrc = gamePreviewVideo.src.slice(indexVideoSrc);
+  if (oldSrc !== newVideoSrc) {
+    gamePreviewVideo.src = newVideoSrc;
+  }
+}
+
+if (gameIcons && gamePreviewVideo) {
+  gameIcons.forEach(icon => icon.addEventListener('click', onGameIconClick));  
+}
