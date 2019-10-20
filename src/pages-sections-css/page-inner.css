@@ -26,6 +26,8 @@
   font-weight: 300;
   line-height: 1.333;
   color: var(--main-black);
+  position: relative;
+  top: 5px;
 }
 
 .web-project-inner .article {

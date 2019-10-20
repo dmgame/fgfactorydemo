@@ -1,3 +1,8 @@
+:root {
+  --btn-bordered-border-color-hover: #0a0b0f;
+
+}
+
 .contact-us-form-container {
   max-width: 1790px;
   margin-left: auto;
@@ -14,7 +19,6 @@
 
 #home .contact-us-form {
   padding-top: 125px;
-  padding-bottom: 125px;
 }
 
 .project-type-part {
@@ -217,6 +221,11 @@ textarea {
   height: 100%;
 }
 
+.fileUpload .btn--bordered:hover {
+border-color:var(--btn-bordered-border-color-hover);
+color: #0a0b0f;
+}
+
 .input-file .input-file-fake {
   max-width: 330px;
   width: 100%;
@@ -266,7 +275,7 @@ textarea {
   font-size: 16px;
   font-weight: bold;
   text-align: center;
-  border: 1px solid var(--main-black);
+  border: 1px solid #d3d3d4;
   border-radius: 5px;
   line-height: 1;
   padding: 11px 10px;
@@ -280,7 +289,7 @@ textarea {
 }
 
 .radio-group-month {
-  margin-bottom: 100px;
+  margin-bottom: 105px;
 }
 
 .radio-group-month .radio-month-item + .radio-month-item {
