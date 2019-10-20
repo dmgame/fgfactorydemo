@@ -73,6 +73,11 @@
     max-width: 450px;
   }
 
+  .call-to-action-content .right-side {
+    width: 100%;
+    margin-top: 80px;
+  }
+
   .call-to-action-wrap {
     padding: 80px;
   }
@@ -465,5 +470,18 @@
 
   .call-to-action-wrap .title-wrap .title {
     line-height: 1.3;
+  }
+
+  .call-to-action-wrap .block-icon {
+    margin-right: 20px;
+    width: 30px;
+  }
+
+  .base-list {
+    font-size: 14px;
+  }
+
+  .base-list--icons.store-icons {
+    font-size: 30px;
   }
 }

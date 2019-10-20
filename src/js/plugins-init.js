@@ -57,7 +57,6 @@ function rangeImageSlider() {
     max: 100,
     step: 0.5,
     slide: function(event, ui) {
-      console.log(ui);
       img.style.backgroundPositionX = `${ui.value}%`;
     },
   });
@@ -66,29 +65,32 @@ function rangeImageSlider() {
   let startPos = 0;
   let naturalImgWidth = naturalImg.naturalWidth;
 
-  img.addEventListener('mousedown', () => (mouseIsPressed = true));
-  document.addEventListener('mouseup', () => {
+  function onMouseDown() {
+    mouseIsPressed = true
+  }
+
+  function onMouseUp() {
     mouseIsPressed = false;
     startPos = 0;
-  });
+  }
 
-  img.addEventListener('mousemove', e => {
+  function onMouseMove(e) {
     if (!mouseIsPressed) {
       return;
     }
 
     if (startPos === 0) {
-      startPos = e.offsetX;
+      startPos = e.offsetX || e.touches[0].screenX;
     }
 
-    let difference = (((e.offsetX - startPos) / naturalImgWidth) * 100) / 29;
+    let difference = ((((e.offsetX || e.touches[0].screenX) - startPos) / naturalImgWidth) * 100) / 29;
     let currentBgPos = parseFloat(img.style.backgroundPositionX) || 0;
     let pos;
-    console.log('startPos', startPos);
-    console.log('difference', difference);
-    console.log('currentBgPos', currentBgPos);
-    console.log('naturalImgWidth', naturalImgWidth);
-    console.log('==========================');
+    // console.log('startPos', startPos);
+    // console.log('difference', difference);
+    // console.log('currentBgPos', currentBgPos);
+    // console.log('naturalImgWidth', naturalImgWidth);
+    // console.log('==========================');
     if (difference < 0) {
       pos = -currentBgPos + difference;
       if (pos < -100) return;
@@ -100,7 +102,14 @@ function rangeImageSlider() {
       control.slider('value', Math.abs(pos));
       img.style.backgroundPositionX = `${Math.abs(pos)}%`;
     }
-  });
+  }
+
+  img.addEventListener('mousedown', onMouseDown);
+  img.addEventListener('touchstart', onMouseDown);
+  document.addEventListener('mouseup', onMouseUp);
+  document.addEventListener('touchend', onMouseUp);
+  img.addEventListener('mousemove', onMouseMove);
+  img.addEventListener('touchmove', onMouseMove);
 }
 // init range image slider
 rangeImageSlider();
@@ -203,11 +212,11 @@ if (window.AOS) {
 (function($){
   $(window).on('load', function(){
     var tempScrollTop, currentScrollTop = 0;
-    var header = $('header');
+    var header = $('.header');
 
     var windowWidth = $(window).width();
     if (windowWidth < 768) {
-        header.addClass("pos-fixed");
+        header.addClass("pos-fixed is-fixed show-header");
         return;
     }
     $(window).on('scroll', function(){

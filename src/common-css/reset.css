@@ -9,6 +9,10 @@ body {
   font: 400 16px/1 'Roboto', sans-serif;
   overflow-x: hidden;
 }
+
+main {
+  overflow: hidden;
+}
 /* font-family: 'Roboto Condensed', sans-serif;
  */
 body.overflowY-hidden {
