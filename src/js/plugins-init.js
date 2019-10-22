@@ -311,3 +311,209 @@ function onGameIconClick(e) {
 if (gameIcons && gamePreviewVideo) {
   gameIcons.forEach(icon => icon.addEventListener('click', onGameIconClick));  
 }
+
+// Map init
+var mapElement = document.getElementById('map');
+
+window.initMap = function initMap() {
+// Basic options for a simple Google Map
+
+    // Get the HTML DOM element that will contain your map
+    // We are using a div with id="map" seen below in the <body>
+
+    if (mapElement) {
+      //----------------- ADD YOUR SETTINGS HERE -----------------//
+      // Add your coordinates. How to know coordinates: https://support.google.com/maps/answer/18539?hl=en
+      var myLatlng = new google.maps.LatLng(49.985368, 36.236165);
+      // Add your company name and some text about company
+      var mapOptions = {
+
+          // How zoomed in you want the map to start at (always required)
+          zoom: 16,
+
+          //scroll zoom false
+          scrollwheel: false,
+          clickable: false,
+          disableDefaultUI: true,
+          zoomControl: false,
+          //on mobile
+          draggable: !("ontouchend" in document),
+          // The latitude and longitude to center the map (always required)
+          center: new google.maps.LatLng(49.986369, 36.230165),
+
+          // How you would like to style the map.
+          // This is where you would paste any style found on Snazzy Maps.
+          styles: [
+            {elementType: 'geometry', stylers: [{color: '#1e1e1e'}]},
+            {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
+            {elementType: 'labels.text.fill', stylers: [{color: '#746855'}]},
+            {
+              "featureType": "poi.sports_complex",
+              "stylers": [
+                {
+                  "visibility": "off"
+                }
+              ]
+            },
+            {
+              "featureType": "poi.attraction",
+              "stylers": [
+                {
+                  "visibility": "off"
+                }
+              ]
+            },
+            {
+              "featureType": "poi.medical",
+              "stylers": [
+                {
+                  "visibility": "off"
+                }
+              ]
+            },
+            {
+              "featureType": "poi.place_of_worship",
+              "stylers": [
+                {
+                  "visibility": "off"
+                }
+              ]
+            },
+            {
+              "featureType": "poi.government",
+              "stylers": [
+                {
+                  "visibility": "off"
+                }
+              ]
+            },
+            {
+              "featureType": "poi.school",
+              "stylers": [
+                {
+                  "visibility": "off"
+                }
+              ]
+            },
+            {
+              "featureType": "poi.business",
+              "stylers": [
+                {
+                  "visibility": "off"
+                }
+              ]
+            },
+            
+            {
+              "featureType": "transit.station",
+              "stylers": [
+                {
+                  "visibility": "off"
+                }
+              ]
+            },
+            {
+              featureType: 'administrative.locality',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#c7c8c8'}]
+            },
+            {
+              featureType: 'poi',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#c7c8c8'}]
+            },
+            {
+              featureType: 'poi.park',
+              elementType: 'geometry',
+              stylers: [{color: '#152123'}]
+            },
+            {
+              featureType: 'poi.park',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#7b7b7b'}]
+            },
+            {
+              featureType: 'road',
+              elementType: 'geometry',
+              stylers: [{color: '#121212'}]
+            },
+            {
+              featureType: 'road',
+              elementType: 'geometry.stroke',
+              stylers: [{color: '#121212'}]
+            },
+            {
+              featureType: 'road',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#7b7b7b'}, {"weight": 0}]
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'geometry',
+              stylers: [{color: '#121212'}]
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'geometry.stroke',
+              stylers: [{color: '#121212'}]
+            },
+            {
+              featureType: 'transit',
+              elementType: 'geometry',
+              stylers: [{color: '#121212'}]
+            },
+            {
+              featureType: 'transit.station',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#c7c8c8'}]
+            },
+            {
+              featureType: 'water',
+              elementType: 'geometry',
+              stylers: [{color: '#2a2a2b'}]
+            },
+            {
+              featureType: 'water',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#515c6d'}]
+            },
+            {
+              featureType: 'water',
+              elementType: 'labels.text.stroke',
+              stylers: [{color: '#17263c'}]
+            }
+          ]
+      };
+      // Create the Google Map using out element and options defined above
+      var map = new google.maps.Map(mapElement, mapOptions);
+      console.log(map)
+      if(window.innerWidth > 1199)
+          map.panBy(200, 0);
+
+      // Image of toogle
+      var image = 'public/img/map-marker.png';
+      var marker = new google.maps.Marker({
+          position: myLatlng,
+          map: map,
+          draggable: false,
+          icon: image,
+      });
+      const mapContainer = document.querySelector('.map-container');
+      
+      function onFirstMapClick() {
+        mapContainer.style.opacity = 0;
+        mapContainer.style.zIndex = -1;
+        map.setOptions({zoomControl: true});
+      }
+
+      function closeMapControls(e) {
+        mapContainer.style.opacity = 1;
+        mapContainer.style.zIndex = 1;
+        map.setOptions({zoomControl: false});
+      }
+
+      google.maps.event.addListener(map, "click", closeMapControls);
+      mapContainer.addEventListener('click', onFirstMapClick);
+	}
+
+}
