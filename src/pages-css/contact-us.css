@@ -45,7 +45,7 @@
 }
 
 .on-map-review .review-text {
-  font-family: 'Butler-Medium', sans-serif;
+  font-family: "Butler-Medium", sans-serif;
   font-size: 36px;
   letter-spacing: 0.9px;
   max-width: 540px;
@@ -59,7 +59,7 @@
   color: #fff;
   font-size: 14px;
   line-height: 24px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .left-side {
@@ -68,4 +68,8 @@
 
 .left-side .map-slider.slick-slider {
   max-width: 100%;
+}
+
+#map {
+  height: 478px;
 }
