@@ -208,3 +208,7 @@
 .service-home-tabs .carousel-wrap .left-side {
   max-width: 435px;
 }
+
+.tabs-without-icons .slick-list {
+  padding: 10px;
+}

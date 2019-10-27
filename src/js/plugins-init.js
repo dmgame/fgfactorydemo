@@ -517,3 +517,56 @@ window.initMap = function initMap() {
 	}
 
 }
+
+// Partners images carousel
+// home-inner-partners data-slick-slider
+$('.home-inner-partners').slick({
+  dots: false,
+  infinite: true,
+  arrows: false,
+  speed: 300,
+  slidesToShow: 10,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1199,
+      settings: {
+        slidesToShow: 5,
+        slidesToScroll: 5,
+      }
+    },
+    {
+      breakpoint: 991,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3
+      }
+    },
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+
+// Update option on carousel nav
+$('.service-home-tabs .carousel-nav, .service-tab-wrap .carousel-nav').slick({
+  dots: false,
+  infinite: false,
+  arrows: false,
+  responsive: [
+    {
+      breakpoint: 1199,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
+    },
+  ]
+})

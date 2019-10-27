@@ -126,7 +126,10 @@
     padding: 35px 24px;
     display: none;
   }
-
+  .bg-transparent .open-menu span,
+  .bg-transparent .open-menu.open-menu--active .open-menu--rotate::after {
+    background-color: #fff;
+  }
   .header-nav--mobile .copyright {
     text-align: left;
   }
@@ -256,7 +259,7 @@
     position: relative;
   }
 
-  .article--medium::after {
+  /* .article--medium::after {
     content: "";
     position: absolute;
     bottom: -50px;
@@ -264,7 +267,7 @@
     right: -24px;
     height: 1px;
     background-color: #38393d;
-  }
+  } */
 
   .why-us .title--section__big {
     margin: 0 15px 45px !important;

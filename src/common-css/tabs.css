@@ -18,6 +18,8 @@
   border-bottom: 5px solid transparent;
   opacity: 0.4;
   height: 100%;
+  width: 395px !important;
+  margin: auto;
 }
 
 .nav-tabs .nav-item .nav-link.active {
@@ -31,7 +33,7 @@
 }
 
 .nav-tabs .nav-item .nav-link span {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 24px;
   font-weight: 400;
   width: 100px;
@@ -56,6 +58,7 @@
   padding: 25px 65px;
   border: 1px solid transparent;
   border-radius: 5px;
+  width: 265px !important;
 }
 
 .nav-tabs.tabs-without-icons .nav-item .nav-link.active {
@@ -95,7 +98,7 @@
 }
 
 .contact-us-form-tabs .nav-tabs .nav-item .nav-link span {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: bold;
   line-height: 1;
