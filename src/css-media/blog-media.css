@@ -1,0 +1,62 @@
+@media screen and (max-width: 1629px) {
+  .other-articles .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .other-articles .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .grid-column-2 {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+  }
+  .grid-column-2 .image-card img {
+    width: 100%;
+  }
+  .other-articles .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .blog-article-part + .blog-article-part {
+    margin-top: 100px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .blog-inner {
+    padding: 100px 0 65px 0;
+  }
+  .grid-column-2 .image-card img {
+    height: 100%;
+  }
+  .guide-and-tips .text-card {
+    padding: 20px;
+  }
+  .guide-and-tips {
+    padding-bottom: 120px;
+  }
+  .other-articles {
+    padding: 30px 10px;
+  }
+  .blog-article-inner {
+    padding-top: 70px;
+    height: 700px;
+  }
+  .blog-article-content {
+    padding-top: 100px;
+  }
+  .article-image.w-margin {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  .article-image + .article,
+  .article-image + .centered-text {
+    margin-top: 60px;
+  }
+  .blog-article-part .article {
+    margin-bottom: 60px;
+  }
+}

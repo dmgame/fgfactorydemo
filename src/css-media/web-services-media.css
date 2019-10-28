@@ -137,6 +137,9 @@
     margin-bottom: 30px;
     padding: 10px;
   }
+  .technology-stack-items .technology-stack-item {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (max-width: 991px) {

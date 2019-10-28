@@ -20,6 +20,10 @@
   margin-right: -10px;
 }
 
+.guide-and-tips .text-card {
+  margin: 0 10px;
+}
+
 .other-articles {
   padding: 30px 40px;
 }

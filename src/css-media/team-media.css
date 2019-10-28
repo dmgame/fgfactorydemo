@@ -1,0 +1,37 @@
+@media screen and (max-width: 1629px) {
+  .about-team {
+    padding: 100px 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .team-page-inner {
+    padding-top: 120px;
+    padding-bottom: 80px;
+  }
+  .team-page-inner .title {
+    margin-bottom: 60px;
+  }
+  .vacancy-item {
+    padding: 50px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .team-page-inner .btn {
+    padding: 16px 20px;
+  }
+  .about-team {
+    padding: 70px 0;
+  }
+  .vacancy-item {
+    padding: 20px;
+  }
+  .vacancy-item .vacancy-name {
+    font-size: 20px;
+  }
+  .vacancy-item .arrow-link {
+    padding-left: 20px;
+    font-size: 16px;
+  }
+}

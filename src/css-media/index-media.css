@@ -39,6 +39,12 @@
   .image-card--wide {
     height: var(--card-small-height);
   }
+  .play-btn {
+    width: 150px;
+  }
+  .home-inner .title {
+    max-width: 480px;
+  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -84,6 +90,12 @@
 
   .home-inner-partners img + .home-inner-partners img {
     padding-left: 10px;
+  }
+  .home-inner-container {
+    display: none !important;
+  }
+  .home-inner {
+    height: 450px;
   }
 }
 
@@ -346,6 +358,7 @@
 
   .next-page .title {
     margin-bottom: 0;
+    text-align: center;
   }
 
   .call-to-action-section {
@@ -382,6 +395,12 @@
     margin: 0 auto !important;
     text-align: center;
   }
+  .home-inner {
+    height: 400px;
+  }
+  .video-modal .modal-dialog .modal-content {
+    height: 400px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -402,7 +421,7 @@
 
   div.home-inner {
     height: 248px;
-    margin-top: 125px;
+    margin-top: 95px;
     margin-left: 24px;
     margin-right: 24px;
   }
@@ -434,6 +453,12 @@
   .works-container .image-card--big,
   .works-container .image-card--wide {
     height: 180px;
+  }
+  .play-btn {
+    width: 100px;
+  }
+  .image-card a {
+    width: 100%;
   }
 }
 
@@ -486,5 +511,13 @@
 
   .base-list--icons.store-icons {
     font-size: 30px;
+  }
+  div.home-inner {
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 175px;
+  }
+  .video-modal .modal-dialog .modal-content {
+    height: 300px;
   }
 }

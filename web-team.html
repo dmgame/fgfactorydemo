@@ -17,17 +17,118 @@
     <title>Team</title>
   </head>
   <body>
-    <header class="header" data-aos="fade-down">
-      <div class="container d-flex align-items-center">
+    <header class="header">
+      <div class="container d-flex align-items-center" data-aos="fade-down">
         <a href="#" class="logo">
-          <img src="public/img/logo.png" alt="" />
+          <img src="public/img/logo.png" class="logo-img" alt="" />
+          <img src="public/img/logo-mob.png" class="logo-img--mobile" alt="" />
         </a>
+
         <nav class="header-nav ml-auto d-flex align-items-center">
           <a href="">WORK</a>
           <a href="">SERVICES</a>
           <a href="" class="active">TEAM</a>
           <a href="">BLOG</a>
           <a href="">CONTACT</a>
+        </nav>
+
+        <div class="open-menu">
+          <span></span>
+          <span class="open-menu--rotate"></span>
+          <span></span>
+        </div>
+
+        <nav class="header-nav--mobile">
+          <div class="list-wrap">
+            <h3 class="list-title">Main</h3>
+            <ul class="base-list">
+              <li><a href="">Work</a></li>
+              <li><a href="">Services</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+          </div>
+          <div class="list-wrap">
+            <h3 class="list-title">Work models</h3>
+            <ul class="base-list">
+              <li><a href="">Fixed price project</a></li>
+              <li><a href="">Dedicated team</a></li>
+              <li><a href="">Assets and games for sale</a></li>
+            </ul>
+          </div>
+          <div class="list-wrap">
+            <h3 class="list-title">Company</h3>
+            <ul class="base-list">
+              <li><a href="">Team</a></li>
+              <li><a href="">Careers</a></li>
+              <li><a href="">Blog</a></li>
+            </ul>
+          </div>
+          <div class="list-wrap">
+            <h3 class="list-title">Latest articles</h3>
+            <ul class="base-list base-list--light">
+              <li>
+                <a href="" class="color-gray text-underline"
+                  >Meeting at White Nights Berlin 2019</a
+                >
+              </li>
+              <li>
+                <a href="" class="color-gray text-underline"
+                  >How to design a 3d character from scratch</a
+                >
+              </li>
+              <li>
+                <a href="" class="color-gray text-underline"
+                  >Top 15 game features besides the core gameplay</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="contact-ul-list">
+            <h3 class="list-title">Contacts</h3>
+            <ul class="base-list">
+              <li>Ukraine</li>
+              <li>Kharkiv, 12 Podilskyi Ln</li>
+              <li>
+                <a href="tel:+38 063 288 00 09">+38 063 288 00 09</a>
+              </li>
+              <li>
+                <a
+                  href="mailto:info@fgfactory.com"
+                  class="color-green font-bold"
+                  >info@fgfactory.com</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="follow-us-list">
+            <h3 class="list-title">Follow us</h3>
+            <ul class="base-list base-list--icons">
+              <li>
+                <a href=""><i class="fab fa-behance"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fab fa-dribbble"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fab fa-linkedin-in"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fab fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fab fa-youtube"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="copyright">
+            <span>All Rights Reserved. Fgfactory LTD © 2010 - 2019</span>
+          </div>
         </nav>
       </div>
     </header>
@@ -50,25 +151,28 @@
       </div>
       <!-- /.team-inner-img -->
       <div class="about-team">
-        <div class="centered-text">
-          <div class="title title--section title__gray" data-aos="fade-up">
-            Meet the team
+        <div class="container">
+          <div class="centered-text">
+            <div class="title title--section title__gray" data-aos="fade-up">
+              Meet the team
+            </div>
+            <p class="article article--medium" data-aos="fade-up">
+              Fgfactory features a team of experienced artists, creative
+              designers, developers, testers, technical managers and game
+              producers. We are the mixed potion of creative, smart and ambitious
+              people who work together to deliver great products.
+            </p>
+            <p class="article article--medium" data-aos="fade-up">
+              We pay great attention to both design and internal implementation of
+              our solutions. We manage the process using a smart mix of
+              methodologies to create a zero-fat productive development process
+              and to deliver high quality products. Using Unity development
+              technologies we create amazing game products for all platforms that
+              it supports and covers all customer targets and requirements.
+            </p>
           </div>
-          <p class="article article--medium" data-aos="fade-up">
-            Fgfactory features a team of experienced artists, creative
-            designers, developers, testers, technical managers and game
-            producers. We are the mixed potion of creative, smart and ambitious
-            people who work together to deliver great products.
-          </p>
-          <p class="article article--medium" data-aos="fade-up">
-            We pay great attention to both design and internal implementation of
-            our solutions. We manage the process using a smart mix of
-            methodologies to create a zero-fat productive development process
-            and to deliver high quality products. Using Unity development
-            technologies we create amazing game products for all platforms that
-            it supports and covers all customer targets and requirements.
-          </p>
         </div>
+        <!-- /.container -->
       </div>
       <!-- /.about-team -->
       <div class="team-carousel" data-aos="fade-up">
@@ -194,167 +298,170 @@
           </div>
           <!-- /.slide-item -->
           <div class="team-slide-item">
-              <div class="team-slider-item">
-                <img src="public/img/team-unit-1.png" />
-              </div>
-              <div class="team-slider-item">
-                <img src="public/img/team-unit-2.png" />
-              </div>
-              <div class="team-slider-item">
-                <img src="public/img/team-unit-3.png" />
-              </div>
-              <div class="team-slider-item">
-                <img src="public/img/team-unit-4.png" />
-              </div>
+            <div class="team-slider-item">
+              <img src="public/img/team-unit-1.png" />
             </div>
-            <!-- /.slide-item -->
-            <div class="team-slide-item">
-              <div class="team-slider-item">
-                <img src="public/img/team-unit-5.png" />
-              </div>
-              <div class="team-slider-item">
-                <img src="public/img/team-unit-6.png" />
-              </div>
-              <div class="team-slider-item">
-                <img src="public/img/team-unit-7.png" />
-              </div>
-              <div class="team-slider-item">
-                <img src="public/img/team-unit-8.png" />
-              </div>
+            <div class="team-slider-item">
+              <img src="public/img/team-unit-2.png" />
             </div>
-            <!-- /.slide-item -->
-            <div class="team-slide-item">
-              <div class="team-slider-item">
-                <img src="public/img/team-unit-9.png" />
-              </div>
-              <div class="team-slider-item">
-                <img src="public/img/team-unit-10.png" />
-              </div>
-              <div class="team-slider-item">
-                <img src="public/img/team-unit-11.png" />
-              </div>
-              <div class="team-slider-item">
-                <img src="public/img/team-unit-12.png" />
-              </div>
+            <div class="team-slider-item">
+              <img src="public/img/team-unit-3.png" />
             </div>
-            <!-- /.slide-item -->
-            <div class="team-slide-item">
-              <div class="team-slider-item">
-                <img src="public/img/team-unit-13.png" />
-              </div>
-              <div class="team-slider-item">
-                <img src="public/img/team-unit-14.png" />
-              </div>
-              <div class="team-slider-item">
-                <img src="public/img/team-unit-15.png" />
-              </div>
-              <div class="team-slider-item">
-                <img src="public/img/team-unit-16.png" />
-              </div>
+            <div class="team-slider-item">
+              <img src="public/img/team-unit-4.png" />
             </div>
-            <!-- /.slide-item -->
-            <div class="team-slide-item">
-              <div class="team-slider-item">
-                <img src="public/img/team-unit-17.png" />
-              </div>
-              <div class="team-slider-item">
-                <img src="public/img/team-unit-18.png" />
-              </div>
-              <div class="team-slider-item">
-                <img src="public/img/team-unit-19.png" />
-              </div>
-              <div class="team-slider-item">
-                <img src="public/img/team-unit-20.png" />
-              </div>
+          </div>
+          <!-- /.slide-item -->
+          <div class="team-slide-item">
+            <div class="team-slider-item">
+              <img src="public/img/team-unit-5.png" />
             </div>
-            <!-- /.slide-item -->
-            <div class="team-slide-item">
-              <div class="team-slider-item">
-                <img src="public/img/team-unit-1.png" />
-              </div>
-              <div class="team-slider-item">
-                <img src="public/img/team-unit-2.png" />
-              </div>
-              <div class="team-slider-item">
-                <img src="public/img/team-unit-3.png" />
-              </div>
-              <div class="team-slider-item">
-                <img src="public/img/team-unit-4.png" />
-              </div>
+            <div class="team-slider-item">
+              <img src="public/img/team-unit-6.png" />
             </div>
-            <!-- /.slide-item -->
-            <div class="team-slide-item">
-              <div class="team-slider-item">
-                <img src="public/img/team-unit-5.png" />
-              </div>
-              <div class="team-slider-item">
-                <img src="public/img/team-unit-6.png" />
-              </div>
-              <div class="team-slider-item">
-                <img src="public/img/team-unit-7.png" />
-              </div>
-              <div class="team-slider-item">
-                <img src="public/img/team-unit-8.png" />
-              </div>
+            <div class="team-slider-item">
+              <img src="public/img/team-unit-7.png" />
             </div>
-            <!-- /.slide-item -->
-            <div class="team-slide-item">
-              <div class="team-slider-item">
-                <img src="public/img/team-unit-9.png" />
-              </div>
-              <div class="team-slider-item">
-                <img src="public/img/team-unit-10.png" />
-              </div>
-              <div class="team-slider-item">
-                <img src="public/img/team-unit-11.png" />
-              </div>
-              <div class="team-slider-item">
-                <img src="public/img/team-unit-12.png" />
-              </div>
+            <div class="team-slider-item">
+              <img src="public/img/team-unit-8.png" />
             </div>
-            <!-- /.slide-item -->
+          </div>
+          <!-- /.slide-item -->
+          <div class="team-slide-item">
+            <div class="team-slider-item">
+              <img src="public/img/team-unit-9.png" />
+            </div>
+            <div class="team-slider-item">
+              <img src="public/img/team-unit-10.png" />
+            </div>
+            <div class="team-slider-item">
+              <img src="public/img/team-unit-11.png" />
+            </div>
+            <div class="team-slider-item">
+              <img src="public/img/team-unit-12.png" />
+            </div>
+          </div>
+          <!-- /.slide-item -->
+          <div class="team-slide-item">
+            <div class="team-slider-item">
+              <img src="public/img/team-unit-13.png" />
+            </div>
+            <div class="team-slider-item">
+              <img src="public/img/team-unit-14.png" />
+            </div>
+            <div class="team-slider-item">
+              <img src="public/img/team-unit-15.png" />
+            </div>
+            <div class="team-slider-item">
+              <img src="public/img/team-unit-16.png" />
+            </div>
+          </div>
+          <!-- /.slide-item -->
+          <div class="team-slide-item">
+            <div class="team-slider-item">
+              <img src="public/img/team-unit-17.png" />
+            </div>
+            <div class="team-slider-item">
+              <img src="public/img/team-unit-18.png" />
+            </div>
+            <div class="team-slider-item">
+              <img src="public/img/team-unit-19.png" />
+            </div>
+            <div class="team-slider-item">
+              <img src="public/img/team-unit-20.png" />
+            </div>
+          </div>
+          <!-- /.slide-item -->
+          <div class="team-slide-item">
+            <div class="team-slider-item">
+              <img src="public/img/team-unit-1.png" />
+            </div>
+            <div class="team-slider-item">
+              <img src="public/img/team-unit-2.png" />
+            </div>
+            <div class="team-slider-item">
+              <img src="public/img/team-unit-3.png" />
+            </div>
+            <div class="team-slider-item">
+              <img src="public/img/team-unit-4.png" />
+            </div>
+          </div>
+          <!-- /.slide-item -->
+          <div class="team-slide-item">
+            <div class="team-slider-item">
+              <img src="public/img/team-unit-5.png" />
+            </div>
+            <div class="team-slider-item">
+              <img src="public/img/team-unit-6.png" />
+            </div>
+            <div class="team-slider-item">
+              <img src="public/img/team-unit-7.png" />
+            </div>
+            <div class="team-slider-item">
+              <img src="public/img/team-unit-8.png" />
+            </div>
+          </div>
+          <!-- /.slide-item -->
+          <div class="team-slide-item">
+            <div class="team-slider-item">
+              <img src="public/img/team-unit-9.png" />
+            </div>
+            <div class="team-slider-item">
+              <img src="public/img/team-unit-10.png" />
+            </div>
+            <div class="team-slider-item">
+              <img src="public/img/team-unit-11.png" />
+            </div>
+            <div class="team-slider-item">
+              <img src="public/img/team-unit-12.png" />
+            </div>
+          </div>
+          <!-- /.slide-item -->
         </div>
       </div>
       <div class="about-team">
-        <div class="centered-text">
-          <p class="article article--medium" data-aos="fade-up">
-            Today we are a software development agency that specializes in
-            custom game development for Mobile, Apple TV, Mac, Windows and VR
-            and art production for mobile and video games with the development
-            center in Kharkiv, Ukraine.
-          </p>
-          <p class="article article--medium" data-aos="fade-up">
-            We always welcome new people in our team: cool developers and game
-            designers, artists and managers. We have fun and a lot of
-            interesting work surrounded by truly talented people. Take a look at
-            our current opening positions.
-          </p>
-          <div class="vacancy-list" id="vacancy-list">
-            <div
-              class="vacancy-item d-flex align-items-center"
-              data-aos="fade-up"
-            >
-              <span class="vacancy-name">
-                2d Artist
-              </span>
-              <!-- /.vacancy-name -->
-              <a href="" class="arrow-link ml-auto color-black">Apply now</a>
+        <div class="container">
+          <div class="centered-text">
+            <p class="article article--medium" data-aos="fade-up">
+              Today we are a software development agency that specializes in
+              custom game development for Mobile, Apple TV, Mac, Windows and VR
+              and art production for mobile and video games with the development
+              center in Kharkiv, Ukraine.
+            </p>
+            <p class="article article--medium" data-aos="fade-up">
+              We always welcome new people in our team: cool developers and game
+              designers, artists and managers. We have fun and a lot of
+              interesting work surrounded by truly talented people. Take a look at
+              our current opening positions.
+            </p>
+            <div class="vacancy-list" id="vacancy-list">
+              <div
+                class="vacancy-item d-flex align-items-center"
+                data-aos="fade-up"
+              >
+                <span class="vacancy-name">
+                  2d Artist
+                </span>
+                <!-- /.vacancy-name -->
+                <a href="" class="arrow-link ml-auto color-black">Apply now</a>
+              </div>
+              <!-- /.vacancy-item -->
+              <div
+                class="vacancy-item d-flex align-items-center"
+                data-aos="fade-up"
+              >
+                <span class="vacancy-name">
+                  Unity Developer
+                </span>
+                <!-- /.vacancy-name -->
+                <a href="" class="arrow-link ml-auto color-black">Apply now</a>
+              </div>
+              <!-- /.vacancy-item -->
             </div>
-            <!-- /.vacancy-item -->
-            <div
-              class="vacancy-item d-flex align-items-center"
-              data-aos="fade-up"
-            >
-              <span class="vacancy-name">
-                Unity Developer
-              </span>
-              <!-- /.vacancy-name -->
-              <a href="" class="arrow-link ml-auto color-black">Apply now</a>
-            </div>
-            <!-- /.vacancy-item -->
+            <!-- /.vacancy-list -->
           </div>
-          <!-- /.vacancy-list -->
         </div>
+        <!-- /.container -->
       </div>
       <div class="call-to-action-section" data-aos="fade-up">
         <div class="container-fluid">
@@ -369,7 +476,7 @@
                 Let's build something amazing together.
               </h3>
             </div>
-            <div class="call-to-action-content d-flex">
+            <div class="call-to-action-content d-flex flex-wrap">
               <div class="left-side">
                 <div class="article article--small">
                   Think we might be the right friends for your next adventure?
