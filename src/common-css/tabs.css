@@ -80,21 +80,22 @@
 
 .contact-us-form-tabs .nav-tabs .nav-item .nav-link {
   padding: 10px;
-  width: 265px;
+  width: 265px !important;
   height: 101px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #d3d3d4;
+  border: 1px solid rgba(211, 211, 212, 0.4);
+  border-bottom-color: var(--main-green);
   background-color: #fff;
   border-radius: 5px 5px 0 0;
-  border-bottom: none;
+  opacity: 1;
 }
 
 .contact-us-form-tabs .nav-tabs .nav-item .nav-link:hover {
-  border: 1px solid #0a0b0f;
-  color: #0a0b0f;
-  border-bottom: none;
+  opacity: 1;
+  /* border: 1px solid #0a0b0f;
+  border-bottom: none; */
 }
 
 .contact-us-form-tabs .nav-tabs .nav-item .nav-link span {
@@ -102,10 +103,18 @@
   font-size: 18px;
   font-weight: bold;
   line-height: 1;
+  opacity: 0.4;
+}
+
+.contact-us-form-tabs .nav-tabs .nav-item .nav-link:hover span,
+.contact-us-form-tabs .nav-tabs .nav-item .nav-link.active span {
+  color: #0a0b0f;
+  opacity: 1;
 }
 
 .contact-us-form-tabs .nav-tabs .nav-item .nav-link.active {
   border-color: var(--main-green);
+  border-bottom-color: #fff;
 }
 
 .contact-us-form-tabs .nav-tabs .nav-item {
