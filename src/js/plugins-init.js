@@ -12,16 +12,7 @@ if (menuBtn) {
   function openMenu(event) {
     menu.classList.toggle("header-active");
     menuBtn.classList.toggle("open-menu--active");
-  }
-  
-  for (let i = 0; i < menuLink.length; i++) {
-    menuLink[i].addEventListener("click", closeMenu);
-  
-    function closeMenu(event) {
-      event.preventDefault();
-      menu.classList.toggle("header-active");
-      menuBtn.classList.toggle("open-menu--active");
-    }
+    document.body.style.overflowY = menu.classList.contains('header-active') ? 'hidden' : 'auto';
   }
 }
 

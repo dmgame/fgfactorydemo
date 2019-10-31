@@ -3879,7 +3879,17 @@ section {
 
 .image-card:hover .arrow-link::before,
 .arrow-link:hover::before {
-  animation: moveLeft 0.2s ease-in alternate 4;
+  -webkit-animation: moveLeft 0.2s ease-in alternate 4;
+          animation: moveLeft 0.2s ease-in alternate 4;
+}
+
+@-webkit-keyframes moveLeft {
+  0% {
+    transform: translateY(-50%) translateX(0);
+  }
+  100% {
+    transform: translateY(-50%) translateX(5px);
+  }
 }
 
 @keyframes moveLeft {
@@ -4041,7 +4051,8 @@ header.is-fixed.show-header {
 }
 
 .nav-down a.logo.background-white img {
-  filter: brightness(0);
+  -webkit-filter: brightness(0);
+          filter: brightness(0);
 }
 
 .base-list {
@@ -4865,6 +4876,7 @@ header.is-fixed.show-header {
   height: 700px;
   overflow: hidden;
   background: url(../../img/web-project-pastry-range-img.png) no-repeat;
+  cursor: -webkit-grab;
   cursor: grab;
 }
 
@@ -5805,7 +5817,8 @@ color: #0a0b0f;
 
 .visual-assets .grid-visual-assets {
   grid-template-columns: repeat(4, minmax(380px, 1fr));
-  column-gap: 20px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
 }
 
 .visual-assets-card .visual-assets-desc {
