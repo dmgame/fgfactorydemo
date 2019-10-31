@@ -3879,17 +3879,7 @@ section {
 
 .image-card:hover .arrow-link::before,
 .arrow-link:hover::before {
-  -webkit-animation: moveLeft 0.2s ease-in alternate 4;
-          animation: moveLeft 0.2s ease-in alternate 4;
-}
-
-@-webkit-keyframes moveLeft {
-  0% {
-    transform: translateY(-50%) translateX(0);
-  }
-  100% {
-    transform: translateY(-50%) translateX(5px);
-  }
+  animation: moveLeft 0.2s ease-in alternate 4;
 }
 
 @keyframes moveLeft {
@@ -4051,8 +4041,7 @@ header.is-fixed.show-header {
 }
 
 .nav-down a.logo.background-white img {
-  -webkit-filter: brightness(0);
-          filter: brightness(0);
+  filter: brightness(0);
 }
 
 .base-list {
@@ -4243,19 +4232,19 @@ header.is-fixed.show-header {
   margin-top: 55px;
 }
 
-[data-slick-slider] .slide {
+.slick-slider .slide {
   padding: 0 10px;
 }
 
-[data-slick-slider] .slick-dots {
+.slick-slider .slick-dots {
   bottom: -125px;
 }
 
-[data-slick-slider].service-fade-carousel .slick-dots {
+.slick-slider.service-fade-carousel .slick-dots {
   bottom: -45px;
 }
 
-[data-slick-slider] .slick-dots li button {
+.slick-slider .slick-dots li button {
   width: 10px;
   height: 10px;
   border: 1px solid var(--main-green);
@@ -4264,11 +4253,11 @@ header.is-fixed.show-header {
   background-color: transparent;
 }
 
-[data-slick-slider] .slick-dots li.slick-active button {
+.slick-slider .slick-dots li.slick-active button {
   background-color: var(--main-green);
 }
 
-[data-slick-slider] .slick-dots li button::before {
+.slick-slider .slick-dots li button::before {
   display: none;
 }
 
@@ -4876,7 +4865,6 @@ header.is-fixed.show-header {
   height: 700px;
   overflow: hidden;
   background: url(../../img/web-project-pastry-range-img.png) no-repeat;
-  cursor: -webkit-grab;
   cursor: grab;
 }
 
@@ -5817,8 +5805,7 @@ color: #0a0b0f;
 
 .visual-assets .grid-visual-assets {
   grid-template-columns: repeat(4, minmax(380px, 1fr));
-  -moz-column-gap: 20px;
-       column-gap: 20px;
+  column-gap: 20px;
 }
 
 .visual-assets-card .visual-assets-desc {
@@ -6830,6 +6817,9 @@ color: #0a0b0f;
   .video-modal .modal-dialog .modal-content {
     height: 400px;
   }
+  .image-card a {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -6885,9 +6875,6 @@ color: #0a0b0f;
   }
   .play-btn {
     width: 100px;
-  }
-  .image-card a {
-    width: 100%;
   }
 }
 
@@ -6948,6 +6935,9 @@ color: #0a0b0f;
   }
   .video-modal .modal-dialog .modal-content {
     height: 300px;
+  }
+  .title--section {
+    margin-bottom: 20px;
   }
 }
 
@@ -7675,6 +7665,95 @@ color: #0a0b0f;
   }
   .map-wrapper img {
     transform: translateX(-32%);
+  }
+}
+
+@media screen and (max-width: 1629px) {
+  .works-menu-list .list-wrap + .list-wrap {
+    margin-left: 50px;
+  }
+  .work-main-preview .work-main-preview-image {
+    padding-left: 100px;
+  }
+  .work-main-preview .phone-preview {
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .works-menu-list .list-wrap + .list-wrap {
+    margin-left: 25px;
+  }
+  .work-main-preview .work-main-preview-image {
+    height: 650px;
+    padding-left: 60px;
+  }
+  .work-main-preview .phone-preview {
+    top: -70px;
+    height: 800px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .works-container {
+    margin-bottom: 50px;
+  }
+  .web-work-inner .container {
+    flex-wrap: wrap;
+  }
+  .works-menu-list {
+    margin-left: 0 !important;
+    margin-top: 30px;
+  }
+  .works-menu-carusel-mobile {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .works-menu-carusel-mobile.slick-slider .slick-dots {
+    bottom: -60px;
+  }
+  .web-work-inner {
+    padding: 100px 0 75px 0;
+  }
+  .work-main-preview .phone-preview {
+    display: none;
+  }
+  .work-main-preview .work-main-preview-image {
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .works-container .d-grid.grid-small-images {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .work-main-preview-text .article {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .works-container .d-grid.grid-small-images {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .works-container .title-wrap {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .works-container {
+    padding-top: 60px;
+  }
+  .works-container .image-card img {
+    height: 100%;
+  }
+  .works-container .d-grid.grid-small-images {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .work-main-preview .work-main-preview-image {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 

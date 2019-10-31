@@ -401,6 +401,9 @@
   .video-modal .modal-dialog .modal-content {
     height: 400px;
   }
+  .image-card a {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -456,9 +459,6 @@
   }
   .play-btn {
     width: 100px;
-  }
-  .image-card a {
-    width: 100%;
   }
 }
 
@@ -519,5 +519,8 @@
   }
   .video-modal .modal-dialog .modal-content {
     height: 300px;
+  }
+  .title--section {
+    margin-bottom: 20px;
   }
 }

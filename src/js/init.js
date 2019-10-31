@@ -49,6 +49,7 @@ import '../css-media/web-services-media.css';
 import '../css-media/team-media.css';
 import '../css-media/blog-media.css';
 import '../css-media/contactus-media.css';
+import '../css-media/work-media.css';
 
 import './plugins-init';
 
