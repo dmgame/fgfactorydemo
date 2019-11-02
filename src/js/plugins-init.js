@@ -1,4 +1,6 @@
 import { initSlider, initSliderNav } from "./slickSlider";
+import { validate } from './validate';
+import { showInputError, removeInputError } from './form';
 
 // menu mobile
 let menuBtn = document.querySelector(".open-menu");
@@ -461,4 +463,32 @@ $('.works-menu-carusel-mobile').slick({
       }
     }
   ]
-})
+});
+
+// Form validation
+const form = document.querySelector('.contact-us-form form');
+const [...inputs] = document.querySelectorAll('[data-required]');
+
+if (form && inputs.length) {
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    onSubmit();
+  });
+  
+  inputs.forEach(el => el.addEventListener('focus', () => removeInputError(el)));
+  
+  // Handlers
+  function onSubmit() {
+    const isValidForm = inputs.every(el => {
+      const isValidInput = validate(el);
+      if (!isValidInput) {
+        showInputError(el);
+      }
+      return isValidInput;
+    });
+  
+    if (!isValidForm) return;
+    // Made any actions
+  }
+}
+

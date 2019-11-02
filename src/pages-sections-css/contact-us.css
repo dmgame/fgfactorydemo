@@ -1,6 +1,5 @@
 :root {
   --btn-bordered-border-color-hover: #0a0b0f;
-
 }
 
 .contact-us-form-container {
@@ -222,8 +221,8 @@ textarea {
 }
 
 .fileUpload .btn--bordered:hover {
-border-color:var(--btn-bordered-border-color-hover);
-color: #0a0b0f;
+  border-color: var(--btn-bordered-border-color-hover);
+  color: #0a0b0f;
 }
 
 .input-file .input-file-fake {
@@ -415,4 +414,17 @@ color: #0a0b0f;
 
 .project-type-icon {
   padding: 0 25px;
+}
+
+.input-item .is-invalid {
+  border-color: tomato;
+}
+.input-item .invalid-feedback {
+  padding-left: 25px;
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  color: tomato;
+  position: absolute;
+  bottom: -20px;
 }

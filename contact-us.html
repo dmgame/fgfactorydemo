@@ -377,19 +377,25 @@
                       </div>
                     </div>
                     <div class="input-item">
-                      <textarea id="what-you-want-build"></textarea>
+                      <textarea id="what-you-want-build" data-required="text"></textarea>
                       <label for="what-you-want-build"
                         >What do you want to build?</label
                       >
                     </div>
                     <!-- /.input-item -->
                     <div class="input-item">
-                      <input type="text" name="" id="name" />
+                      <input type="text" name="" id="name" data-required="text"/>
                       <label for="name">Can we have your name?</label>
                     </div>
                     <!-- /.input-item -->
                     <div class="input-item">
-                      <input type="text" name="" id="email" />
+                      <input 
+                        type="text"
+                        name=""
+                        id="email" 
+                        data-required="email"
+                        data-invalid-message="Please provide valid email example@example.com"
+                      />
                       <label for="email">How about your email?</label>
                     </div>
                     <!-- /.input-item -->
@@ -731,7 +737,7 @@
                       </div>
                       <!-- /.radio-month-item -->
                       <div class="radio-month-item">
-                        <input type="radio" name="month" id="month-12" />
+                        <input type="radio" name="month" id="month-12" data-required="text"/>
                         <label for="month-12">12 months</label>
                       </div>
                       <!-- /.radio-month-item -->
@@ -745,12 +751,15 @@
                     </div>
                     <!-- /.input-item -->
                     <div class="input-item">
-                      <input type="text" name="" id="name2" />
+                      <input type="text" name="" id="name2" data-required="text"/>
                       <label for="name2">Can we have your name?</label>
                     </div>
                     <!-- /.input-item -->
                     <div class="input-item">
-                      <input type="text" name="" id="email2" />
+                      <input type="text" name="" id="email2" 
+                        data-required="email"
+                        data-invalid-message="Please provide valid email example@example.com"
+                      />
                       <label for="email2">How about your email?</label>
                     </div>
                     <!-- /.input-item -->
