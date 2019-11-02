@@ -89,7 +89,7 @@
   }
 
   .image-preview.web-project-timber img {
-    transform: scale(1.5);
+    /* transform: scale(1.5); */
     width: 100%;
   }
 
