@@ -1,10 +1,8 @@
 import { initSlider, initSliderNav } from "./slickSlider";
 
 // menu mobile
-
 let menuBtn = document.querySelector(".open-menu");
 let menu = document.querySelector(".header-nav--mobile");
-let menuLink = document.querySelectorAll(".header-nav--mobile a");
 
 if (menuBtn) {
   menuBtn.addEventListener("click", openMenu);
@@ -247,7 +245,7 @@ if (window.AOS) {
         header.addClass("pos-fixed is-fixed show-header");
         return;
     }
-    $(window).on('scroll', function(){
+    function onScroll(){
       var windowHeight = $(window).height();
 
       currentScrollTop = $(window).scrollTop();
@@ -264,7 +262,9 @@ if (window.AOS) {
           header.addClass('show-header');
       }
       tempScrollTop = currentScrollTop;
-    });
+    }
+    document.addEventListener('DOMContentLoaded', onScroll)
+    $(window).on('scroll', onScroll);
   });
 })(jQuery);
 

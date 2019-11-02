@@ -1,8 +1,4 @@
 @media screen and (min-width: 1630px) {
-  .logo-img--mobile {
-    display: none;
-  }
-
   .open-menu {
     display: none;
   }
@@ -17,10 +13,6 @@
     --card-big-height: 446px;
     --card-medium-height: 259px;
     --card-small-height: 210px;
-  }
-
-  .logo-img--mobile {
-    display: none;
   }
 
   .open-menu {
@@ -110,8 +102,8 @@
     display: none;
   }
 
-  .logo-img--mobile {
-    display: block;
+  #fgf {
+    display: none;
   }
 
   .header div.container.d-flex {
@@ -142,6 +134,14 @@
   .bg-transparent .open-menu.open-menu--active .open-menu--rotate::after {
     background-color: #fff;
   }
+
+  .bg-transparent.is-fixed.show-header .open-menu span,
+  .bg-transparent.is-fixed.show-header
+    .open-menu.open-menu--active
+    .open-menu--rotate::after {
+    background-color: #0a0b0f;
+  }
+
   .header-nav--mobile .copyright {
     text-align: left;
   }
