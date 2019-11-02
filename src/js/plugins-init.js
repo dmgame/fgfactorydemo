@@ -120,7 +120,7 @@ setImageBgFromDataUrl();
 
 // Poppover init
 $(function() {
-  $('[data-toggle="popover"]').popover({
+  $('[data-toggle="popover"]').popover({ 
     trigger: 'hover',
     animation: true
   });

@@ -37,6 +37,9 @@
   .home-inner .title {
     max-width: 480px;
   }
+  .carousel-card {
+    padding: 40px 20px;
+  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -88,6 +91,9 @@
   }
   .home-inner {
     height: 450px;
+  }
+  .carousel-card-col + .carousel-card-col {
+    margin-top: 30px;
   }
 }
 
@@ -522,5 +528,9 @@
   }
   .title--section {
     margin-bottom: 20px;
+  }
+  .carousel-card .article,
+  .carousel-card .title {
+    margin-bottom: 30px;
   }
 }

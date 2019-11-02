@@ -82,3 +82,25 @@
 .why-us .tabs-wrap .carousel .right-side .article + .article {
   margin-top: 50px;
 }
+
+.carousel-cards-list {
+  margin: 0 -20px;
+}
+
+.carousel-card-col {
+  padding: 0 20px;
+}
+
+.carousel-card {
+  border-radius: 5px;
+  background-color: #12131a;
+  padding: 70px 100px;
+}
+
+.carousel-card .title {
+  margin-bottom: 35px;
+}
+
+.carousel-card .article {
+  margin-bottom: 50px;
+}
