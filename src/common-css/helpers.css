@@ -43,3 +43,7 @@
   left: 0;
   right: 0;
 }
+
+.fade {
+  transition: opacity 0.15s linear;
+}

@@ -121,7 +121,8 @@ setImageBgFromDataUrl();
 // Poppover init
 $(function() {
   $('[data-toggle="popover"]').popover({
-    trigger: 'hover'
+    trigger: 'hover',
+    animation: true
   });
 });
 
@@ -151,7 +152,11 @@ $('[data-toggle="popover"]').on('shown.bs.popover', function(e) {
 $('[data-toggle="popover"]').on('hidden.bs.popover', function(e) {
   e.currentTarget.classList.remove('active-poppover');
   const poppoverContainer = e.currentTarget.closest('.poppover-container');
+  const parent = e.currentTarget.closest('.poppover-item');
 
+  if (parent) {
+    parent.classList.remove('active-poppover-item');
+  }
   if (!poppoverContainer) return;
 
   const [...children] = poppoverContainer.children;
