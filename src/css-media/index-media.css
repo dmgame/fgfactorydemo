@@ -330,8 +330,7 @@
   }
 
   .works-container {
-    border-bottom: none;
-    padding-bottom: 0;
+    padding-bottom: 50px;
   }
 
   .works-container .image-card--none,

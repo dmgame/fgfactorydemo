@@ -6830,8 +6830,7 @@ textarea {
   }
 
   .works-container {
-    border-bottom: none;
-    padding-bottom: 0;
+    padding-bottom: 50px;
   }
 
   .works-container .image-card--none,
@@ -7790,9 +7789,6 @@ textarea {
 }
 
 @media screen and (max-width: 991px) {
-  .works-container {
-    margin-bottom: 50px;
-  }
   .web-work-inner .container {
     flex-wrap: wrap;
   }
