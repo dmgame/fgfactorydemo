@@ -47,6 +47,16 @@
   .process-flow-services .process-flow-services-item {
     margin-bottom: 30px;
   }
+  .work-step-team-block-content .work-step-team-item img {
+    width: 100px;
+  }
+  .work-step-team-item,
+  .project-backlog-wrap {
+    z-index: 1;
+  }
+  .project-backlog-item.w-text-decorate::before {
+    left: -35px;
+  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -139,6 +149,39 @@
   }
   .technology-stack-items .technology-stack-item {
     margin-bottom: 30px;
+  }
+  .work-steps-wrap::after {
+    display: none;
+  }
+  .work-step-item-right {
+    width: 100%;
+  }
+  .work-step-3,
+  .work-step-2 {
+    margin-top: 70px;
+  }
+  .work-steps-wrap {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 0;
+  }
+  .work-step-item-text {
+    max-width: none;
+  }
+  .work-step-item-title {
+    margin-top: 0;
+  }
+  .work-step .work-step-item:first-child .work-step-item-right::before,
+  .work-step .work-step-item:last-child .work-step-item-right::before {
+    top: -15px;
+    transform: none;
+    left: -30px;
+  }
+  .work-steps-wrap::before {
+    top: 0;
+    left: 20px;
+    bottom: 50px;
   }
 }
 
@@ -257,6 +300,33 @@
   .process-flow-services .process-flow-services-item .article {
     max-width: none;
   }
+  .work-step .work-step-item:first-child .work-step-item-right::before,
+  .work-step .work-step-item:last-child .work-step-item-right::before {
+    left: -15px;
+  }
+  .work-steps-wrap::before {
+    left: 51px;
+    bottom: 80px;
+  }
+  .reviews-carousel-wrap {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .reviews-carousel-wrap .fade-carousel-wrap {
+    padding-bottom: 30px;
+  }
+  .reviews-carousel-wrap [data-slick-slider].service-fade-carousel .slick-dots {
+    bottom: -60px;
+  }
+  .team-setup-wrap {
+    padding-top: 100px;
+  }
+  .team-setup-wrap .contact-us-form-container {
+    margin-top: 60px;
+  }
+  .process-flow-wrap {
+    padding-top: 100px;
+  }
 }
 
 @media screen and (max-width: 575px) {
@@ -310,5 +380,33 @@
   }
   .review-info img {
     width: 60px;
+  }
+  .work-step-1 .work-step-item:first-child .work-step-item-right::before,
+  .work-step-2 .work-step-item:first-child .work-step-item-right::before,
+  .work-step-3 .work-step-item:first-child .work-step-item-right::before {
+    width: 40px;
+  }
+  .work-step-item-title {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+  .work-step-item-right {
+    padding-left: 50px;
+  }
+  .work-step-item-text {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .work-step .work-step-item:first-child .work-step-item-right::before,
+  .work-step .work-step-item:last-child .work-step-item-right::before {
+    left: -5px;
+    top: -19px;
+  }
+  .work-steps-wrap::before {
+    left: 28px;
+    bottom: 85px;
+  }
+  .work-steps-wrap {
+    margin-bottom: 75px;
   }
 }
