@@ -382,34 +382,34 @@ $('.home-inner-partners').slick({
 });
 
 // Update option on carousel nav
-$('.service-home-tabs .carousel-nav').slick({
-  dots: false,
-  infinite: false,
-  arrows: false,
-  responsive: [
-    {
-      breakpoint: 1199,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-      }
-    },
-  ]
-});
-$('.service-tab-wrap .carousel-nav').slick({
-  dots: false,
-  infinite: false,
-  arrows: false,
-  responsive: [
-    {
-      breakpoint: 1199,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-      }
-    },
-  ]
-});
+// $('.service-home-tabs .carousel-nav').slick({
+//   dots: false,
+//   infinite: false,
+//   arrows: false,
+//   responsive: [
+//     {
+//       breakpoint: 1199,
+//       settings: {
+//         slidesToShow: 1,
+//         slidesToScroll: 1,
+//       }
+//     },
+//   ]
+// });
+// $('.service-tab-wrap .carousel-nav').slick({
+//   dots: false,
+//   infinite: false,
+//   arrows: false,
+//   responsive: [
+//     {
+//       breakpoint: 1199,
+//       settings: {
+//         slidesToShow: 1,
+//         slidesToScroll: 1,
+//       }
+//     },
+//   ]
+// });
 
 $('[data-tips-slider]').slick({
   "slidesToShow": 4,

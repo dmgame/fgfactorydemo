@@ -234,6 +234,12 @@
   .service-slide-img-upper {
     display: none;
   }
+  .nav-tabs.tabs-without-icons .nav-item .nav-link {
+    width: auto !important;
+  }
+  .nav-tabs.tabs-without-icons .nav-item .nav-link span {
+    line-height: 24px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -367,8 +373,12 @@
     padding: 30px 0;
     width: 100% !important;
   }
-  .nav-tabs .nav-item .nav-link span {
-    font-size: 20px;
+  .service-tab-wrap .nav-tabs .nav-item .nav-link span {
+    font-size: 13px;
+  }
+  .service-tab-wrap .nav-tabs .nav-item .nav-link {
+    padding-left: 2px;
+    padding-right: 2px;
   }
   .inner-cards .inner-cards-item .article {
     font-size: 16px;
@@ -408,5 +418,8 @@
   }
   .work-steps-wrap {
     margin-bottom: 75px;
+  }
+  .service-tab-wrap {
+    margin-top: 60px;
   }
 }
