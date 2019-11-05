@@ -183,6 +183,14 @@
     left: 20px;
     bottom: 50px;
   }
+  .timber-carousel .service-slide-content {
+    height: 500px;
+    overflow: hidden;
+  }
+  .timber-carousel .project-slide img {
+    height: 100%;
+    max-width: none;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -239,6 +247,15 @@
   }
   .nav-tabs.tabs-without-icons .nav-item .nav-link span {
     line-height: 24px;
+  }
+  .process-flow-list-carousel .nav-tabs .nav-item .nav-link {
+    padding: 20px 50px;
+  }
+  .process-flow-wrap .carousel-wrap {
+    padding-bottom: 0;
+  }
+  .timber-carousel .service-slide-content {
+    height: 400px;
   }
 }
 
@@ -333,6 +350,22 @@
   .process-flow-wrap {
     padding-top: 100px;
   }
+  .process-flow-list-carousel .nav-tabs {
+    flex-wrap: wrap;
+  }
+  .process-flow-list-carousel .nav-tabs > div {
+    width: 100% !important;
+  }
+  .process-flow-list-carousel .nav-tabs > div .nav-item {
+    max-width: none;
+  }
+  .process-flow-list-carousel .nav-tabs .nav-item .nav-link {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .process-flow-list-carousel .nav-tabs .nav-item .nav-link br {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 575px) {
@@ -421,5 +454,11 @@
   }
   .service-tab-wrap {
     margin-top: 60px;
+  }
+  .timber-carousel .service-slide-content {
+    height: 260px;
+  }
+  .timber-carousel.fade-carousel-wrap {
+    padding-bottom: 0;
   }
 }

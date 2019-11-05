@@ -32,6 +32,7 @@ if (carouselNav && caroiselNavItems.length) {
 // Init Tabs
 $('[data-tab-nav] a').on('click', function(e) {
   e.preventDefault();
+  $('[data-tab-nav] a').removeClass('active');
   $(this).tab('show');
 });
 
@@ -497,3 +498,88 @@ if (form && inputs.length) {
   }
 }
 
+// web services fixed process flow
+const processFlowCarouselSettings = {
+  dots: false,
+  infinite: false,
+  arrows: false,
+  responsive: [
+    {
+      breakpoint: 1630,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 1,
+      }
+    },
+    {
+      breakpoint: 1199,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+      }
+    },
+    {
+      breakpoint: 991,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      }
+    },
+    {
+      breakpoint: 575,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
+    },
+  ]
+};
+
+$('.process-flow-list-carousel a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+  console.dir(e.target, e.relatedTarget);
+  const carouselID = e.target.hash;
+  console.log(carouselID)
+  $(`${carouselID} .process-flow-list`).slick(processFlowCarouselSettings);
+})
+
+$('#first .process-flow-list').slick(processFlowCarouselSettings);
+
+
+// timber-carousel
+$('.timber-carousel .service-fade-carousel').slick({
+  "slidesToShow": 1,
+  "slidesToScroll": 1,
+  "dots": false,
+  "adaptiveHeight": false,
+  "arrows": false,
+  "fade": false,
+  "centerMode": true,
+  "centerPadding": "130px",
+  "infinite": false,
+  responsive: [
+    {
+      breakpoint: 1199,
+      settings: {
+        centerPadding: "90px",
+      }
+    },
+    {
+      breakpoint: 991,
+      settings: {
+        centerPadding: "50px",
+      }
+    },
+    {
+      breakpoint: 767,
+      settings: {
+        centerPadding: "20px",
+      }
+    },
+    {
+      breakpoint: 575,
+      settings: {
+        centerPadding: "0px",
+      }
+    },
+  ]
+});

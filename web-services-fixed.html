@@ -220,305 +220,324 @@
         <!-- /.container -->
         <div class="tabs-wrap service-tab-wrap process-flow-list-carousel">
           <div class="container">
-            <div class="nav nav-tabs d-flex carousel-nav justify-content-center tabs-without-icons" id="myTab" role="tablist" data-tab-nav data-aos="fade-up"
-              data-slick='{"slidesToShow": 3, "slidesToScroll": 3}'
-            >
+            <div class="nav nav-tabs d-flex  justify-content-center tabs-without-icons" id="myTab" role="tablist" data-tab-nav data-aos="fade-up">
               <div>
                 <div class="nav-item">
-                  <a class="nav-link active d-flex align-items-center justify-content-center carousel-nav-item" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true" data-slide-index="0">
+                  <a class="nav-link active d-flex align-items-center justify-content-center " id="first-tab" data-toggle="tab" href="#first" role="tab" aria-controls="first" aria-selected="true" data-slide-index="0">
                     <span class="width-auto">Full-cycle game <br/> development</span>
                   </a>
                 </div>
               </div>
               <div>
                 <div class="nav-item">
-                  <a class="nav-link d-flex align-items-center justify-content-center carousel-nav-item" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false" data-slide-index="1">
+                  <a class="nav-link d-flex align-items-center justify-content-center " id="second-tab" data-toggle="tab" href="#second" role="tab" aria-controls="second" aria-selected="false" data-slide-index="1">
                     <span class="width-auto">MVP game <br/> development</span>
                   </a>
                 </div>
               </div>
               <div>
                 <div class="nav-item">
-                  <a class="nav-link d-flex align-items-center justify-content-center carousel-nav-item" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false" data-slide-index="2">
+                  <a class="nav-link d-flex align-items-center justify-content-center " id="third-tab" data-toggle="tab" href="#third" role="tab" aria-controls="third" aria-selected="false" data-slide-index="2">
                     <span class="width-auto">Graphics design <br/> or animation</span>
                   </a>
                 </div>
               </div>
             </div>
             <div class="carousel-wrap">
-              <div  class="carousel" data-slick-slider data-slick='{"slidesToShow": 1, "slidesToScroll": 1, "dots": false, "adaptiveHeight": true, "arrows": false, "infinite": false, "fade": true}'>
-                <div class="content-wrap d-flex">
-                  <div class="process-flow-list d-flex justify-content-between" data-aos="fade-up">
-                    <div class="process-flow-item">
-                      <div class="process-flow-item-header d-flex align-items-center">
-                        <img src="public/img/inner-card-img-5.png" alt="">
-                        <span>Evaluation</span>
+              <!--  data-slick-slider data-slick='{"slidesToShow": 1, "slidesToScroll": 1, "dots": false, "adaptiveHeight": true, "arrows": false, "infinite": false, "fade": true}' -->
+              <div  class="carousel tab-content">
+                <div class="content-wrap tab-pane fade active" id="first">
+                  <div class="process-flow-list" data-aos="fade-up" data-slick='{"slidesToShow": 6, "slidesToScroll": 1}'>
+                    <div>
+                      <div class="process-flow-item">
+                        <div class="process-flow-item-header d-flex align-items-center">
+                          <img src="public/img/inner-card-img-5.png" alt="">
+                          <span>Evaluation</span>
+                        </div>
+                        <!-- /.process-flow-item-header -->
+                        <div class="process-flow-item-list">
+                          <ul class="base-list base-list--w-dots color-gray">
+                            <li><a href="">Overview and analysis</a></li>
+                            <li><a href="">Scope estimation</a></li>                          
+                          </ul>
+                        </div>
                       </div>
-                      <!-- /.process-flow-item-header -->
-                      <div class="process-flow-item-list">
-                        <ul class="base-list base-list--w-dots color-gray">
-                          <li><a href="">Overview and analysis</a></li>
-                          <li><a href="">Scope estimation</a></li>                          
-                        </ul>
-                      </div>
+                      <!-- /.process-flow-item -->
                     </div>
-                    <!-- /.process-flow-item -->
-                    <div class="process-flow-item">
-                      <div class="process-flow-item-header d-flex align-items-center">
-                        <img src="public/img/inner-card-img-7.png" alt="">
-                        <span>Planning</span>
+                    <div>
+                      <div class="process-flow-item">
+                        <div class="process-flow-item-header d-flex align-items-center">
+                          <img src="public/img/inner-card-img-7.png" alt="">
+                          <span>Planning</span>
+                        </div>
+                        <!-- /.process-flow-item-header -->
+                        <div class="process-flow-item-list">
+                          <ul class="base-list base-list--w-dots color-gray">
+                            <li><a href="">Team setup</a></li>
+                            <li><a href="">Sprint planning</a></li>         
+                          </ul>
+                        </div>
                       </div>
-                      <!-- /.process-flow-item-header -->
-                      <div class="process-flow-item-list">
-                        <ul class="base-list base-list--w-dots color-gray">
-                          <li><a href="">Team setup</a></li>
-                          <li><a href="">Sprint planning</a></li>         
-                        </ul>
-                      </div>
+                      <!-- /.process-flow-item -->
                     </div>
-                    <!-- /.process-flow-item -->
-                    <div class="process-flow-item">
-                      <div class="process-flow-item-header d-flex align-items-center">
-                        <img src="public/img/inner-card-img-8.png" alt="">
-                        <span>Design</span>
+                    <div>
+                      <div class="process-flow-item">
+                        <div class="process-flow-item-header d-flex align-items-center">
+                          <img src="public/img/inner-card-img-8.png" alt="">
+                          <span>Design</span>
+                        </div>
+                        <!-- /.process-flow-item-header -->
+                        <div class="process-flow-item-list">
+                          <ul class="base-list base-list--w-dots color-gray">
+                            <li><a href="">Concept art</a></li>
+                            <li><a href="">Design</a></li>   
+                            <li><a href="">Animation</a></li>  
+                            <li><a href="">Assets preparation</a></li>
+                          </ul>
+                        </div>
                       </div>
-                      <!-- /.process-flow-item-header -->
-                      <div class="process-flow-item-list">
-                        <ul class="base-list base-list--w-dots color-gray">
-                          <li><a href="">Concept art</a></li>
-                          <li><a href="">Design</a></li>   
-                          <li><a href="">Animation</a></li>  
-                          <li><a href="">Assets preparation</a></li>
-                        </ul>
-                      </div>
+                      <!-- /.process-flow-item -->
                     </div>
-                    <!-- /.process-flow-item -->
-                    <div class="process-flow-item">
-                      <div class="process-flow-item-header d-flex align-items-center">
-                        <img src="public/img/inner-card-img-4.png" alt="">
-                        <span>Development</span>
+                    <div>
+                      <div class="process-flow-item">
+                        <div class="process-flow-item-header d-flex align-items-center">
+                          <img src="public/img/inner-card-img-4.png" alt="">
+                          <span>Development</span>
+                        </div>
+                        <!-- /.process-flow-item-header -->
+                        <div class="process-flow-item-list">
+                          <ul class="base-list base-list--w-dots color-gray">
+                            <li><a href="">Building</a></li>
+                            <li><a href="">Testing</a></li>
+                          </ul>
+                        </div>
                       </div>
-                      <!-- /.process-flow-item-header -->
-                      <div class="process-flow-item-list">
-                        <ul class="base-list base-list--w-dots color-gray">
-                          <li><a href="">Building</a></li>
-                          <li><a href="">Testing</a></li>
-                        </ul>
-                      </div>
+                      <!-- /.process-flow-item -->
                     </div>
-                    <!-- /.process-flow-item -->
-                    <div class="process-flow-item">
-                      <div class="process-flow-item-header d-flex align-items-center">
-                        <img src="public/img/tab-icon-3.png" alt="">
-                        <span>Delivery</span>
+                    <div>
+                      <div class="process-flow-item">
+                        <div class="process-flow-item-header d-flex align-items-center">
+                          <img src="public/img/tab-icon-3.png" alt="">
+                          <span>Delivery</span>
+                        </div>
+                        <!-- /.process-flow-item-header -->
+                        <div class="process-flow-item-list">
+                          <ul class="base-list base-list--w-dots color-gray">
+                            <li><a href="">Final product</a></li>
+                            <li><a href="">Source code</a></li>
+                          </ul>
+                        </div>
                       </div>
-                      <!-- /.process-flow-item-header -->
-                      <div class="process-flow-item-list">
-                        <ul class="base-list base-list--w-dots color-gray">
-                          <li><a href="">Final product</a></li>
-                          <li><a href="">Source code</a></li>
-                        </ul>
-                      </div>
+                      <!-- /.process-flow-item -->
                     </div>
-                    <!-- /.process-flow-item -->
-                    <div class="process-flow-item">
-                      <div class="process-flow-item-header d-flex align-items-center">
-                        <img src="public/img/inner-card-img-9.png" alt="">
-                        <span>Maintenance</span>
+                    <div>
+                      <div class="process-flow-item">
+                        <div class="process-flow-item-header d-flex align-items-center">
+                          <img src="public/img/inner-card-img-9.png" alt="">
+                          <span>Maintenance</span>
+                        </div>
+                        <!-- /.process-flow-item-header -->
+                        <div class="process-flow-item-list">
+                          <ul class="base-list base-list--w-dots color-gray">
+                            <li><a href="">Bug fix</a></li>
+                            <li><a href="">Updates</a></li>
+                          </ul>
+                        </div>
                       </div>
-                      <!-- /.process-flow-item-header -->
-                      <div class="process-flow-item-list">
-                        <ul class="base-list base-list--w-dots color-gray">
-                          <li><a href="">Bug fix</a></li>
-                          <li><a href="">Updates</a></li>
-                        </ul>
-                      </div>
+                      <!-- /.process-flow-item -->
                     </div>
-                    <!-- /.process-flow-item -->
                   </div>
                   <!-- /.process-flow-list -->
                 </div>
                 <!-- /slide-wrap -->
-                <div class="content-wrap d-flex">
-                  <div class="process-flow-list d-flex justify-content-between">
-                    <div class="process-flow-item">
-                      <div class="process-flow-item-header d-flex align-items-center">
-                        <img src="public/img/inner-card-img-5.png" alt="">
-                        <span>Evaluation</span>
+                <div class="content-wrap tab-pane fade" id="second">
+                  <div class="process-flow-list" data-aos="fade-up" data-slick='{"slidesToShow": 5, "slidesToScroll": 1}'>
+                    <div>
+                      <div class="process-flow-item">
+                        <div class="process-flow-item-header d-flex align-items-center">
+                          <img src="public/img/inner-card-img-5.png" alt="">
+                          <span>Evaluation</span>
+                        </div>
+                        <!-- /.process-flow-item-header -->
+                        <div class="process-flow-item-list">
+                          <ul class="base-list base-list--w-dots color-gray">
+                            <li><a href="">Overview and analysis</a></li>
+                            <li><a href="">Scope estimation</a></li>                          
+                          </ul>
+                        </div>
                       </div>
-                      <!-- /.process-flow-item-header -->
-                      <div class="process-flow-item-list">
-                        <ul class="base-list base-list--w-dots color-gray">
-                          <li><a href="">Overview and analysis</a></li>
-                          <li><a href="">Scope estimation</a></li>                          
-                        </ul>
-                      </div>
+                      <!-- /.process-flow-item -->
                     </div>
-                    <!-- /.process-flow-item -->
-                    <div class="process-flow-item">
-                      <div class="process-flow-item-header d-flex align-items-center">
-                        <img src="public/img/inner-card-img-7.png" alt="">
-                        <span>Planning</span>
+                    <div>
+                      <div class="process-flow-item">
+                        <div class="process-flow-item-header d-flex align-items-center">
+                          <img src="public/img/inner-card-img-7.png" alt="">
+                          <span>Planning</span>
+                        </div>
+                        <!-- /.process-flow-item-header -->
+                        <div class="process-flow-item-list">
+                          <ul class="base-list base-list--w-dots color-gray">
+                            <li><a href="">Team setup</a></li>
+                            <li><a href="">Sprint planning</a></li>         
+                          </ul>
+                        </div>
                       </div>
-                      <!-- /.process-flow-item-header -->
-                      <div class="process-flow-item-list">
-                        <ul class="base-list base-list--w-dots color-gray">
-                          <li><a href="">Team setup</a></li>
-                          <li><a href="">Sprint planning</a></li>         
-                        </ul>
-                      </div>
+                      <!-- /.process-flow-item -->
                     </div>
-                    <!-- /.process-flow-item -->
-                    <div class="process-flow-item">
-                      <div class="process-flow-item-header d-flex align-items-center">
-                        <img src="public/img/inner-card-img-8.png" alt="">
-                        <span>Design</span>
+                    <div>
+                      <div class="process-flow-item">
+                        <div class="process-flow-item-header d-flex align-items-center">
+                          <img src="public/img/inner-card-img-8.png" alt="">
+                          <span>Design</span>
+                        </div>
+                        <!-- /.process-flow-item-header -->
+                        <div class="process-flow-item-list">
+                          <ul class="base-list base-list--w-dots color-gray">
+                            <li><a href="">Concept art</a></li>
+                            <li><a href="">Design</a></li>   
+                            <li><a href="">Animation</a></li>  
+                            <li><a href="">Assets preparation</a></li>
+                          </ul>
+                        </div>
                       </div>
-                      <!-- /.process-flow-item-header -->
-                      <div class="process-flow-item-list">
-                        <ul class="base-list base-list--w-dots color-gray">
-                          <li><a href="">Concept art</a></li>
-                          <li><a href="">Design</a></li>   
-                          <li><a href="">Animation</a></li>  
-                          <li><a href="">Assets preparation</a></li>
-                        </ul>
-                      </div>
+                      <!-- /.process-flow-item -->
                     </div>
-                    <!-- /.process-flow-item -->
-                    <div class="process-flow-item">
-                      <div class="process-flow-item-header d-flex align-items-center">
-                        <img src="public/img/inner-card-img-4.png" alt="">
-                        <span>Development</span>
+                    <div>
+                      <div class="process-flow-item">
+                        <div class="process-flow-item-header d-flex align-items-center">
+                          <img src="public/img/inner-card-img-4.png" alt="">
+                          <span>Development</span>
+                        </div>
+                        <!-- /.process-flow-item-header -->
+                        <div class="process-flow-item-list">
+                          <ul class="base-list base-list--w-dots color-gray">
+                            <li><a href="">Building</a></li>
+                            <li><a href="">Testing</a></li>
+                          </ul>
+                        </div>
                       </div>
-                      <!-- /.process-flow-item-header -->
-                      <div class="process-flow-item-list">
-                        <ul class="base-list base-list--w-dots color-gray">
-                          <li><a href="">Building</a></li>
-                          <li><a href="">Testing</a></li>
-                        </ul>
-                      </div>
+                      <!-- /.process-flow-item -->
                     </div>
-                    <!-- /.process-flow-item -->
-                    <div class="process-flow-item">
-                      <div class="process-flow-item-header d-flex align-items-center">
-                        <img src="public/img/tab-icon-3.png" alt="">
-                        <span>Delivery</span>
+                    <div>
+                      <div class="process-flow-item">
+                        <div class="process-flow-item-header d-flex align-items-center">
+                          <img src="public/img/tab-icon-3.png" alt="">
+                          <span>Delivery</span>
+                        </div>
+                        <!-- /.process-flow-item-header -->
+                        <div class="process-flow-item-list">
+                          <ul class="base-list base-list--w-dots color-gray">
+                            <li><a href="">Final product</a></li>
+                            <li><a href="">Source code</a></li>
+                          </ul>
+                        </div>
                       </div>
-                      <!-- /.process-flow-item-header -->
-                      <div class="process-flow-item-list">
-                        <ul class="base-list base-list--w-dots color-gray">
-                          <li><a href="">Final product</a></li>
-                          <li><a href="">Source code</a></li>
-                        </ul>
-                      </div>
+                      <!-- /.process-flow-item -->
                     </div>
-                    <!-- /.process-flow-item -->
-                    <div class="process-flow-item">
-                      <div class="process-flow-item-header d-flex align-items-center">
-                        <img src="public/img/inner-card-img-9.png" alt="">
-                        <span>Maintenance</span>
-                      </div>
-                      <!-- /.process-flow-item-header -->
-                      <div class="process-flow-item-list">
-                        <ul class="base-list base-list--w-dots color-gray">
-                          <li><a href="">Bug fix</a></li>
-                          <li><a href="">Updates</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <!-- /.process-flow-item -->
                   </div>
                   <!-- /.process-flow-list -->
                 </div>
                 <!-- /slide-wrap -->
-                <div class="content-wrap d-flex">
-                  <div class="process-flow-list d-flex justify-content-between">
-                    <div class="process-flow-item">
-                      <div class="process-flow-item-header d-flex align-items-center">
-                        <img src="public/img/inner-card-img-5.png" alt="">
-                        <span>Evaluation</span>
+                <div class="content-wrap tab-pane fade" id="third">
+                  <div class="process-flow-list" data-aos="fade-up" data-slick='{"slidesToShow": 6, "slidesToScroll": 1}'>
+                    <div>
+                      <div class="process-flow-item">
+                        <div class="process-flow-item-header d-flex align-items-center">
+                          <img src="public/img/inner-card-img-5.png" alt="">
+                          <span>Evaluation</span>
+                        </div>
+                        <!-- /.process-flow-item-header -->
+                        <div class="process-flow-item-list">
+                          <ul class="base-list base-list--w-dots color-gray">
+                            <li><a href="">Overview and analysis</a></li>
+                            <li><a href="">Scope estimation</a></li>                          
+                          </ul>
+                        </div>
                       </div>
-                      <!-- /.process-flow-item-header -->
-                      <div class="process-flow-item-list">
-                        <ul class="base-list base-list--w-dots color-gray">
-                          <li><a href="">Overview and analysis</a></li>
-                          <li><a href="">Scope estimation</a></li>                          
-                        </ul>
-                      </div>
+                      <!-- /.process-flow-item -->
                     </div>
-                    <!-- /.process-flow-item -->
-                    <div class="process-flow-item">
-                      <div class="process-flow-item-header d-flex align-items-center">
-                        <img src="public/img/inner-card-img-7.png" alt="">
-                        <span>Planning</span>
+                    <div>
+                      <div class="process-flow-item">
+                        <div class="process-flow-item-header d-flex align-items-center">
+                          <img src="public/img/inner-card-img-7.png" alt="">
+                          <span>Planning</span>
+                        </div>
+                        <!-- /.process-flow-item-header -->
+                        <div class="process-flow-item-list">
+                          <ul class="base-list base-list--w-dots color-gray">
+                            <li><a href="">Team setup</a></li>
+                            <li><a href="">Sprint planning</a></li>         
+                          </ul>
+                        </div>
                       </div>
-                      <!-- /.process-flow-item-header -->
-                      <div class="process-flow-item-list">
-                        <ul class="base-list base-list--w-dots color-gray">
-                          <li><a href="">Team setup</a></li>
-                          <li><a href="">Sprint planning</a></li>         
-                        </ul>
-                      </div>
+                      <!-- /.process-flow-item -->
                     </div>
-                    <!-- /.process-flow-item -->
-                    <div class="process-flow-item">
-                      <div class="process-flow-item-header d-flex align-items-center">
-                        <img src="public/img/inner-card-img-8.png" alt="">
-                        <span>Design</span>
+                    <div>
+                      <div class="process-flow-item">
+                        <div class="process-flow-item-header d-flex align-items-center">
+                          <img src="public/img/inner-card-img-8.png" alt="">
+                          <span>Design</span>
+                        </div>
+                        <!-- /.process-flow-item-header -->
+                        <div class="process-flow-item-list">
+                          <ul class="base-list base-list--w-dots color-gray">
+                            <li><a href="">Concept art</a></li>
+                            <li><a href="">Design</a></li>   
+                            <li><a href="">Animation</a></li>  
+                            <li><a href="">Assets preparation</a></li>
+                          </ul>
+                        </div>
                       </div>
-                      <!-- /.process-flow-item-header -->
-                      <div class="process-flow-item-list">
-                        <ul class="base-list base-list--w-dots color-gray">
-                          <li><a href="">Concept art</a></li>
-                          <li><a href="">Design</a></li>   
-                          <li><a href="">Animation</a></li>  
-                          <li><a href="">Assets preparation</a></li>
-                        </ul>
-                      </div>
+                      <!-- /.process-flow-item -->
                     </div>
-                    <!-- /.process-flow-item -->
-                    <div class="process-flow-item">
-                      <div class="process-flow-item-header d-flex align-items-center">
-                        <img src="public/img/inner-card-img-4.png" alt="">
-                        <span>Development</span>
+                    <div>
+                      <div class="process-flow-item">
+                        <div class="process-flow-item-header d-flex align-items-center">
+                          <img src="public/img/inner-card-img-4.png" alt="">
+                          <span>Development</span>
+                        </div>
+                        <!-- /.process-flow-item-header -->
+                        <div class="process-flow-item-list">
+                          <ul class="base-list base-list--w-dots color-gray">
+                            <li><a href="">Building</a></li>
+                            <li><a href="">Testing</a></li>
+                          </ul>
+                        </div>
                       </div>
-                      <!-- /.process-flow-item-header -->
-                      <div class="process-flow-item-list">
-                        <ul class="base-list base-list--w-dots color-gray">
-                          <li><a href="">Building</a></li>
-                          <li><a href="">Testing</a></li>
-                        </ul>
-                      </div>
+                      <!-- /.process-flow-item -->
                     </div>
-                    <!-- /.process-flow-item -->
-                    <div class="process-flow-item">
-                      <div class="process-flow-item-header d-flex align-items-center">
-                        <img src="public/img/tab-icon-3.png" alt="">
-                        <span>Delivery</span>
+                    <div>
+                      <div class="process-flow-item">
+                        <div class="process-flow-item-header d-flex align-items-center">
+                          <img src="public/img/tab-icon-3.png" alt="">
+                          <span>Delivery</span>
+                        </div>
+                        <!-- /.process-flow-item-header -->
+                        <div class="process-flow-item-list">
+                          <ul class="base-list base-list--w-dots color-gray">
+                            <li><a href="">Final product</a></li>
+                            <li><a href="">Source code</a></li>
+                          </ul>
+                        </div>
                       </div>
-                      <!-- /.process-flow-item-header -->
-                      <div class="process-flow-item-list">
-                        <ul class="base-list base-list--w-dots color-gray">
-                          <li><a href="">Final product</a></li>
-                          <li><a href="">Source code</a></li>
-                        </ul>
-                      </div>
+                      <!-- /.process-flow-item -->
                     </div>
-                    <!-- /.process-flow-item -->
-                    <div class="process-flow-item">
-                      <div class="process-flow-item-header d-flex align-items-center">
-                        <img src="public/img/inner-card-img-9.png" alt="">
-                        <span>Maintenance</span>
+                    <div>
+                      <div class="process-flow-item">
+                        <div class="process-flow-item-header d-flex align-items-center">
+                          <img src="public/img/inner-card-img-9.png" alt="">
+                          <span>Maintenance</span>
+                        </div>
+                        <!-- /.process-flow-item-header -->
+                        <div class="process-flow-item-list">
+                          <ul class="base-list base-list--w-dots color-gray">
+                            <li><a href="">Bug fix</a></li>
+                            <li><a href="">Updates</a></li>
+                          </ul>
+                        </div>
                       </div>
-                      <!-- /.process-flow-item-header -->
-                      <div class="process-flow-item-list">
-                        <ul class="base-list base-list--w-dots color-gray">
-                          <li><a href="">Bug fix</a></li>
-                          <li><a href="">Updates</a></li>
-                        </ul>
-                      </div>
+                      <!-- /.process-flow-item -->
                     </div>
-                    <!-- /.process-flow-item -->
                   </div>
                   <!-- /.process-flow-list -->
                 </div>

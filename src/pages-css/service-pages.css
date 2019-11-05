@@ -71,6 +71,10 @@
   padding: 170px 0;
 }
 
+.process-flow-list-carousel .tab-content > .tab-pane {
+  padding: 0;
+}
+
 .process-flow-list .process-flow-item .process-flow-item-header {
   margin-bottom: 30px;
   padding-right: 90px;
@@ -82,23 +86,26 @@
 }
 
 .process-flow-list
-  .process-flow-item:not(:last-child)
-  .process-flow-item-header::after {
+  .slick-slide:not(:last-child)
+  .process-flow-item-header
+  span::after {
   content: "";
   position: absolute;
-  right: 0;
+  right: -65px;
   top: 50%;
   transform: translateY(-50%);
-  width: 60px;
+  width: 50px;
   height: 13px;
   background: url("../img/light-arrow.png") no-repeat;
+  background-size: contain;
 }
 
 .process-flow-list .process-flow-item .process-flow-item-header span {
   font-family: "Roboto", sans-serif;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 400;
   margin-left: 20px;
+  position: relative;
 }
 
 .process-flow-list .process-flow-item .process-flow-item-list {
@@ -109,7 +116,8 @@
   color: var(--main-gray);
 }
 
-.process-flow-list .process-flow-item + .process-flow-item {
+.process-flow-list .process-flow-item + .process-flow-item,
+.process-flow-list .slick-slide + .slick-slide .process-flow-item {
   margin-left: 25px;
 }
 

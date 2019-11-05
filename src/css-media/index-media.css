@@ -541,8 +541,15 @@
   div.home-inner {
     margin-left: 5px;
     margin-right: 5px;
-    height: 175px;
+    height: 290px;
   }
+
+  div.home-inner video {
+    width: 270%;
+    height: 100%;
+    transform: translateY(-50%) translateX(-31%);
+  }
+
   .video-modal .modal-dialog .modal-content {
     height: 300px;
   }
