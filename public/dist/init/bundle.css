@@ -6075,6 +6075,12 @@ textarea {
   padding: 10px;
 }
 
+.carousel-service-preview-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, 1fr));
+  grid-gap: 30px;
+}
+
 .team-page-inner {
   padding-top: 175px;
   padding-bottom: 135px;
@@ -7614,6 +7620,9 @@ textarea {
   .process-flow-list-carousel .nav-tabs .nav-item .nav-link br {
     display: none;
   }
+  .carousel-service-preview-grid {
+    grid-gap: 20px;
+  }
 }
 
 @media screen and (max-width: 575px) {
@@ -7708,6 +7717,10 @@ textarea {
   }
   .timber-carousel.fade-carousel-wrap {
     padding-bottom: 0;
+  }
+  .carousel-service-preview-grid {
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
   }
 }
 

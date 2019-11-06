@@ -367,6 +367,9 @@
   .process-flow-list-carousel .nav-tabs .nav-item .nav-link br {
     display: none;
   }
+  .carousel-service-preview-grid {
+    grid-gap: 20px;
+  }
 }
 
 @media screen and (max-width: 575px) {
@@ -461,5 +464,9 @@
   }
   .timber-carousel.fade-carousel-wrap {
     padding-bottom: 0;
+  }
+  .carousel-service-preview-grid {
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
   }
 }
