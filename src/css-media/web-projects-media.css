@@ -99,7 +99,7 @@
     margin-top: -100px;
   }
   .project-preview-images .image-item {
-    margin-left: -85px;
+    margin-left: -60px;
   }
   .project-technology-stack .left-side .list-wrap {
     flex-wrap: wrap;
@@ -110,11 +110,17 @@
   .project-technology-stack .left-side .list-wrap .base-list + .base-list {
     margin-top: 40px;
   }
+  .project-preview-images .row {
+    display: block;
+  }
+  .project-preview-images {
+    margin-top: 0;
+  }
 }
 
 @media screen and (max-width: 575px) {
   .project-preview-images .image-item {
-    margin-left: -50px;
+    margin-left: -30px;
   }
 
   .project-technology-stack .title {
