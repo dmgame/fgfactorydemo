@@ -82,6 +82,9 @@
 .centered-carousel .project-slide img {
   margin: auto;
 }
+.timber-carousel .project-slide img {
+  width: 100%;
+}
 
 .centered-carousel .project-slide {
   opacity: 0.5;

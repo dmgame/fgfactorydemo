@@ -190,6 +190,7 @@
   .timber-carousel .project-slide img {
     height: 100%;
     max-width: none;
+    width: auto;
   }
 }
 

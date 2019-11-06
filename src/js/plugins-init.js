@@ -412,6 +412,14 @@ $('.home-inner-partners').slick({
 //   ]
 // });
 
+$('.character-carousel-mobile').slick({
+  dots: true,
+  arrows: false,
+  infinite: false,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+})
+
 $('[data-tips-slider]').slick({
   "slidesToShow": 4,
   "slidesToScroll": 1,

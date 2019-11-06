@@ -4354,6 +4354,9 @@ header.is-fixed.show-header {
 .centered-carousel .project-slide img {
   margin: auto;
 }
+.timber-carousel .project-slide img {
+  width: 100%;
+}
 
 .centered-carousel .project-slide {
   opacity: 0.5;
@@ -7083,6 +7086,27 @@ textarea {
     display: none !important;
   }
 
+  .character-wrap-mobile {
+    display: block;
+  }
+
+  .character-carousel-mobile .character-slide {
+    position: relative;
+    padding: 100px 0;
+  }
+
+  .character-carousel-mobile .character-slide .game-preview {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    height: 700px;
+  }
+
+  .character-carousel-mobile .slick-dots {
+    bottom: -50px;
+  }
+
   .centered-text.w-icon .centered-text-icon {
     left: -155px;
   }
@@ -7110,6 +7134,15 @@ textarea {
   .centered-text.w-icon .centered-text-icon {
     display: none;
   }
+  .character-carousel-mobile .character-slide .game-preview {
+    height: 600px;
+  }
+  .character-carousel-mobile .character-slide {
+    padding: 90px 0;
+  }
+  .character-carousel-mobile .slick-dots {
+    bottom: -30px;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -7123,6 +7156,13 @@ textarea {
   }
   .project-description.w-padding {
     padding: 100px 0;
+  }
+  .character-carousel-mobile .character-slide .slide-bg-wrap {
+    overflow: hidden;
+  }
+  .character-carousel-mobile .character-slide .slide-bg {
+    max-width: none;
+    height: 400px;
   }
 }
 
@@ -7165,8 +7205,9 @@ textarea {
   }
 
   .image-preview.web-project-timber img {
-    /* transform: scale(1.5); */
+    transform: scale(1.5);
     width: 100%;
+    max-width: none;
   }
 
   .related-works .related-works-list {
@@ -7180,6 +7221,18 @@ textarea {
 
   .range-image-wrap .range-img {
     height: 590px;
+  }
+  .character-carousel-mobile .character-slide .game-preview {
+    height: 350px;
+  }
+  .character-carousel-mobile .character-slide .slide-bg {
+    height: 250px;
+  }
+  .character-carousel-mobile .character-slide {
+    padding: 50px 0;
+  }
+  .project-description.w-padding {
+    padding: 80px 0;
   }
 }
 
@@ -7375,6 +7428,7 @@ textarea {
   .timber-carousel .project-slide img {
     height: 100%;
     max-width: none;
+    width: auto;
   }
 }
 
