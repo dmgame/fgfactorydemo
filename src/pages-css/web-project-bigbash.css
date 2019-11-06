@@ -4,3 +4,6 @@
 .project-preview-images .image-item {
   margin-left: -150px;
 }
+.character-wrap-mobile {
+  display: none;
+}
