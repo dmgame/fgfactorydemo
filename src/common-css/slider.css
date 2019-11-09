@@ -54,6 +54,7 @@
 .slick-next:hover,
 .slick-next:focus {
   background: url("../img/arrow_right.png") no-repeat;
+  background-size: contain;
 }
 
 .slick-arrow::before {

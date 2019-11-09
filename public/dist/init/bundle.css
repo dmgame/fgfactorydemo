@@ -4064,6 +4064,10 @@ header.is-fixed.show-header {
   color: #0a0b0f;
 }
 
+.bg-transparent.is-fixed.show-header .header-nav a:hover {
+  color: var(--main-white);
+}
+
 .bg-transparent.is-fixed.show-header #logo,
 .bg-transparent.is-fixed.show-header #fgf {
   fill: #0a0b0f;
@@ -4197,7 +4201,7 @@ header.is-fixed.show-header {
 }
 
 .base-list--without-title {
-  margin-top: 45px;
+  margin-top: 39px;
 }
 
 :root {
@@ -4326,6 +4330,7 @@ header.is-fixed.show-header {
 .slick-next:hover,
 .slick-next:focus {
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEsAAAAjCAMAAADrNwfvAAAAAXNSR0IB2cksfwAAADZQTFRFAAAAzc3NsbGxAAAAFBQU////np6e0dHRxcXFv7+/ubm5qqqqpaWloaGh////j4+PmpqacXFx5JfOugAAABJ0Uk5TADhS/+8EZjI+RExaXmIMdGqTAU6qowAAAGtJREFUeJzt1rsOgCAMQNFCtT7A1///rJjowkjuUI13JOGkYSAVaS60X62L2vUQZVqCsEFBLJDY6BabSGx2i0USSySWSWwhMXuwFWi7MeVya5HvBbT/1Mspc0mBn83nKTk46hoM27/KOlEfnHyDDaQX5HtbAAAAAElFTkSuQmCC) no-repeat;
+  background-size: contain;
 }
 
 .slick-arrow::before {
@@ -4434,6 +4439,10 @@ header.is-fixed.show-header {
 .nav-tabs.tabs-without-icons .nav-item .nav-link.active {
   border-color: transparent;
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.18);
+}
+
+.nav-tabs.tabs-without-icons > div + div {
+  margin-left: 20px;
 }
 
 .nav-tabs.tabs-without-icons .nav-item .nav-link:hover {
@@ -5093,7 +5102,7 @@ header.is-fixed.show-header {
   top: 0;
   bottom: auto;
   height: 100%;
-  width: 150px;
+  width: 50%;
   transform: none;
 }
 
@@ -6018,6 +6027,10 @@ textarea {
 
 .service-page-inner .home-inner-partners {
   margin-top: 100px;
+}
+.home-inner-partners .slick-track {
+  display: flex;
+  align-items: center;
 }
 
 .services-category {
@@ -7511,6 +7524,9 @@ textarea {
   .timber-carousel .service-slide-content {
     height: 400px;
   }
+  .process-flow-list-carousel .nav-tabs > div + div {
+    margin-left: 0;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -7613,6 +7629,9 @@ textarea {
   .process-flow-list-carousel .nav-tabs > div .nav-item {
     max-width: none;
   }
+  .process-flow-list-carousel .nav-tabs > div + div {
+    margin-top: 10px;
+  }
   .process-flow-list-carousel .nav-tabs .nav-item .nav-link {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -7705,6 +7724,8 @@ textarea {
   .work-steps-wrap::before {
     left: 28px;
     bottom: 85px;
+    top: -22px;
+    background-size: 11px 37px;
   }
   .work-steps-wrap {
     margin-bottom: 75px;
@@ -7721,6 +7742,12 @@ textarea {
   .carousel-service-preview-grid {
     grid-gap: 10px;
     grid-template-columns: repeat(2, minmax(100px, 1fr));
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .work-steps-wrap::before {
+    top: -1px;
   }
 }
 

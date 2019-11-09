@@ -66,6 +66,10 @@
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.18);
 }
 
+.nav-tabs.tabs-without-icons > div + div {
+  margin-left: 20px;
+}
+
 .nav-tabs.tabs-without-icons .nav-item .nav-link:hover {
   border-color: rgba(10, 11, 15, 0.18);
 }

@@ -172,6 +172,10 @@
 .service-page-inner .home-inner-partners {
   margin-top: 100px;
 }
+.home-inner-partners .slick-track {
+  display: flex;
+  align-items: center;
+}
 
 .services-category {
   padding: 95px 0;

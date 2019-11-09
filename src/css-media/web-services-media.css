@@ -258,6 +258,9 @@
   .timber-carousel .service-slide-content {
     height: 400px;
   }
+  .process-flow-list-carousel .nav-tabs > div + div {
+    margin-left: 0;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -360,6 +363,9 @@
   .process-flow-list-carousel .nav-tabs > div .nav-item {
     max-width: none;
   }
+  .process-flow-list-carousel .nav-tabs > div + div {
+    margin-top: 10px;
+  }
   .process-flow-list-carousel .nav-tabs .nav-item .nav-link {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -452,6 +458,8 @@
   .work-steps-wrap::before {
     left: 28px;
     bottom: 85px;
+    top: -22px;
+    background-size: 11px 37px;
   }
   .work-steps-wrap {
     margin-bottom: 75px;
@@ -468,5 +476,11 @@
   .carousel-service-preview-grid {
     grid-gap: 10px;
     grid-template-columns: repeat(2, minmax(100px, 1fr));
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .work-steps-wrap::before {
+    top: -1px;
   }
 }

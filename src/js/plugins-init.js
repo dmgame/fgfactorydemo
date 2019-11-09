@@ -139,15 +139,6 @@ $('[data-toggle="popover"]').on('shown.bs.popover', function(e) {
   if (parent) {
     parent.classList.add('active-poppover-item');
   }
-
-  const poppoverContainer = e.currentTarget.closest('.poppover-container');
-  if (!poppoverContainer) return;
-  const [...children] = poppoverContainer.children;
-  children.forEach(el => {
-    if (!el.classList.contains('active-poppover-item')) {
-      el.style.color = '#bcbfca';
-    }
-  });
 });
 
 $('[data-toggle="popover"]').on('hidden.bs.popover', function(e) {
@@ -158,10 +149,6 @@ $('[data-toggle="popover"]').on('hidden.bs.popover', function(e) {
   if (parent) {
     parent.classList.remove('active-poppover-item');
   }
-  if (!poppoverContainer) return;
-
-  const [...children] = poppoverContainer.children;
-  children.forEach(el => (el.style.color = ''));
 });
 
 // contact-us map slider
@@ -224,17 +211,30 @@ $('[data-team-slider]').slick({
 });
 
 let teamSliderInterval = null;
+let timeout = 1000;
 
-$('.team-carousel .slick-prev').on('mouseover', (e) => moveSlider('slickPrev'));
+$('.team-carousel .slick-prev').on('mousemove', (e) => {
+  timeout = (e.target.clientWidth - e.offsetX) / 100;
+  clearInterval(teamSliderInterval);
+  moveSlider('slickPrev', e);
+});
+
+$('.team-carousel .slick-prev').on('mouseover', (e) => moveSlider('slickPrev', e));
 $('.team-carousel .slick-prev').on('mouseleave', (e) => clearInterval(teamSliderInterval));
 
-$('.team-carousel .slick-next').on('mouseover', (e) => moveSlider('slickNext'));
+$('.team-carousel .slick-next').on('mousemove', (e) => {
+  timeout = (e.target.clientWidth - e.offsetX) / 100;
+  clearInterval(teamSliderInterval);
+  moveSlider('slickNext', e);
+});
+
+$('.team-carousel .slick-next').on('mouseover', (e) => moveSlider('slickNext', e));
 $('.team-carousel .slick-next').on('mouseleave', (e) => clearInterval(teamSliderInterval));
 
-function moveSlider(moveTo) {
+function moveSlider(moveTo, e) {
   teamSliderInterval = setInterval(() => {
     $('[data-team-slider]').slick(moveTo);
-  }, 500);
+  }, timeout);
 }
 
 // Init WoW animation
@@ -381,36 +381,6 @@ $('.home-inner-partners').slick({
     }
   ]
 });
-
-// Update option on carousel nav
-// $('.service-home-tabs .carousel-nav').slick({
-//   dots: false,
-//   infinite: false,
-//   arrows: false,
-//   responsive: [
-//     {
-//       breakpoint: 1199,
-//       settings: {
-//         slidesToShow: 1,
-//         slidesToScroll: 1,
-//       }
-//     },
-//   ]
-// });
-// $('.service-tab-wrap .carousel-nav').slick({
-//   dots: false,
-//   infinite: false,
-//   arrows: false,
-//   responsive: [
-//     {
-//       breakpoint: 1199,
-//       settings: {
-//         slidesToShow: 1,
-//         slidesToScroll: 1,
-//       }
-//     },
-//   ]
-// });
 
 $('.character-carousel-mobile').slick({
   dots: true,
