@@ -4,6 +4,12 @@
   }
 }
 
+@media screen and (max-width: 991px) {
+  .vacancy-form form {
+    padding: 80px 100px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .team-page-inner {
     padding-top: 120px;
@@ -13,6 +19,23 @@
     margin-bottom: 60px;
   }
   .vacancy-item {
+    padding: 50px;
+  }
+  .team-vacancy-inner {
+    min-height: 500px;
+  }
+  .team-vacancy-inner-container .title {
+    margin-bottom: 50px;
+  }
+  .requirement-item-title,
+  .requirement-item-list {
+    font-size: 18px;
+  }
+  .vacancy-description-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .vacancy-form form {
     padding: 50px;
   }
 }
@@ -33,5 +56,11 @@
   .vacancy-item .arrow-link {
     padding-left: 20px;
     font-size: 16px;
+  }
+  .team-vacancy-inner-container .article {
+    font-size: 16px;
+  }
+  .vacancy-form form {
+    padding: 40px 15px;
   }
 }

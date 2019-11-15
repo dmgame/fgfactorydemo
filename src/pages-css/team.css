@@ -39,10 +39,78 @@
 }
 
 .vacancy-item .vacancy-name {
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 40px;
   font-weight: 700;
   line-height: 36px;
   color: var(--main-black);
   letter-spacing: -1px;
+}
+
+.team-vacancy-inner {
+  height: 100vh;
+  min-height: 700px;
+  background: url("../img/team-vacancy-inner-bg.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.team-vacancy-inner-container {
+  max-width: 1600px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.team-vacancy-inner-container .title {
+  max-width: 350px;
+  line-height: 1.4;
+  margin-bottom: 100px;
+}
+
+.team-vacancy-inner-container .article {
+  max-width: 805px;
+}
+
+.vacancy-description-section {
+  padding-top: 170px;
+  padding-bottom: 170px;
+}
+
+.requirements-wrap {
+  margin-top: 110px;
+}
+
+.requirement-item + .requirement-item {
+  margin-top: 50px;
+}
+
+.requirement-item-title,
+.requirement-item-list {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 2;
+}
+
+.requirement-item-list {
+  text-transform: none;
+  font-weight: normal;
+}
+
+.vacancy-form {
+  padding-bottom: 80px;
+}
+
+.vacancy-form form {
+  padding: 100px 170px 80px 170px;
+  border: 1px solid var(--main-green);
+}
+
+.vacancy-form .input-item + .input-item {
+  margin-top: 100px;
+}
+
+.vacancy-form .form-actions {
+  margin-top: 60px;
 }

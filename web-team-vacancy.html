@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:300i,400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="libs/butler-font/stylesheet.css" />
+    <link rel="stylesheet" href="libs/slick/slick.css" />
+    <link rel="stylesheet" href="libs/slick/slick-theme.css" />
+    <link rel="stylesheet" href="libs/aos/aos.css" />
+    <link rel="stylesheet" href="public/dist/init/bundle.css" />
+    <title>Home</title>
+  </head>
+  <body>
+    <header class="header bg-transparent">
+      <div class="container d-flex align-items-center" data-aos="fade-down">
+        <a href="#" class="logo d-flex align-items-center">
+          <svg
+            id="logo"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 31.43 30.1"
+          >
+            <title>logo</title>
+            <path
+              d="M.06,21.91l.78-.71A.49.49,0,0,0,1,20.84C1.07,16.09,3.5,8.65,7.64,2.64a1,1,0,0,0,.15-.86L7.36.2A.16.16,0,0,1,7.55,0c1.17.26,6.12,1.36,8.06,2A34.82,34.82,0,0,1,22.8,5.38a.42.42,0,0,1,.16.31c0,.46.2,2,2.28,4.95l0,.07a.19.19,0,0,1-.05.25l-.12.08a.07.07,0,0,0,0,.09A5,5,0,0,1,26,13.76a0,0,0,0,1-.06,0,7.88,7.88,0,0,0-2.15-1.69.34.34,0,0,0-.32,0l-1.33.79A.1.1,0,0,0,22,13c0,.38.17,2.44-.63,3.5a.05.05,0,0,1-.09,0,3,3,0,0,0-.81-1.29c-.68-.63-1.14-1.18-1.28-1.3a13,13,0,0,1-2.59.16.05.05,0,0,0-.05,0,5.09,5.09,0,0,1-1.86,2.63,0,0,0,0,1-.06,0,23.2,23.2,0,0,0-.46-2.94,0,0,0,0,0-.05,0,2.75,2.75,0,0,1-1.93,1.13,0,0,0,0,1,0-.06,4.92,4.92,0,0,0,.34-1.89.17.17,0,0,0-.09-.15A3.28,3.28,0,0,1,11,11.34l1.2-.54a0,0,0,0,0,0-.05,1.76,1.76,0,0,0-1.52-.05A5.09,5.09,0,0,0,8.9,12.55s0,.06,0,0l1.52-.88a0,0,0,0,1,0,0,7.68,7.68,0,0,0,2,6.85c1.74,1.66,3.75,1.8,3.94,1.34.1-.25.85-2.41,1-2.86a0,0,0,0,1,.08,0,5.37,5.37,0,0,1,1.3,3,.1.1,0,0,0,.12.09A21,21,0,0,0,24.82,18a.36.36,0,0,0,.17-.27,14.19,14.19,0,0,0-.37-3.42s.56,0,2.3,2.26a.12.12,0,0,0,.18,0A9.31,9.31,0,0,0,28,15.5a.06.06,0,0,1,.1,0c.41.7,3.24,5.64,3.3,6.05s-1.59,4-6.81,6.45c-4.68,2.43-13,3.26-18.88-.43A16.64,16.64,0,0,1,0,22.13.17.17,0,0,1,.06,21.91Z"
+            />
+          </svg>
+          <svg
+            id="fgf"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 103.99 13"
+          >
+            <title>fgf</title>
+            <path
+              d="M131.26,8.55a6.5,6.5,0,1,0,6.5,6.5A6.5,6.5,0,0,0,131.26,8.55Zm0,9.08a2.58,2.58,0,1,1,2.58-2.58A2.58,2.58,0,0,1,131.26,17.63Z"
+              transform="translate(-58.34 -8.55)"
+            />
+            <polygon
+              points="7.29 3.54 7.29 0.32 3.95 0.32 0 0.32 0 3.54 0 4.95 0 7.99 0 12.68 3.95 12.68 3.95 7.99 7.22 7.99 7.22 4.95 3.95 4.95 3.95 3.54 7.29 3.54"
+            />
+            <polygon
+              points="31.27 3.54 31.27 0.32 23.98 0.32 23.98 12.68 27.93 12.68 27.93 7.99 31.2 7.99 31.2 4.95 27.93 4.95 27.93 3.54 31.27 3.54"
+            />
+            <path
+              d="M79.55,14.08H74.82v2.57h1.11a2.58,2.58,0,1,1-.36-3.58l2.21-3.24a6.49,6.49,0,1,0,1.77,8.43Z"
+              transform="translate(-58.34 -8.55)"
+            />
+            <path
+              d="M111.81,16.58a3.14,3.14,0,0,1-2.36,1,2.73,2.73,0,0,1-2.85-2.58,2.73,2.73,0,0,1,2.85-2.58,3.35,3.35,0,0,1,2.26.9l2-3.53a7.64,7.64,0,0,0-4.28-1.28c-4,0-7.17,2.91-7.17,6.49s3.21,6.49,7.17,6.49A7.61,7.61,0,0,0,114,20Z"
+              transform="translate(-58.34 -8.55)"
+            />
+            <path
+              d="M96.88,8.87h-3L89.25,21.23h3.91l.38-1.1h3.73l.42,1.1h3.89Zm-2.32,8.52.86-2.18.82,2.18Z"
+              transform="translate(-58.34 -8.55)"
+            />
+            <polygon
+              points="65.27 0.32 62.98 0.32 58.95 0.32 56.66 0.32 56.66 3.54 58.95 3.54 58.95 12.68 62.98 12.68 62.98 3.54 65.27 3.54 65.27 0.32"
+            />
+            <path
+              d="M148.51,17.12a3.92,3.92,0,0,0,1.75-3.47,4.79,4.79,0,0,0-2.81-4.27,7.73,7.73,0,0,0-3.1-.52h-3.92V21.24h3.92v-3l2,3h4.46Zm-4.16-5h.44a1.37,1.37,0,0,1,0,2.74h-.44Z"
+              transform="translate(-58.34 -8.55)"
+            />
+            <polygon
+              points="92.33 0.31 96.78 0.31 98.17 2.9 99.57 0.31 103.99 0.31 100.13 7.36 100.13 12.69 96.19 12.69 96.19 7.35 92.33 0.31"
+            />
+          </svg>
+        </a>
+
+        <nav class="header-nav ml-auto d-flex align-items-center">
+          <a href="">WORK</a>
+          <a href="">SERVICES</a>
+          <a href="" class="active">TEAM</a>
+          <a href="">BLOG</a>
+          <a href="">CONTACT</a>
+        </nav>
+
+        <div class="open-menu">
+          <span></span>
+          <span class="open-menu--rotate"></span>
+          <span></span>
+        </div>
+
+        <nav class="header-nav--mobile">
+          <div class="list-wrap">
+            <h3 class="list-title">Main</h3>
+            <ul class="base-list">
+              <li><a href="">Work</a></li>
+              <li><a href="">Services</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+          </div>
+          <div class="list-wrap">
+            <h3 class="list-title">Work models</h3>
+            <ul class="base-list">
+              <li><a href="">Fixed price project</a></li>
+              <li><a href="">Dedicated team</a></li>
+              <li><a href="">Assets and games for sale</a></li>
+            </ul>
+          </div>
+          <div class="list-wrap">
+            <h3 class="list-title">Company</h3>
+            <ul class="base-list">
+              <li><a href="">Team</a></li>
+              <li><a href="">Careers</a></li>
+              <li><a href="">Blog</a></li>
+            </ul>
+          </div>
+          <div class="list-wrap">
+            <h3 class="list-title">Latest articles</h3>
+            <ul class="base-list base-list--light">
+              <li>
+                <a href="" class="color-gray text-underline"
+                  >Meeting at White Nights Berlin 2019</a
+                >
+              </li>
+              <li>
+                <a href="" class="color-gray text-underline"
+                  >How to design a 3d character from scratch</a
+                >
+              </li>
+              <li>
+                <a href="" class="color-gray text-underline"
+                  >Top 15 game features besides the core gameplay</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="contact-ul-list">
+            <h3 class="list-title">Contacts</h3>
+            <ul class="base-list">
+              <li>Ukraine</li>
+              <li>Kharkiv, 12 Podilskyi Ln</li>
+              <li>
+                <a href="tel:+38 063 288 00 09">+38 063 288 00 09</a>
+              </li>
+              <li>
+                <a
+                  href="mailto:info@fgfactory.com"
+                  class="color-green font-bold"
+                  >info@fgfactory.com</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="follow-us-list">
+            <h3 class="list-title">Follow us</h3>
+            <ul class="base-list base-list--icons">
+              <li>
+                <a href=""><i class="fab fa-behance"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fab fa-dribbble"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fab fa-linkedin-in"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fab fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fab fa-youtube"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="copyright">
+            <span>All Rights Reserved. Fgfactory LTD © 2010 - 2019</span>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div
+        class="team-vacancy-inner d-flex align-items-center"
+        data-aos="fade-up"
+      >
+        <div class="team-vacancy-inner-container container-fluid">
+          <h1 class="title title--section__big color-white">
+            Unity game developer
+          </h1>
+          <p class="article article--medium color-white">
+            Компания Fgfactory – разработчик мобильных игр, приглашает в свою
+            команду опытных специалистов на позиции Unity 3D Game Developer.
+          </p>
+        </div>
+        <!-- /.team-vacancy-inner-container -->
+      </div>
+      <!-- /.team-vacancy-inner -->
+      <div class="vacancy-description-section">
+        <div class="container">
+          <div class="centered-text">
+            <div class="title title--section title__gray">
+              Вакансия
+            </div>
+            <p class="article article--medium">
+              Разработка 2d и 3d игр на движке Unity 3D для мобильных платформ
+              iOS и Android. Разработка мультиплеера для игр на базе Photon и
+              Firebase.
+            </p>
+            <div class="requirements-wrap">
+              <div class="requirement-item">
+                <h3 class="requirement-item-title">ТРЕБОВАНИЯ</h3>
+                <ul class="requirement-item-list">
+                  <li>
+                    Опыт разработки кросс-платформенных игр на Unity 3D от 2х
+                    лет;
+                  </li>
+                  <li>Высокий уровень знания C# и ООП</li>
+                  <li>
+                    Технические знания особенностей разработки игр с 3d и 2d
+                    графикой;
+                  </li>
+                  <li>Опыт работы с игровой физикой в Unity;</li>
+                  <li>Опыт оптимизации игр на Unity;</li>
+                  <li>
+                    Знание Unity плагинов (purchases, ads, social, stats).
+                  </li>
+                </ul>
+              </div>
+              <!-- /.requirement-item -->
+              <div class="requirement-item">
+                <h3 class="requirement-item-title">ДОПОЛНИТЕЛЬНЫЕ НАВЫКИ</h3>
+                <ul class="requirement-item-list">
+                  <li>Objective-C;</li>
+                  <li>Опыт работы с системами контроля версий (svn, git);</li>
+                  <li>
+                    Опыт работы с готовыми серверными решениями типа Parse,
+                    Leanplum.
+                  </li>
+                </ul>
+              </div>
+              <!-- /.requirement-item -->
+              <div class="requirement-item">
+                <h3 class="requirement-item-title">МЫ ПРЕДЛАГАЕМ</h3>
+                <ul class="requirement-item-list">
+                  <li>Офис в центре г. Харькова;</li>
+                  <li>
+                    График работы: полный день (8ч), время прихода с 9 до 10
+                    часов (как удобно), 5 дней в нед; + все гос. праздники –
+                    отдыхаем;
+                  </li>
+                  <li>
+                    ЗП – по результатам собеседования, пересмотр(на повышение)
+                    каждые три месяца по результатам работы, оплата в гривне по
+                    актуальному курсу продажи $;
+                  </li>
+                  <li>Оплачиваемый отпуск + больничный;</li>
+                  <li>
+                    Комфортное рабочее место и компьютер предоставляется +
+                    комната отдыха (где можно поспать в перерыв, поиграть в
+                    тенис, настольный футбол, размяться на шведской стенке,
+                    поиграть на гитаре);
+                  </li>
+                  <li>Чай, кофе, водичка, конфетки, печеньки и т.д.;</li>
+                  <li>Регулярные тимбилдинги, и корпоративы;</li>
+                  <li>
+                    Небольшой коллектив (художники, дизайнеры, 3д, разработчики)
+                    и никакой офисной бюрократии.
+                  </li>
+                </ul>
+              </div>
+              <!-- /.requirement-item -->
+              <div class="requirement-item">
+                <ul class="requirement-item-list">
+                  <li>
+                    К резюме прилагать примеры выпущенных проектов + ссылки в
+                    маркетах с подробным описанием того, что делалось.
+                  </li>
+                </ul>
+              </div>
+              <!-- /.requirement-item -->
+            </div>
+            <!-- /.requirements-wrap -->
+          </div>
+          <!-- /.centered-text -->
+        </div>
+        <!-- /.container -->
+      </div>
+      <!-- /.vacancy-description-section -->
+      <div class="vacancy-form border-bottom">
+        <div class="container">
+          <div class="centered-text">
+            <div class="title title--section title__gray">
+              Подать заявку
+            </div>
+            <form>
+              <div class="input-item">
+                <input type="text" name="" id="name2" data-required="text" />
+                <label for="name2">Can we have your name?</label>
+              </div>
+              <!-- /.input-item -->
+              <div class="input-item">
+                <input
+                  type="text"
+                  name=""
+                  id="email2"
+                  data-required="email"
+                  data-invalid-message="Please provide valid email example@example.com"
+                />
+                <label for="email2">How about your email?</label>
+              </div>
+              <!-- /.input-item -->
+              <div class="input-item">
+                <textarea id="what-you-want-build2"></textarea>
+                <label for="what-you-want-build2"
+                  >You can add some information and links here.</label
+                >
+              </div>
+              <!-- /.input-item -->
+              <div class="input-item input-file d-flex align-items-end">
+                <div class="input-file-fake">
+                  <input
+                    id="uploadFile"
+                    class="f-input"
+                    readonly
+                    data-file-name
+                  />
+                  <label for="uploadFile">Attach a file</label>
+                </div>
+                <div class="fileUpload">
+                  <div class="btn btn--bordered">Browse</div>
+                  <input
+                    id="uploadBtn"
+                    type="file"
+                    class="upload"
+                    data-upload-btn
+                  />
+                </div>
+              </div>
+              <!-- /.input-item -->
+              <div class="form-actions d-flex justify-content-center">
+                <button class="btn btn--primary">
+                 SUBMIT APPLICATION
+                </button>
+              </div>
+              <!-- /.form-actions -->
+            </form>
+          </div>
+          <!-- /.centered-text -->
+        </div>
+        <!-- /.container -->
+      </div>
+      <!-- /.vacancy-form -->
+      <div class="next-page" data-aos="fade-up">
+        <div
+          class="container d-flex justify-content-center align-items-center flex-column"
+        >
+          <span class="article article--small">Next page</span>
+          <h3 class="title title--section color-green">
+            <a href="">Augmented reality</a>
+          </h3>
+        </div>
+      </div>
+      <!-- /.next-article -->
+      <div class="call-to-action-section" data-aos="fade-up">
+        <div class="container-fluid">
+          <div class="call-to-action-wrap">
+            <div class="title-wrap d-flex align-items-center">
+              <img
+                class="block-icon"
+                src="public/img/call-to-action-icon.png"
+                alt=""
+              />
+              <h3 class="title title--section">
+                Let's build something amazing together.
+              </h3>
+            </div>
+            <div class="call-to-action-content d-flex flex-wrap">
+              <div class="left-side">
+                <div class="article article--small">
+                  Think we might be the right friends for your next adventure?
+                  Take a minute, we’d love to hear about your request.
+                </div>
+                <a href="" class="btn btn--primary">CONTACT US</a>
+              </div>
+              <div class="right-side ml-auto d-flex">
+                <div class="contact-ul-list">
+                  <h3 class="list-title">Contacts</h3>
+                  <ul class="base-list">
+                    <li>Ukraine</li>
+                    <li>Kharkiv, 12 Podilskyi Ln</li>
+                    <li>
+                      <a href="tel:+38 063 288 00 09">+38 063 288 00 09</a>
+                    </li>
+                    <li>
+                      <a
+                        href="mailto:info@fgfactory.com"
+                        class="color-green font-bold"
+                        >info@fgfactory.com</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="follow-us-list">
+                  <h3 class="list-title">Follow us</h3>
+                  <ul class="base-list base-list--icons">
+                    <li>
+                      <a href=""><i class="fab fa-behance"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fab fa-dribbble"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fab fa-linkedin-in"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fab fa-youtube"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.call-to-action-section -->
+    </main>
+    <footer class="footer">
+      <div class="container d-flex">
+        <div class="list-wrap">
+          <h3 class="list-title">Main</h3>
+          <ul class="base-list">
+            <li><a href="">Work</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
+        <div class="list-wrap">
+          <h3 class="list-title">Work models</h3>
+          <ul class="base-list">
+            <li><a href="">Fixed price project</a></li>
+            <li><a href="">Dedicated team</a></li>
+            <li><a href="">Assets and games for sale</a></li>
+          </ul>
+        </div>
+        <div class="list-wrap">
+          <h3 class="list-title">Company</h3>
+          <ul class="base-list">
+            <li><a href="">Team</a></li>
+            <li><a href="">Careers</a></li>
+            <li><a href="">Blog</a></li>
+          </ul>
+        </div>
+        <div class="list-wrap">
+          <h3 class="list-title">Latest articles</h3>
+          <ul class="base-list base-list--light">
+            <li>
+              <a href="" class="color-gray text-underline"
+                >Meeting at White Nights Berlin 2019</a
+              >
+            </li>
+            <li>
+              <a href="" class="color-gray text-underline"
+                >How to design a 3d character from scratch</a
+              >
+            </li>
+            <li>
+              <a href="" class="color-gray text-underline"
+                >Top 15 game features besides the core gameplay</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="copyright d-flex flex-column ml-auto">
+          <span>All Rights Reserved</span>
+          <span>Fgfactory LTD</span>
+          <span>© 2010 - 2019</span>
+        </div>
+      </div>
+    </footer>
+    <!-- /.footer -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="libs/bootstrap/bootstrap.min.js"></script>
+    <script src="libs/slick/slick.min.js"></script>
+    <script src="libs/aos/aos.js"></script>
+    <script src="public/dist/init/bundle.js"></script>
+  </body>
+</html>
