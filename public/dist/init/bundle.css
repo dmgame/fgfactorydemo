@@ -4887,6 +4887,10 @@ header.is-fixed.show-header {
   margin-left: 300px;
 }
 
+.project-technology-stack .left-side {
+  width: 70%;
+}
+
 .related-works {
   padding: 90px 0 100px 0;
 }
@@ -6728,11 +6732,13 @@ textarea {
     width: 100%;
     margin-top: 66px;
     max-width: 100%;
-    overflow-y: scroll;
+    overflow-y: auto;
     position: fixed;
-    z-index: 15;
+    z-index: 9999;
     top: 0;
     left: 0;
+    right: 0;
+    bottom: 0;
     background-color: #fff;
     display: flex;
     flex-direction: column;
@@ -7169,10 +7175,6 @@ textarea {
 }
 
 @media screen and (max-width: 1629px) {
-  .project-technology-stack .left-side {
-    width: 70%;
-  }
-
   .character-wrap {
     display: none !important;
   }
@@ -7980,7 +7982,7 @@ textarea {
     max-width: 750px;
   }
   .contact-us-form {
-    padding: 105px 70px;
+    padding: 105px 55px;
   }
   #home .contact-us-form {
     padding-top: 100px;
