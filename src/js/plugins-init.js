@@ -12,7 +12,8 @@ if (menuBtn) {
   function openMenu(event) {
     menu.classList.toggle("header-active");
     menuBtn.classList.toggle("open-menu--active");
-    document.documentElement.style.overflowY = menu.classList.contains('header-active') ? 'hidden' : 'auto';
+    // document.documentElement.style.overflowY = menu.classList.contains('header-active') ? 'hidden' : 'auto';
+    document.body.classList.toggle('overflowOnScroll');
   }
 }
 
