@@ -124,11 +124,9 @@
 
   .header-nav--mobile {
     height: calc(100vh - 66px);
-    box-sizing: border-box;
-    width: 100%;
     margin-top: 66px;
-    max-width: 100%;
-    overflow-y: auto;
+    /* max-width: 100%; */
+    /* overflow-y: auto; */
     position: fixed;
     z-index: 9999;
     top: 0;
@@ -136,11 +134,17 @@
     right: 0;
     bottom: 0;
     background-color: #fff;
+    display: none;
+  }
+
+  .header-nav--mobile .mobile-nav-scroll-container {
     display: flex;
     flex-direction: column;
     padding: 35px 24px;
-    display: none;
+    height: 100%;
+    overflow: scroll;
   }
+
   .bg-transparent .open-menu span,
   .bg-transparent .open-menu.open-menu--active .open-menu--rotate::after {
     background-color: #fff;
@@ -157,7 +161,7 @@
     text-align: left;
   }
 
-  .header-nav--mobile > div + div {
+  .header-nav--mobile .mobile-nav-scroll-container > div + div {
     padding-top: 45px;
   }
 
