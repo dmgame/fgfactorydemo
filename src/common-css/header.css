@@ -81,7 +81,8 @@ header.is-fixed.show-header {
   color: #0a0b0f;
 }
 
-.bg-transparent.is-fixed.show-header .header-nav a:hover {
+.bg-transparent.is-fixed.show-header .header-nav a:hover,
+.bg-transparent.is-fixed.show-header .header-nav a.active {
   color: var(--main-white);
 }
 
