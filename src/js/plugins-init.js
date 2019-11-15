@@ -299,10 +299,13 @@ function teamCountRangeSliderInit() {
     step: 1,
     slide: function(event, ui) {
       const parent = ui.handle.closest('label');
+      const mainCheckboxParent = ui.handle.closest('.project-type-checkbox-item');
+      const mainCheckbox = mainCheckboxParent.querySelector('input[name="team-type"]');
       const counter = parent.querySelector('.team-counter');
       const nestedRadio = parent.querySelectorAll('.project-team-type-ragio-item input');
       counter.textContent = ui.value;
       nestedRadio.forEach(el => (el.disabled = !Boolean(ui.value)));
+      mainCheckbox.checked = Boolean(ui.value);
       if (!ui.value) {
         nestedRadio.forEach(el => (el.checked = false));
       }
