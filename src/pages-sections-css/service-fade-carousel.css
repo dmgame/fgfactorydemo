@@ -4,6 +4,7 @@
 
 .service-slide-content {
   position: relative;
+  padding: 0 15px;
 }
 
 .service-slide-content .service-slide-text {

@@ -250,10 +250,10 @@ if (window.AOS) {
     var header = $('.header');
 
     var windowWidth = $(window).width();
-    if (windowWidth < 768) {
-        header.addClass("pos-fixed is-fixed show-header");
-        return;
-    }
+    // if (windowWidth < 768) {
+    //     header.addClass("pos-fixed is-fixed show-header");
+    //     return;
+    // }
     function onScroll(){
       var windowHeight = $(window).height();
 

@@ -66,6 +66,10 @@
   .works-container .title-wrap {
     margin-bottom: 40px;
   }
+  .works-container .title-wrap .article {
+    margin-top: 10px;
+    line-height: 1.5;
+  }
 }
 
 @media screen and (max-width: 575px) {

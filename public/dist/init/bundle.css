@@ -17,12 +17,12 @@ body {
 body.overflowOnScroll {
   overflow: hidden !important;
   -webkit-overflow-scrolling: touch;
-  height: 100%;
+  /* height: 100%;
   position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
-  right: 0;
+  right: 0; */
 }
 
 main {
@@ -3666,7 +3666,7 @@ section {
 }
 
 .title {
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-weight: 700;
   line-height: var(--lh-page-title);
 }
@@ -3720,6 +3720,10 @@ section {
 
 .works-container .title-wrap {
   margin-bottom: 80px;
+}
+
+.works-container .title-wrap .article {
+  margin-top: 15px;
 }
 
 :root {
@@ -4900,7 +4904,7 @@ header.is-fixed.show-header {
   margin-left: 220px;
 }
 .project-technology-stack.web-project-timber .right-side {
-  margin-left: 300px;
+  margin-left: auto;
 }
 
 .project-technology-stack .left-side {
@@ -5051,6 +5055,7 @@ header.is-fixed.show-header {
 
 .service-slide-content {
   position: relative;
+  padding: 0 15px;
 }
 
 .service-slide-content .service-slide-text {
@@ -6755,15 +6760,19 @@ textarea {
     bottom: 0;
     background-color: #fff;
     display: none;
-  }
-
-  .header-nav--mobile .mobile-nav-scroll-container {
-    display: flex;
     flex-direction: column;
     padding: 35px 24px;
     height: 100%;
     overflow: scroll;
   }
+
+  /* .header-nav--mobile .mobile-nav-scroll-container {
+    display: flex;
+    flex-direction: column;
+    padding: 35px 24px;
+    height: 100%;
+    overflow: scroll;
+  } */
 
   .bg-transparent .open-menu span,
   .bg-transparent .open-menu.open-menu--active .open-menu--rotate::after {
@@ -6780,8 +6789,12 @@ textarea {
   .header-nav--mobile .copyright {
     text-align: left;
   }
-
+  /* 
   .header-nav--mobile .mobile-nav-scroll-container > div + div {
+    padding-top: 45px;
+  } */
+
+  .header-nav--mobile > div + div {
     padding-top: 45px;
   }
 
@@ -8242,6 +8255,10 @@ textarea {
   }
   .works-container .title-wrap {
     margin-bottom: 40px;
+  }
+  .works-container .title-wrap .article {
+    margin-top: 10px;
+    line-height: 1.5;
   }
 }
 
